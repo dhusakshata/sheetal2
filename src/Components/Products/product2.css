@@ -1,0 +1,332 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.product-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative;
+
+}
+
+/* Header Styling */
+.product-head {
+  text-align: center; 
+  
+  margin-bottom: 20px;
+  transform: translateY(60px); /* Start slightly below */
+  /* animation: bounceFade 2s ease-out forwards; Bounce fade animation */
+  animation-delay: 0.5s; /* Delay for Mission */
+}
+
+
+.product-head h1 {
+  text-align: left;
+  border-bottom: 2px solid #0f5286;
+  font-size: 2.5rem;
+  padding: 10px;
+  color: #0f5286;
+  font-weight: bold;
+  position: relative;
+
+}
+.product-head h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  
+}
+
+
+/* Product Container */
+.product-container {
+  display: flex;
+  justify-content: center; /* Keep image and info in a row */
+  align-items: center; /* Align items vertically */
+  gap: 60px; /* Minimal gap between image and info */
+  padding-top: 20px;
+ 
+}
+
+/* Image Section */
+.content-image {
+  flex: 1; /* Take equal space */
+  max-width: 400px; /* Restrict maximum width */
+  object-fit: cover;
+ 
+}
+
+.content-image img {
+  width: 100%;
+  top:-30px;
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+/* Zoom-In and Out Effect on Hover */
+.content-image img:hover {
+  transform: scale(1.1); /* Zoom-in effect */
+  
+}
+
+
+/* Info Section */
+.content-info {
+  flex: 1; /* Take equal space */
+  width: 900px; /* Restrict maximum width */
+  text-align: left;
+  margin-bottom: 200px;
+  
+  padding: 10px;
+}
+
+.content-info p {
+  font-size: 16px;
+  color: black;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.content-info h3 {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+ 
+}
+
+.content-info ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Add indentation for the list */
+}
+
+.content-info li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+.content-image{
+  margin-bottom: -60px;
+}
+  .content-image,
+  .content-info {
+    max-width: 90%;
+    text-align: center;
+   
+  }
+
+  .content-info ul {
+    padding-left: 0;
+  }
+  
+
+  .image-slider {
+    flex-direction: column; 
+    align-items: center;
+    
+  }
+
+  .slider-image {
+
+    width: 200px; 
+    padding: 20px;
+    margin-top: 180px !important;
+  }
+  .fulehose-img{
+   margin-top: 0 !important;
+    padding: 20px;
+  }
+  .wirehose-img{
+    margin-top: -50px !important;
+ 
+  
+  }
+
+  /* Adjust slider-button size */
+  .slider-button {
+    font-size: 16px; /* Reduce size of buttons */
+    padding: 8px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  /* Adjust product-container layout for smaller screens */
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Fix content-image positioning */
+  .content-image img {
+    position: relative;
+    top: 0; /* Reset overlapping position */
+    transform: scale(1); /* Disable zoom on smaller screens */
+    max-width: 100%;
+  }
+
+  /* Adjust content-info styling */
+  .content-info {
+    margin-bottom: 50px; /* Reduce bottom margin */
+    padding: 10px;
+    text-align: center; /* Center-align for better readability */
+  }
+
+  /* Fix image-slider positioning */
+  .image-slider {
+    flex-direction: column; /* Stack slider images vertically */
+    align-items: center;
+    margin-top: 200px; /* Reset negative margin to avoid overlap */
+   
+  }
+
+  .slider-image-wrapper {
+    padding: 10px; /* Reduce padding */
+    margin-top: 200px; /* Add spacing */
+  }
+
+  .slider-image {
+    margin: 10px; /* Reduce margin between images */
+    width: 100%; /* Ensure images take full width */
+    max-width: 250px; /* Restrict max width */
+  }
+
+  /* Adjust slider-button size */
+  .slider-button {
+    font-size: 16px; /* Reduce size of buttons */
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Product Container Adjustments */
+  .product-container {
+    flex-direction: column;
+    gap: 20px; /* Reduce gap between image and info */
+    align-items: center;
+  }
+
+  /* Image Adjustments */
+  .content-image img {
+    position: relative;
+    top: 0; /* Reset top position to avoid overlap */
+    transform: scale(1); /* Prevent zoom effect */
+    max-width: 100%; /* Ensure the image fits within the container */
+    margin-bottom: 20px; /* Add space below the image */
+  }
+
+  /* Info Section Adjustments */
+  .content-info {
+    width: 100%; /* Use full width */
+    text-align: center; /* Center-align content */
+    padding: 10px; /* Adjust padding */
+   
+  }
+
+  .content-info h3 {
+    font-size: 14px; /* Smaller font for headings */
+  }
+
+  .content-info p,
+  .content-info li {
+    font-size: 14px; /* Smaller font for text */
+  }
+
+  /* Image Slider Adjustments */
+  .image-slider {
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 700px; /* Reset negative margin */
+  }
+
+  .slider-image-wrapper {
+    padding: 10px; 
+    margin-top: 600px;
+  
+  }
+
+  .slider-image {
+    margin-top: 600px;
+  
+  width: 200px  !important; 
+  }
+
+  /* Adjust slider buttons */
+  .slider-button {
+    font-size: 14px; /* Smaller button size */
+    padding: 6px; /* Adjust padding for smaller buttons */
+  }
+
+  /* Header Styling for Smaller Screens */
+  .product-head h1 {
+    font-size: 1.8rem; /* Smaller heading size */
+    text-align: center; /* Center-align the heading */
+    padding: 5px;
+  }
+
+  .product-head h1::after {
+    width: 50px; /* Adjust the underline size */
+  }
+}
+
+
+/*Slider*/
+.image-slider {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+ margin-top: -150px;
+  position: relative;
+  
+}
+
+.slider-image-wrapper {
+  
+  padding: 30px;
+  margin-top: -60px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slider-image{
+  margin: 50px;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.slider-button {
+  background-color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.slider-button:hover {
+  background-color: #ddd;
+}
+
+.silicone-slider{
+  margin-top: -100px !important;
+}

@@ -1,0 +1,30 @@
+.product-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.product-button button {
+margin-top: -10px;
+  font-size: 12px; 
+  background-color: #0f5286;
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer;
+  margin-right: 1250px;
+  transition: background-color 0.3s ease;
+}
+
+.product-button button:hover {
+  background-color: #0d3c5f; /* Darker blue on hover */
+}
+
+.product-button button:active {
+  background-color: #0f5286; /* Even darker blue on click */
+}
+
+.product-button a {
+  text-decoration: none; /* Remove underline from the link */
+}

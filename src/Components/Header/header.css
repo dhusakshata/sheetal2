@@ -1,0 +1,178 @@
+/* Additional Styles for Logo and Header */
+.header {
+  background-color: #000; /* Black background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0; /* Ensure the header sticks to the top */
+  z-index: 1000; /* Make sure header stays on top */
+}
+
+/* Logo Styling */
+.logo-image {
+  padding: 10px 0;
+  height: 100px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
+  margin-left: 20px; /* Add left margin for spacing */
+}
+
+/* Ensure that the logo aligns well with the header section */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  z-index: 2;
+}
+
+.contact-email {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* White text for email */
+  margin-right: 20px;
+}
+
+/* Navbar Section */
+.navbar-custom {
+  background-color: transparent; /* Transparent background for the navbar */
+  z-index: 1; /* Set z-index to keep it behind the logo */
+  margin-top: -40px;
+}
+
+.menu-toggle {
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff; /* White toggle icon */
+  position: absolute;
+  right: 10px;
+  top: -50px;
+}
+
+.navbar-custom .nav-link {
+  color: #fff; /* White links */
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  position: relative; /* Make sure parent link remains visible */
+  z-index: 2; /* Keep parent link above the dropdown */
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffc107; /* Gold hover effect */
+}
+
+/* Dropdown Menus */
+.navbar-custom .dropdown-menu {
+  background-color: rgba(33, 37, 41, 0.95); /* Dark transparent background */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  border: none;
+  margin-top: 0; /* Ensure no gap between dropdown and parent */
+  z-index: 1; /* Ensure the dropdown is behind the parent link */
+}
+
+.navbar-custom .dropdown-item {
+  color: #fff; /* White dropdown items */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: #343a40; /* Darker gray hover effect */
+  color: #ffc107; /* Gold text on hover */
+}
+
+/* Fix Dropdown Parent Text Visibility */
+.navbar-custom .dropdown:hover > .nav-link {
+  color: #ffc107; /* Keep parent text visible when dropdown is open */
+}
+
+/* Sidebar (Smaller Screens) */
+.offcanvas {
+  background-color: rgba(33, 37, 41, 0.95); /* Semi-transparent dark gray */
+  color: #fff;
+}
+
+.offcanvas .nav-link {
+  color: #fff; /* White links in sidebar */
+  margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.offcanvas .nav-link:hover {
+  color: #ffc107; /* Gold hover effect in sidebar */
+}
+
+.offcanvas .dropdown-menu {
+  background-color: rgba(33, 37, 41, 0.95); /* Transparent dark gray dropdown */
+}
+
+.offcanvas .dropdown-item {
+  color: #fff; /* White dropdown items */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.offcanvas .dropdown-item:hover {
+  background-color: #343a40; /* Darker background on hover */
+  color: #ffc107; /* Gold text */
+}
+
+/* Fix for nested dropdowns */
+.nested-dropdown .dropdown-menu {
+  left: 100%; /* Position nested menu to the right */
+  top: 0; /* Align nested menu with the parent item */
+  margin-top: 0; /* Ensure no gap between parent and child dropdown */
+  z-index: 1050; /* Ensure proper stacking context */
+}
+
+.navbar-custom .dropdown-menu {
+  background-color: rgba(33, 37, 41, 0.9); /* Semi-transparent dark background */
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-custom .dropdown-item {
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: #343a40; /* Dark gray hover effect */
+  color: #ffc107; /* Gold text on hover */
+}
+
+/* Ensure visibility for nested dropdowns */
+.nested-dropdown:hover > .dropdown-menu {
+  display: block; /* Ensure the child dropdown is visible */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .nested-dropdown .dropdown-menu {
+    left: 0; /* Adjust position for smaller screens */
+    top: auto; /* Reset top alignment */
+    position: relative; /* Reset positioning for smaller screens */
+  }
+
+  .navbar-custom {
+    background-color: rgba(33, 37, 41, 0.9); /* Transparent gray for smaller screens */
+  }
+
+  .navbar-custom .nav-link {
+    color: #fff; /* Keep links white on smaller screens */
+  }
+
+  .navbar-custom .nav-link:hover {
+    color: #ffc107;
+  }
+
+  .offcanvas .nav-link,
+  .offcanvas .dropdown-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff; /* Ensure readability */
+  }
+
+  .offcanvas .nav-link:hover,
+  .offcanvas .dropdown-item:hover {
+    background-color: #343a40; /* Add background color for hover effect */
+    color: #fff; /* Keep text white */
+  }
+}
