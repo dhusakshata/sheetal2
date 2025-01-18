@@ -6,6 +6,7 @@
   padding: 0; 
 }
 .product-section {
+  height: 100vh;
   position: relative;
   width: 100%;
   overflow: visible;

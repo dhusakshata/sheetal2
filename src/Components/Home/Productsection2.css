@@ -78,8 +78,7 @@ margin-top: -60px;
 
   color: black;
   font-weight: bold;
-  font-style: italic;
-  transform: skew(-8deg);
+
 }
 
 .content p {
@@ -88,8 +87,7 @@ margin-top: -60px;
   line-height: 1.4;
   font-weight: bold;
   letter-spacing: 0.1px;
-  font-style:oblique !important;
-  transform: skew(-5deg);
+ 
 }
 
 .image-slide img {

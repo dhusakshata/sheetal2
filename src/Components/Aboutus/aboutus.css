@@ -1,0 +1,389 @@
+
+.about-hero {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  background: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+  background-attachment: fixed; 
+  color: #fff;
+  padding: 50px 20px;
+  
+  position: relative; 
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 193, 7, 0.2), rgba(0, 0, 0, 0.6));
+  opacity: 0.7;
+  z-index: -1;
+}
+.about-hero-content {
+  min-height: 100vh; 
+  background: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+  background-attachment: fixed; 
+  color: #fff;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+  z-index: 10;
+}
+
+.about-hero-content::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../Images/wave2.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  opacity: 0.3;
+  z-index: -1; 
+}
+
+.about-hero-heading {
+  flex: 2;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative; 
+}
+
+.vertical-line {
+  width: 10px;
+  height: 150px;
+  background-color: #ffc107;
+  margin-right: 10px;
+}
+/* Keyframes for the unrolling effect */
+@keyframes horizontalUnroll {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0; 
+  }
+  50% {
+    clip-path: inset(0 50% 0 0); /* Halfway unrolled */
+    opacity: 0.5; /* Partially visible */
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* Fully visible */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Styling for the heading */
+.about-hero-heading h1 span,
+.about-hero-heading h2 {
+  display: inline-block;
+  animation: horizontalUnroll 2s ease-out;
+  animation-fill-mode: forwards; 
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* Optional: Add delay for h2 */
+.about-hero-heading h2 {
+  animation-delay: 0.5s;
+}
+
+.about-hero-heading h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.about-hero-heading h1 span {
+  padding-left: 10px;
+}
+
+.about-hero-heading h2 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+/* Annimations*/
+/* Keyframes for right-to-left unrolling */
+@keyframes unrollRightToLeft {
+  0% {
+    clip-path: inset(0 0 0 100%); /* Hidden from the right */
+    opacity: 0; /* Fully invisible */
+  }
+  50% {
+    clip-path: inset(0 0 0 50%); /* Halfway unrolled */
+    opacity: 0.5; /* Partially visible */
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* Fully visible */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Styling for the right-to-left animation */
+.about-hero-description {
+
+  animation: unrollRightToLeft 2s ease-out;
+  animation-fill-mode: forwards; 
+  opacity: 0;
+  overflow: hidden; 
+}
+
+
+.about-hero-description {
+  flex: 2;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-hero-description p {
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+/* About Info Section */
+
+/*Annimation */
+/* Custom unrolling animation */
+@keyframes unrollFromTop {
+  0% {
+    clip-path: inset(100% 0 0 0); /* Hidden from top */
+    opacity: 0;
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* Fully visible */
+    opacity: 1;
+  }
+}
+
+[data-aos="unroll"] {
+  animation: unrollFromTop 2s ease-out forwards;
+  opacity: 0;}
+
+
+/**/
+
+
+.about-info {
+  display: flex;
+  background-color: #1e202c !important;
+  min-height: 80vh;
+  color: black;
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><pattern id="diagonal-lines" patternUnits="userSpaceOnUse" width="10" height="10"><path d="M -5 5 L 5 -5 M 0 10 L 10 0 M 5 15 L 15 5" stroke="%23333333" stroke-width="1" /></pattern><rect width="100%" height="100%" fill="url(%23diagonal-lines)" /></svg>');
+  background-attachment: fixed;
+}
+
+.about-info-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  width: 100%;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-info-image {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
+}
+
+.about-info-image img {
+  max-width: 800px !important;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-info-text {
+  flex: 2;
+  padding: 20px;
+  margin-left: 150px;
+}
+
+.about-info-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.about-info-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: white;
+}
+
+.about-info-text ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-info-text ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Add Sticky Effect */
+.about-info.sticky {
+  position: sticky;
+  top: 0; 
+  z-index: 10;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-info-container {
+    flex-direction: column;
+  }
+
+  .about-info-image,
+  .about-info-text {
+    max-width: 100%;
+  }
+
+  .about-info-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-info-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+  height: 100vh;
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ), url("../../Images/mission-vision.jpg");
+  background-attachment: fixed !important;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+
+.mission-vision-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 30px;
+}
+
+.mission,
+.vision {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  padding: 30px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  position: relative;
+  overflow: hidden;
+  animation: bounceIn 1s ease-out; /* Apply bounce animation */
+}
+
+.mission:nth-child(1) {
+  animation-delay: 0.2s; /* Staggered animation for Mission */
+}
+
+.vision:nth-child(2) {
+  animation-delay: 0.4s; /* Staggered animation for Vision */
+}
+
+.mission:hover,
+.vision:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mission h2,
+.vision h2 {
+  font-size: 2.5rem;
+  color: #ffc107; /* Highlighted heading color */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.mission hr,
+.vision hr {
+  border: 0;
+  height: 2px;
+  background: #ffc107; /* Yellow underline */
+  margin: 10px 0 20px;
+  width: 80px;
+}
+
+.mission p,
+.vision p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.mission p:last-child,
+.vision p:last-child {
+  margin-bottom: 0;
+}
+
+/* Bounce Animation */
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-100px); /* Start above the screen */
+    opacity: 0; /* Start invisible */
+  }
+  50% {
+    transform: translateY(10px); /* Overshoot */
+    opacity: 1; /* Fade in */
+  }
+  100% {
+    transform: translateY(0); /* Settle in place */
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mission-vision-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mission,
+  .vision {
+    width: 100%;
+  }
+}
+
+
+/* Wave Animation */
+@keyframes wave-animation {
+  0% {
+    transform: translateY(0); 
+  }
+  100% {
+    transform: translateY(100%); 
+  }
+}

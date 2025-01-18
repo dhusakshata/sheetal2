@@ -4,7 +4,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0; /* Ensure the header sticks to the top */
-  z-index: 1000; /* Make sure header stays on top */
+  z-index: 100000; /* Make sure header stays on top */
 }
 
 /* Logo Styling */
@@ -20,22 +20,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
   z-index: 2;
 }
 
-.contact-email {
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* White text for email */
-  margin-right: 20px;
+
+.contact-info {
+  display: flex;
+flex-direction: row !important;
+gap: 20px;
+margin-right: 20px !important ;
+}
+
+.contact-email,
+.contact-number {
+  margin-top: -20px !important;
+  font-size: 14px;
+  color: #fff; /* White text for contact info */
+  text-decoration: none;
+  margin: 2px 0;
+  transition: color 0.3s ease;
+}
+
+.contact-email:hover,
+.contact-number:hover {
+  color: #ffc107; /* Gold hover effect */
 }
 
 /* Navbar Section */
 .navbar-custom {
   background-color: transparent; /* Transparent background for the navbar */
-  z-index: 1; /* Set z-index to keep it behind the logo */
-  margin-top: -40px;
+  z-index: 1; 
+
+
 }
 
 .menu-toggle {
@@ -47,13 +63,25 @@
   right: 10px;
   top: -50px;
 }
+/* Center Navbar Items */
+.navbar-custom .navbar-nav {
+  display: flex;
 
+  justify-content: center !important;
+  align-items: center !important; 
+  flex-grow: 1; 
+}
 .navbar-custom .nav-link {
   color: #fff; /* White links */
   margin: 0 10px;
   transition: color 0.3s ease;
   position: relative; /* Make sure parent link remains visible */
   z-index: 2; /* Keep parent link above the dropdown */
+  text-align: center;
+  color: #fff; /* White links */
+  margin: 0 15px; 
+  gap: 10px;
+  transition: color 0.3s ease;
 }
 
 .navbar-custom .nav-link:hover {
@@ -91,7 +119,7 @@
 }
 
 .offcanvas .nav-link {
-  color: #fff; /* White links in sidebar */
+  color: #fff !important; /* White links in sidebar */
   margin: 10px 0;
   transition: color 0.3s ease;
 }
@@ -141,6 +169,81 @@
 /* Ensure visibility for nested dropdowns */
 .nested-dropdown:hover > .dropdown-menu {
   display: block; /* Ensure the child dropdown is visible */
+}
+
+
+/* Container for the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+ padding-left: 10px;
+ left :40px;
+}
+
+/* Styling for the search input */
+.search-bar input {
+  
+  display: block;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 250px;
+  background-color: #f5f5f5;
+  transition: all 0.3s ease;
+}
+
+/* Styling for the search icon when input is closed */
+.search-icon {
+
+  font-size: 20px;
+  color:white !important;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for the search icon */
+.search-icon:hover {
+  color:black !important ;
+}
+
+/* Search button inside the input box */
+.search-bar button {
+
+  border: none;
+
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+/* Hover effect for the search button */
+.search-bar button:hover {
+  background-color: #ffc107;
+}
+
+/* Disabled state for search input */
+.search-bar input:disabled {
+  pointer-events: none;
+
+}
+
+/* Style for search icon when input is open */
+
+.search-bar input:focus {
+  background-color: white;
+  border-color:#ffc107 ;
+}
+ button{
+  background-color:#ffc107 ;
+    padding: 5px 10px;
+  color: white !important;
 }
 
 /* Mobile Responsive Styles */

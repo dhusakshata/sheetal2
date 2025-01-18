@@ -95,52 +95,49 @@ const Home = () => {
       </section>
 
       {/* About Us Section */}
-    <section className="about-section" id="about">
-  <div className="section-content">
-    <div className="about-us-title">
-      <h1>ABOUT US</h1>
-    </div>
-    <div className="about-us-content">
-      <div className="about-us-info">
-        <p>
-          Welcome to Sheetal Rubber Products, where innovation meets quality in the manufacturing of rubber solutions. Established with a vision to provide superior rubber products, we specialize in a wide range of offerings, including moulded hoses, silicone hoses, fuel tubes, assembly hoses, and wire-reinforced hoses.
-        </p>
-        <p>
-          Our commitment to excellence is reflected in our state-of-the-art manufacturing processes and rigorous quality control measures.
-        </p>
-        <p>
-          With years of experience in the industry, our team of skilled professionals is dedicated to delivering customized solutions tailored to meet the specific needs of our clients. We take pride in our ability to understand client requirements and provide innovative products that enhance efficiency and reliability.
-        </p>
-        <p>
-          At Sheetal Rubber Products, customer satisfaction is our top priority. We believe in building long-term relationships with our clients by offering exceptional service, timely delivery, and continuous support.
-        </p>
-
-        <button className="read-more">
-          <Link to="/about">Read More</Link>
-        </button>
+      <section className="about-section" id="about">
+  <div className="overlay1">
+    <div className="section-content  about-content">
+      <div className="about-us-title">
+        <h1>ABOUT US</h1>
       </div>
+      <div className="about-us-content">
+        <div className="about-us-info">
+          <p>
+            Welcome to Sheetal Rubber Products, where innovation meets quality in the manufacturing of rubber solutions. Established with a vision to provide superior rubber products, we specialize in a wide range of offerings, including moulded hoses, silicone hoses, fuel tubes, assembly hoses, and wire-reinforced hoses.
+          </p>
+          <p>
+            Our commitment to excellence is reflected in our state-of-the-art manufacturing processes and rigorous quality control measures.
+          </p>
+          <p>
+            With years of experience in the industry, our team of skilled professionals is dedicated to delivering customized solutions tailored to meet the specific needs of our clients. We take pride in our ability to understand client requirements and provide innovative products that enhance efficiency and reliability.
+          </p>
+          <p>
+            At Sheetal Rubber Products, customer satisfaction is our top priority. We believe in building long-term relationships with our clients by offering exceptional service, timely delivery, and continuous support.
+          </p>
 
-      <div className="about-us-video">
-        <video className="about-us-video-element" autoPlay muted loop>
-          <source src={rubberWorld} type="video/mp4" />
-        </video>
+          <button className="read-more">
+            <Link to="/Aboutus">Read More</Link>
+          </button>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 
+
       {/* Product Section */}
       <section className="product-section" id="product">
       
         <div className="section-content">
-          
+       
           <h2>PRODUCTS</h2>
           <p >
   At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including <p>
   At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including 
-  <b>
-    <Link to="/siliconpolyester">Silicone Polyester Hoses</Link>, 
+     <b>
+    <Link to="/siliconpolyester"> Silicone Polyester Hoses</Link>, 
     <Link to="/turbochargerhose">Turbocharger Hoses</Link>, 
     <Link to="/marinewethose">Marine Wet Exhaust Hoses</Link>, 
     <Link to="/epdm">EPDM Rubber Hoses</Link>, 
@@ -148,7 +145,7 @@ const Home = () => {
     <Link to="/assembly">Assembly Hoses</Link>, 
     <Link to="/wired">Wire Reinforced Hoses</Link>, 
     <Link to="/fueltube">Fuel Hoses</Link>, 
-    <Link to="/moulded">Moulded Hoses</Link>.
+    <Link to="/moulded">Moulded Hoses </Link>.
   </b> 
   Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications.
 </p>
@@ -162,29 +159,32 @@ const Home = () => {
       </section>
  {/* Application Section */}
  <section className="application-section2" id="application">
-      <div className="section-content trusted-clients">
-  <h2>TRUSTED BY CLIENTS</h2>
-  <p>
-    At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including <p>
-  At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including 
-  <b>
-    <Link to="/siliconpolyester">Silicone Polyester Hoses</Link>, 
-    <Link to="/turbochargerhose">Turbocharger Hoses</Link>, 
-    <Link to="/marinewethose">Marine Wet Exhaust Hoses</Link>, 
-    <Link to="/epdm">EPDM Rubber Hoses</Link>, 
-    <Link to="/organic">Organic Rubber Hoses</Link>, 
-    <Link to="/assembly">Assembly Hoses</Link>, 
-    <Link to="/wired">Wire Reinforced Hoses</Link>, 
-    <Link to="/fueltube">Fuel Hoses</Link>, 
-    <Link to="/moulded">Moulded Hoses</Link>.
-  </b> 
-  Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications.
-</p>
- Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications.
-  </p>
-</div>
+  <div className="overlay">
+    <div className="trusted-clients">
+      <h2>TRUSTED BY CLIENTS</h2>
+      <p>
+        At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including:
+      </p>
+      <p>
+        <b>
+          <Link to="/siliconpolyester"> Silicone Polyester Hoses</Link>, 
+          <Link to="/turbochargerhose">Turbocharger Hoses</Link>, 
+          <Link to="/marinewethose">Marine Wet Exhaust Hoses</Link>, 
+          <Link to="/epdm">EPDM Rubber Hoses</Link>, 
+          <Link to="/organic">Organic Rubber Hoses</Link>, 
+          <Link to="/assembly">Assembly Hoses</Link>, 
+          <Link to="/wired">Wire Reinforced Hoses</Link>, 
+          <Link to="/fueltube">Fuel Hoses</Link>, 
+          <Link to="/moulded">Moulded Hoses </Link>.
+        </b>
+      </p>
+      <p>
+        Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications.
+      </p>
+    </div>
+  </div>
+</section>
 
-      </section>
 
       {/* Esteemed Clients Section */}
       <section className="clients-section" id="clients">
@@ -219,15 +219,15 @@ const Home = () => {
 
 
       
- {/* Application Section 2 */}
+ {/* Application Section  */}
       <section
       className="application-section"
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
       id="application"
     >
       <div className="section-content">
-        <h2>OUR APPLICATIONS</h2>
-        <p>Explore our products and services.</p>
+        <h2 className="application-heading">OUR APPLICATIONS</h2>
+      
       </div>
     </section>
     </div>

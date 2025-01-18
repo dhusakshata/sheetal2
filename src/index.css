@@ -1,9 +1,9 @@
 /* @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css"; */
-
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
+
 
 body {
   margin: 0;

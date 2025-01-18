@@ -134,15 +134,7 @@ const Slider = () => {
         </div>
       </div>
 
-      {/* Navigation buttons */}
-      {/* <div className="nav-arrows">
-        <button id="up" onClick={handlePrevious}>
-          <i>&#9650;</i>
-        </button>
-        <button id="down" onClick={handleNext}>
-          <i>&#9660;</i>
-        </button>
-      </div> */}
+     
     </div>
   );
 };
