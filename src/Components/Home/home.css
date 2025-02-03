@@ -1,16 +1,20 @@
 /* Global Styles */
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-
+  box-sizing: border-box;
 }
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 
 /* Main Hero Section */
 .hero-section {
   height: 100vh;
   background-image: url('../../Images/images-hoses.webp');
-  /* Replace with your image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,38 +25,239 @@ body {
   text-align: center;
   color: white;
   position: relative;
+  transition: background-image 3s ease-in-out;
 }
-
+.hero-section.bg-changed {
+  background-image: url('../../Images/hoses12.jpg'); /* Change this */
+}
 .hero-content h1 {
   font-size: 3rem;
+  margin-top: -100px;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+/* General Styling */
+.animate-top {
+  font-size: 3rem;
+  margin-top: -100px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  opacity: 0; 
+  position: relative;
+  animation: slide-down 1.5s ease-out forwards;
 }
 
+/* Animation Keyframes */
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(10px); /* Slight bounce */
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* General Styling */
+.animated-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  overflow: hidden;
+  height: 100px; /* Adjust as needed */
+  gap: 15px; /* Adds consistent spacing between words */
+}
+
+.designed,
+.perform,
+.to {
+  position: relative;
+  opacity: 0;
+}
+
+/* Animations */
+.designed {
+  animation: slide-in-left-skew 1.5s ease-out forwards;
+}
+
+.perform {
+  animation: slide-in-right-skew 1.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.to {
+  opacity: 0; /* Always visible */
+  animation: fade-in 1s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+/* Keyframes */
+@keyframes slide-in-left-skew {
+  from {
+    transform: translateX(-100%) skew(-50deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(10px) skew(0deg); /* Slight overshoot */
+  }
+  to {
+    transform: translateX(0) skew(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right-skew {
+  from {
+    transform: translateX(100%) skew(50deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-10px) skew(0deg); /* Slight overshoot */
+  }
+  to {
+    transform: translateX(0) skew(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 .hero-content p {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 30px;
 }
 
-.scroll-btn {
-  padding: 10px 20px;
-  background-color: #ffc107;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
+.scroll-down{
+margin-top: -10px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .scroll-btn:hover {
   background-color: #e0a800;
 }
 
+@media (max-width: 1024px) { /* Tablets */
+  .hero-section {
+    height: 80vh; 
+  }
+
+  .hero-content h1, 
+  .animate-top {
+    font-size: 2.5rem;
+    margin-top: -50px;
+  }
+
+  .animated-text {
+    font-size: 2rem;
+    height: auto;
+  }
+
+  .scroll-down {
+    margin-top: 20px !important;
+  }
+
+  .scroll-down svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .hero-section {
+    height: 70vh;
+    padding: 30px 10px;
+  }
+
+  .hero-content h1, 
+  .animate-top {
+    font-size: 2rem;
+    margin-top: -30px;
+  }
+
+  .animated-text {
+    font-size: 1.8rem;
+    flex-direction: row; /* Stack words vertically */
+    gap: 5px;
+    text-align: center;
+  }
+
+  .scroll-down {
+    margin-top: 30px !important;
+  }
+
+  .scroll-down svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) { /* Small Mobile */
+  .hero-section {
+    height: 60vh;
+    padding: 20px 5px;
+  }
+
+  .hero-content h1, 
+  .animate-top {
+    font-size: 1.8rem;
+    margin-top: -20px;
+  }
+  .animated-text {
+    font-size: 1.5rem;
+    flex-direction: column; /* Stack words vertically */
+    gap: 5px;
+    text-align: center;
+  }
+
+  .scroll-down svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+
+
+
 /* About Section */
 .about-section {
-  position: relative;
-  width: 100%;
-  height: 80vh; /* Full viewport height */
-  background: url('../../Images/image1.avif') no-repeat center center/cover; /* Full background image */
+padding: 50px 20px;
+  height: 100vh; /* Full viewport height */
+  background: url('../../Images/warehouse2.jpg'); /* Full background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
+  position: relative;
 }
 
 .overlay1 {
@@ -61,34 +266,33 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  
   background: rgba(30, 32, 44, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  padding: 20px;
+  color: black;
+
   
 }
 
 .about-content {
   z-index: 1;
   max-width: 1000px;
-  padding: 20px;
   text-align: center;
+  margin-top: -80px;
 }
 .about-us-title h1 {
   font-size: 3rem;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: white; /* Highlighted title color */
+  color: white;
   text-align: center;
   font-weight: bold;
 }
 
 .about-us-info p {
-  font-size: 1rem;
+  font-size: 16px;
   margin-bottom: 15px;
   line-height: 1.8;
   color: white;
@@ -96,7 +300,7 @@ body {
 }
 
 .read-more {
-  margin-top: 20px;
+  margin: 20px;
   background-color: #ff9d00 !important;
   color: #fff;
   border: none;
@@ -116,7 +320,7 @@ body {
   background-color: #ffa800;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .section-content {
     padding: 10px;
   }
@@ -127,21 +331,45 @@ body {
 
   .about-us-info p {
     font-size: 0.9rem;
+    margin: 0 20px;
+  }
+}
+@media (min-width: 781px) { 
+  .section-content {
+    padding: 20px; /* Increase padding for better spacing */
+  }
+
+  .about-us-title h1 {
+    font-size: 2.5rem; /* Slightly larger heading */
+  }
+
+  .about-us-info p {
+    font-size: 1rem; /* Slightly larger text for readability */
+    margin: 0 50px; /* Add more margin for a balanced layout */
   }
 }
 
-/* Product Section */
-.product-section {
 
+/* Default Product Section Styles */
+.product-section {
+  background-color: #ffff;
   height: 100vh;
   padding: 30px 20px;
   text-align: center;
-
-  
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  flex-direction: column;
+  background-attachment: fixed;
+  z-index: 1;
 }
 
 .product-section::before {
-  content: ""; 
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -153,58 +381,131 @@ body {
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.3;
-  z-index: -1; 
+  z-index: -1;
+  pointer-events: none;
 }
 
 .product-section h2 {
-  margin-top: 60px !important;
   font-size: 3rem;
   font-weight: bold;
 }
 
+.product-section p {
+  font-size: 16px;
+  margin: 30px;
+}
 
 /* Styling all links inside the <b> tag */
 b a {
-  color: #0056b3; /* Primary link color (blue) */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Keep bold styling */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  color: #0056b3;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 /* Hover effect */
 b a:hover {
-  color: #003d80; /* Darker blue on hover */
-  text-decoration: underline; /* Add underline on hover */
+  color: #003d80;
+  text-decoration: underline;
 }
 
 /* Active link (when the link is clicked) */
 b a:active {
-  color: #00264d; /* Even darker blue when active */
+  color: #00264d;
 }
 
 /* Focus outline for accessibility */
 b a:focus {
-  outline: 2px solid #80bdff; /* Blue outline for keyboard navigation */
+  outline: 2px solid #80bdff;
   outline-offset: 2px;
+}
+
+/* Responsive Styles */
+
+/* Medium Screens (Tablets: ≤ 1024px) */
+@media screen and (max-width: 1024px) {
+  .product-section {
+    height: auto; /* Allow the height to adjust for content */
+    padding: 20px;
+    background-attachment: scroll; /* Disable fixed background for better performance */
+  }
+
+  .product-section h2 {
+    font-size: 2.5rem; /* Reduce heading size */
+  }
+
+  .product-section p {
+    font-size: 14px; /* Slightly smaller font size */
+    margin: 20px; /* Reduce margins for better spacing */
+  }
+
+  b a {
+    font-size: 0.9rem; /* Reduce font size of links */
+  }
+}
+
+/* Small Screens (Mobile: ≤ 768px) */
+@media screen and (max-width: 768px) {
+  .product-section {
+    flex-direction: column;
+    height: auto; /* Allow the height to adjust */
+    padding: 15px; /* Reduce padding */
+    text-align: center;
+  }
+
+  .product-section h2 {
+    font-size: 2rem; /* Further reduce heading size */
+  }
+
+  .product-section p {
+    font-size: 13px; /* Reduce paragraph font size */
+    margin: 15px; /* Adjust margins for smaller screens */
+  }
+
+  b a {
+    font-size: 0.85rem; /* Adjust font size of links */
+  }
+}
+
+/* Extra Small Screens (Mobile: ≤ 480px) */
+@media screen and (max-width: 480px) {
+  .product-section {
+    height: auto;
+    padding: 10px; /* Minimal padding for smaller screens */
+  }
+
+  .product-section h2 {
+    font-size: 1.8rem; /* Further reduce heading size */
+  }
+
+  .product-section p {
+    font-size: 12px; /* Smaller font size for small devices */
+    margin: 10px;
+  }
+
+  b a {
+    font-size: 0.8rem; /* Adjust link font size */
+  }
 }
 
 
 /* Clients Section */
 .clients-section {
-  height: 70vh;
-  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><pattern id="diagonal-lines" patternUnits="userSpaceOnUse" width="10" height="10"><path d="M -5 5 L 5 -5 M 0 10 L 10 0 M 5 15 L 15 5" stroke="%23ccc" stroke-width="1" /></pattern><rect width="100%" height="100%" fill="url(%23diagonal-lines)" /></svg>');
+  height: 50vh;
+  background: url('../../svgfiles/diagonal.svg');
+
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
+  background-attachment: fixed !important;
   padding: 50px 20px;
   text-align: center;
-  color: #333; /* Adjust content color */
+  color: #333;
+  position: relative;
 }
 
 .clients-section h2 {
   font-size: 2.5rem;
-margin-top: 40px;
-  margin-bottom: 20px;
+margin-top: -20px;
   color: black;
   font-weight: bold;
   text-transform: uppercase;
@@ -218,7 +519,7 @@ margin-top: 40px;
   height: 100%;
   text-align: center;
   padding: 50px 0;
-margin-top: 60px;
+
 }
 
 
@@ -259,7 +560,7 @@ margin-top: 60px;
 .swiper-button-next,
 .swiper-button-prev {
   color: #888; /* Lighter gray for better contrast */
-  font-size: 2px; /* Adjust button size */
+  font-size: 1px; /* Adjust button size */
 }
 
 /* Pagination dots for swiper */
@@ -275,51 +576,157 @@ margin-top: 60px;
   background-color: gray; /* Highlight active dot */
 }
 
-/*For Application 2*/
 
-.application-section2{
-  position: relative;
+/* For medium-sized screens (tablets) */
+@media (max-width: 1024px) {
+  .logo-item {
+    width: 250px; /* Smaller logos for tablets */
+    height: 150px;
+  }
+}
+
+/* For smaller screens (smartphones) */
+@media (max-width: 768px) {
+  .logo-item {
+    width: 200px; 
+    height: 200px;
+  }
+  .swiper-button-next,
+.swiper-button-prev {
+ display: none;
+}
+
+}
+
+/* For extra small screens (very small devices) */
+@media (max-width: 400px) {
+  .logo-item {
+    width: 150px;
+    height: 150px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.8rem; 
+  }
+}
+
+
+#application-2 {
+  overflow: visible !important;
+}
+
+.application-section2 {
   width: 100%;
   height: 100vh; /* Full viewport height */
-  background: url('../../Images/car.avif') no-repeat center center/cover; /* Full background image */
+  background: url('../../Images/car.avif') no-repeat center center/cover;
+  z-index: 10; 
+  display: block !important;
+  visibility: visible !important;
+  overflow: visible !important;
+  position: relative !important;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(30, 32, 44, 0.1); /* Dark overlay for readability */
+.application-section2 h2,
+.application-section2 p {
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: white; /* Change text color to ensure it's visible */
+  display: block !important; /* Ensure they're not hidden */
+}
+
+/* Default style for .trusted-clients */
+.trusted-clients {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-.trusted-clients {
-  max-width: 800px;
-  position: absolute; /* Position this element relative to the .application-section */
-  top:100px;
-  left: 80px; /* Adjust the left distance */
-  color: white; /* Assuming white text */
-  padding: 20px; /* Optional padding for better text spacing */
-  z-index: 1; /* Ensures the text stays on top of other elements */
+  width: 550px;
+  position: relative;
+  top: 50px;
+  left: 30px;
+  line-height: 1.8;
 }
 
-.trusted-clients h2 {
-  font-size: 2rem; /* Font size for the header */
-  margin-bottom: 10px;
-  font-weight: bold;
+/* Responsive Rules */
+
+/* Medium Screens (Tablets: 768px to 1024px) */
+@media screen and (max-width: 1024px) {
+  .application-section2 {
+    height: 100vh; /* Allow section to adjust height */
+    padding: 20px;
+    width: 100%;
+  }
+
+  .trusted-clients {
+    width: 90%; /* Reduce width to fit smaller screens */
+    top: 30px; /* Adjust positioning */
+    left: 0; /* Center content */
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.5; /* Reduce line height */
+  }
+
+  .application-section2 h2 {
+    font-size: 2rem; /* Adjust heading size */
+  }
+
+  .application-section2 p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
 }
 
-.trusted-clients p {
-  font-size: 1rem; /* Font size for the paragraph */
-  line-height: 1.5;
-  text-align: left;
+/* Small Screens (Mobile: ≤ 768px) */
+@media screen and (max-width: 768px) {
+  .application-section2 {
+    height: 80vh; /* Adjust height for smaller screens */
+    padding: 15px; /* Add padding */
+    text-align: center; /* Center text for small screens */
+  }
+
+  .trusted-clients {
+    width: 80%; /* Maximize width for small screens */
+    top: 20px; /* Adjust vertical position */
+    left: 0; /* Center content horizontally */
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    line-height: 1.4; /* Adjust line height */
+  }
+
+  .application-section2 h2 {
+    font-size: 1.8rem; /* Reduce heading size */
+  }
+
+  .application-section2 p {
+    font-size: 0.9rem; /* Reduce paragraph size */
+  }
 }
+
+/* Extra Small Screens (Mobile: ≤ 480px) */
+@media screen and (max-width: 400px) {
+  .application-section2 {
+    height: 80vh;
+   
+  }
+
+  .trusted-clients {
+    width: 100%; /* Take full width */
+    top: 10px; /* Reduce top margin */
+    left: 0; /* Center content */
+    font-size: 0.8rem; /* Smaller font size for very small screens */
+    line-height: 1.2; /* Reduce line height */
+   
+  }
+
+  .application-section2 h2 {
+    font-size: 1.5rem; /* Smaller heading size */
+  }
+
+  .application-section2 p {
+    font-size: 0.8rem;
+   
+  }
+}
+
 /**/
+
 /* Application Section */
 .application-section {
   position: relative;
@@ -336,7 +743,7 @@ margin-top: 60px;
   text-align: center;
 }
 
-.section-content{
+.application-content{
   margin-top: -50px;
 }
 
@@ -489,3 +896,11 @@ margin-top: 60px;
     transform: scale(1) translateX(0);
   }
 }
+
+
+
+
+/**/
+
+
+

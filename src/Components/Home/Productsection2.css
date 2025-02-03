@@ -1,9 +1,12 @@
-/* General Styles */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 .slider-container {
@@ -33,7 +36,7 @@ margin-top: -60px;
   width: 40%;
   position: relative;
   overflow: hidden;
-  margin: 0 30px;
+  
 }
 
 .content-slide {
@@ -112,29 +115,32 @@ margin-top: -60px;
 /* Media Query for Smaller Screens */
 @media (max-width: 780px) {
   .slider-container {
-    height: 500px; 
+    height: 600px; 
     flex-direction: column; 
   }
  
   .content h2 {
   
-    font-size: 4rem;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     color: black;
     font-weight: bold;
-    font-style: italic;
+   
   }
   
   .content p {
-  
     font-size: 12px;
-    line-height: 1.8;
+    line-height: 1.4;
     color:black; 
   
   }
+  .content {
+    width: 50%;
+  }
 
   .image {
-    width: 50%; /* Reduce image width */
+    width: 50%; 
+    margin-top: -50px;
   }
 
   .image-slide img {
@@ -143,31 +149,35 @@ margin-top: -60px;
   }
 
   .content-slide h2 {
-    font-size: 2rem; /* Reduce title font size */
+    font-size: 1rem; /* Reduce title font size */
   }
 }
 
 @media (min-width: 781px) and (max-width: 1024px)  {
   .slider-container {
-    height: 600px; /* Reset height for screens above 780px */
+    height: 700px; /* Reset height for screens above 780px */
     flex-direction: row; /* Maintain horizontal layout */
+    margin-top: 60px;
   }
 
   .content {
-    width: 40%;
+    width: 50%;
   }
 
   .image {
     width: 40%;
+    margin-top: -100px;
   }
 
   .content h2 {
-    font-size: 3.5rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
+    padding: 20px;
+    
   }
 
   .content p {
-    font-size: 1.2rem;
+    font-size: 16px;
     line-height: 1.8;
     color:black; 
   }
@@ -181,23 +191,33 @@ margin-top: -60px;
 /* Media Query for Smaller Screens (Mobile Phones) */
 @media (max-width: 480px) {
   .slider-container {
+
     height: 400px; 
-    gap: 20px;
+    gap: 10px;
   }
 
   .image {
+    max-width: 400px;
     width: 50%; 
+    margin-top: -150px;
+  }
+  .content {
+
+    padding: 30px;
   }
 
   .image-slide img {
     width: 100%;
+    max-width: 500px !important;
     height: auto;
   }
 
   .content-slide h2 {
-    font-size: 1.5rem; 
-    line-height: 1.2;
-    margin-left:-50px;
+    font-size: 16px; 
+ 
+    line-height: 1.8;
+    margin-left:-120px;
+   
   }
 
  

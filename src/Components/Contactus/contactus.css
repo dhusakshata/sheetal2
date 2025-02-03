@@ -1,0 +1,459 @@
+/* General Body Styles */
+
+
+.contact-hero {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;  
+  background: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+  background-attachment: fixed; 
+  color: #fff;
+  position: relative; 
+}
+.contact-hero-content {
+
+  background: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+  background-attachment: fixed; 
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+margin-top: -100px;
+margin-left: -200px;
+  gap: 20px;
+  z-index: 10;
+}
+
+.contact-hero-content::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../Images/wave2.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  opacity: 0.3;
+  z-index: -1; 
+}
+
+/* Contact Content Layout */
+.contact-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; 
+  z-index: 2;
+  animation: horizontalUnroll 2s ease-out;
+  animation-fill-mode: forwards; 
+  opacity: 0;
+  overflow: hidden;
+  
+}
+/* Keyframes for the unrolling effect */
+@keyframes horizontalUnroll {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0; 
+  }
+  50% {
+    clip-path: inset(0 50% 0 0); /* Halfway unrolled */
+    opacity: 0.5; /* Partially visible */
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* Fully visible */
+    opacity: 1; /* Fully visible */
+  }
+}
+/* Vertical Line */
+.vertical-line22 {
+  width: 20px;
+  height: 200px;
+  margin-top: -0.8px;
+  background-color: #ffffff; /* White vertical line */
+}
+
+/* Contact Text Styles */
+.contact-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.contact-text h2 {
+  font-size: 1.8rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 800px; /* Ensure the text doesn't stretch too wide */
+}
+
+.scroll-down {
+  margin-top: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.scroll-down span {
+  display: inline-block;
+  animation: bounce 1.5s infinite;
+}
+
+/* Bouncing Arrow Animation */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+/* Centering for Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .contact-hero-content {
+    margin-top: 0;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Centering for Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .contact-hero {
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .contact-hero-content {
+    margin-top: 0;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .vertical-line22 {
+    display: none; /* Hide the vertical line on small screens */
+  }
+
+  .contact-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-text p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+
+
+.map-section {
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+  background-attachment: fixed !important; 
+}
+.map-container{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.form-section-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #121212;
+height: 80vh; /* Full screen height */
+  background-attachment: fixed;
+padding: 50px 20px;
+}
+.address-info{
+  color:white;
+  margin: 30px;
+}
+.address-info h1{
+  font-size: 2rem;
+  padding: 10px;
+}
+.address-info p{
+  font-size: 16px;
+  padding: 10px;
+}
+.form-section {
+  width: 40%; /* Adjust form width */
+ margin: 0 20px;
+  color: #fff;
+ 
+}
+
+
+.form-section form {
+  margin-top: -20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+
+  background-color: #333;
+  color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border: 1px solid #555;
+}
+
+.submit-btn {
+  background-color: #555;
+  color: #fff;
+  padding: 12px;
+
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}
+/* For Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  .form-section-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .address-info {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .form-section {
+    width: 80%; /* Increase width for better form display */
+    margin: 20px 0;
+  }
+}
+
+/* For Mobile (768px and below) */
+@media (max-width: 780px) {
+  .form-section-container {
+    padding: 30px 10px;
+  }
+
+  .address-info {
+    width: 80%;
+    text-align: center;
+  }
+
+  .address-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .address-info p {
+    font-size: 14px;
+  }
+
+  .form-section {
+    width: 100%; /* Full width for better usability */
+    margin: 0;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+/* For Devices between 480px and 780px */
+@media (max-width: 780px) and (min-width: 480px) {
+  .form-section-container {
+    padding: 30px 15px; /* Adjust padding for better spacing */
+  }
+
+  .address-info {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .address-info h1 {
+    font-size: 1.8rem; /* Adjust heading size for mid-sized screens */
+  }
+
+  .address-info p {
+    font-size: 14px; /* Adjust paragraph size */
+  }
+
+  .form-section {
+    width: 80%; /* Full width for easier form filling */
+    margin: 0;
+  }
+
+  .form-group label {
+    font-size: 13px; /* Reduce font size for better spacing */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 13px; /* Adjust input and textarea size */
+    padding: 10px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%; /* Make submit button full width */
+  }
+}
+
+/* For Small Devices (480px and below) */
+@media (max-width: 480px) {
+  .form-section-container {
+    padding: 20px 5px; /* Reduce padding for smaller screens */
+  }
+
+  .address-info {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .address-info h1 {
+    font-size: 1.5rem; /* Reduce heading size */
+  }
+
+  .address-info p {
+    font-size: 12px; /* Smaller text for readability */
+  }
+
+  .form-section {
+    width: 90%; /* Full width for better usability */
+    margin: 0;
+  }
+
+  .form-group label {
+    font-size: 12px; /* Reduce label size */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .submit-btn {
+    font-size: 13px;
+    padding: 8px;
+    width: 100%; /* Make button full width for easy tapping */
+  }
+}
+
+.factory-img{
+  height: 80vh;
+  background-image: url('../../Images/factory.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.factory-img::before {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+opacity: 0.6;
+  z-index: 2;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vertical-line {
+    height: 100px; /* Reduce height for smaller screens */
+  }
+
+  .contact-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-text p {
+    font-size: 1rem;
+  }
+}

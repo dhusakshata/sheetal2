@@ -7,10 +7,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation,Autoplay } from "swiper/modules"; // Correct way to import Navigation
 import "swiper/css";
 import "swiper/css/navigation";
-
+import { BsArrowDownCircle } from "react-icons/bs";
 
 import ProductSection2 from "./Productsection2.js";
-import rubberWorld from "../../video/about1.mp4";
+
 
 //Logos
 import logo1 from "../../Images/client1.png"; 
@@ -23,14 +23,34 @@ import logo7 from "../../Images/client7.png";
 
 
 // Application Area Images
-import Img1 from "../../Images/Truck.png";
-import Img2 from "../../Images/marine.jpeg";
-import Img3 from "../../Images/Image3.jpg";
+import Img1 from "../../Images/Commercial-Vehicle.png";
+import Img2 from "../../Images/marine3.jpg";
+import Img3 from "../../Images/images-hoses.webp";
 import Img4 from "../../Images/Image4.png";
-import Img5 from "../../Images/Image5.jpg";
-import Img6 from "../../Images/Image6.jpg";
+import Img5 from "../../Images/automotive-rubber-hoses.jpg";
+import Img6 from "../../Images/Agricultural-Spray-Hose.jpg";
 
 const Home = () => {
+  const [backgroundChanged, setBackgroundChanged] = useState(false);
+
+  useEffect(() => {
+    const handleAnimationEnd = () => {
+      setBackgroundChanged(true);
+    };
+
+    const animatedText = document.querySelector(".animated-text");
+    if (animatedText) {
+      animatedText.addEventListener("animationend", handleAnimationEnd);
+    }
+
+    return () => {
+      if (animatedText) {
+        animatedText.removeEventListener("animationend", handleAnimationEnd);
+      }
+    };
+  }, []);
+
+ 
 
  // Array of imported images
  const images = [Img1, Img2, Img3, Img4, Img5, Img6];
@@ -48,54 +68,42 @@ const Home = () => {
    return () => clearInterval(interval); // Cleanup on component unmount
  }, [images.length]);
 
+
   const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 
-  // for sliding product images
-  const settings = {
-   dots: true,
-   infinite: true,
-   speed: 500,
-   slidesToShow: 4, // Number of products in one row
-   slidesToScroll: 1,
-   autoplay: true, // Enable automatic sliding
- autoplaySpeed: 1000, // Slide every 3 seconds
-   responsive: [
-     {
-       breakpoint: 1200,
-       settings: { slidesToShow: 3 },
-     },
-     {
-       breakpoint: 992,
-       settings: { slidesToShow: 2 },
-     },
-     {
-       breakpoint: 768,
-       settings: { slidesToShow: 1 },
-     },
-   ],
-   prevArrow: <div className="custom-prev-arrow"></div>,  // Custom left arrow
-   nextArrow: <div className="custom-next-arrow"></div>,  // Custom right arrow
- };
 
 
-
+  const handleScrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+  
  
 
   return (
     <div>
       {/* Main Hero Section */}
-      <section className="hero-section">
+      <section  className={`hero-section ${backgroundChanged ? "bg-changed" : ""}`}>
         <div className="hero-content">
-          <h1>Welcome to Our Website</h1>
-          <p>Explore our products and services</p>
-          <Link to="about" smooth={true} duration={500} className="scroll-btn">
-            Learn More
-          </Link>
+        <h1 class="animate-top">Welcome to Sheetal Rubber Products (P) Ltd.</h1>
+
+          <div class="animated-text">
+  <span class="designed">DESIGNED </span>
+  <span class="to"> TO </span>
+  <span class="perform"> PERFORM</span>
+</div>
+
+
+            <div className="scroll-down" onClick={handleScrollToBottom}>
+                     <BsArrowDownCircle size={50}  style={{color:"black"}} />
+                    </div>
         </div>
       </section>
 
       {/* About Us Section */}
-      <section className="about-section" id="about">
+<section className="about-section" id="about">
   <div className="overlay1">
     <div className="section-content  about-content">
       <div className="about-us-title">
@@ -124,42 +132,34 @@ const Home = () => {
     </div>
   </div>
 </section>
-
-
-
       {/* Product Section */}
       <section className="product-section" id="product">
+      <div className="section-content">
+        <h2>PRODUCTS</h2>
+        <p>
+          At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including:
+          <b>
+            <Link to="/siliconpolyester">Silicone Polyester Hoses</Link>,
+            <Link to="/turbochargerhose">Turbocharger Hoses</Link>,
+            <Link to="/marinewethose">Marine Wet Exhaust Hoses</Link>,
+            <Link to="/epdm">EPDM Rubber Hoses</Link>,
+            <Link to="/organic">Organic Rubber Hoses</Link>,
+            <Link to="/assembly">Assembly Hoses</Link>,
+            <Link to="/wired">Wire Reinforced Hoses</Link>,
+            <Link to="/fueltube">Fuel Hoses</Link>,
+            <Link to="/moulded">Moulded Hoses</Link>.
+          </b>
+          Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications.
+        </p>
       
-        <div className="section-content">
-       
-          <h2>PRODUCTS</h2>
-          <p >
-  At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including <p>
-  At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including 
-     <b>
-    <Link to="/siliconpolyester"> Silicone Polyester Hoses</Link>, 
-    <Link to="/turbochargerhose">Turbocharger Hoses</Link>, 
-    <Link to="/marinewethose">Marine Wet Exhaust Hoses</Link>, 
-    <Link to="/epdm">EPDM Rubber Hoses</Link>, 
-    <Link to="/organic">Organic Rubber Hoses</Link>, 
-    <Link to="/assembly">Assembly Hoses</Link>, 
-    <Link to="/wired">Wire Reinforced Hoses</Link>, 
-    <Link to="/fueltube">Fuel Hoses</Link>, 
-    <Link to="/moulded">Moulded Hoses </Link>.
-  </b> 
-  Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications.
-</p>
+        <ProductSection2 />
+      </div>
+    </section>
+ {/* Application Section 2*/}
 
-  </p>
-          <ProductSection2/>
-
-          
-        </div>
-        
-      </section>
- {/* Application Section */}
- <section className="application-section2" id="application">
-  <div className="overlay">
+<section className="app-sec">
+<section className="application-section2" id="application-2">
+  <div className="section-content  ">
     <div className="trusted-clients">
       <h2>TRUSTED BY CLIENTS</h2>
       <p>
@@ -183,28 +183,37 @@ const Home = () => {
       </p>
     </div>
   </div>
+</section> 
 </section>
 
 
-      {/* Esteemed Clients Section */}
-      <section className="clients-section" id="clients">
+
+   
+  {/* Esteemed Clients Section */}
+  <section className="clients-section" id="clients">
   <div className="section-content">
     <h2>Esteemed Clients</h2>
-
-    {/* Second div with logo container */}
     <div className="logo-container">
-      <div className="logo-title animate-slide-top"></div>
       <Swiper
-        modules={[Navigation, Autoplay]}
-        slidesPerView={5}
+        modules={[Autoplay]}
         spaceBetween={5}
-        navigation={true}
-        pagination={{ clickable: true }}
+        slidesPerView={5} // Show 5 logos by default
         autoplay={{
           delay: 1000,
           disableOnInteraction: false,
         }}
         loop={true}
+        breakpoints={{
+          1024: {
+            slidesPerView: 5, // 5 logos for large screens
+          },
+          768: {
+            slidesPerView: 3, // 3 logos for medium screens
+          },
+          380: {
+            slidesPerView: 2, // 2 logos for small screens
+          },
+        }}
       >
         {logos.map((logo, index) => (
           <SwiperSlide key={index}>
@@ -218,6 +227,9 @@ const Home = () => {
 
 
 
+
+
+
       
  {/* Application Section  */}
       <section
@@ -225,7 +237,7 @@ const Home = () => {
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
       id="application"
     >
-      <div className="section-content">
+      <div className="section-content   application-content">
         <h2 className="application-heading">OUR APPLICATIONS</h2>
       
       </div>

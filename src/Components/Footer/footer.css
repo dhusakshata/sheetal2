@@ -1,9 +1,6 @@
 /* General Footer Styling */
 .footer {
-  background-color: #222;
-  color: white;
-  padding: 50px ;
-  font-size: 14px;
+
 }
 
 .footer-container {
@@ -11,7 +8,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
-  padding: 0 20px ;
+  padding: 30px 40px ;
+  background: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+  color: white;
 }
 
 .footer-container > div {
@@ -73,6 +72,7 @@
 /* Social Icons Styling */
 .footer-social-icons {
   margin-top: 30px;
+  margin-left: -200px;
 }
 
 .footer-social-icons h5 {
@@ -99,11 +99,17 @@
 /* Newsletter Section */
 .footer-newsletter{
   margin-left: -40px;
+  
+}
+.news-form{
+  display: flex;
+  flex-direction: row;
 }
 .footer-newsletter form {
   display: flex;
+  
   gap: 10px;
-  margin-top: 20px;
+
   
 }
 
@@ -117,17 +123,14 @@
 }
 
 .footer-newsletter button {
-  background-color: #ffc107;
+  background: linear-gradient(to right, #252837 0%, #252837 100%);
   border: none;
   color: white;
-  padding: 10px;
+
   border-radius: 50%;
   cursor: pointer;
 }
 
-.footer-newsletter button:hover {
-  background-color:#ffc107;
-}
 
 /* Map Section */
 .footer-map{
@@ -143,15 +146,19 @@ height: 250px;
 
 /* Footer Text Styling */
 .footer-text {
-  background-color: #111;
+  width: inherit;
+  background-color:black;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   color: white;
   font-size: 16px;
 }
 
 .footer-text p {
-  margin: 0;
+  margin: 10px;
+}
+.footer-text a:hover{
+  color: #ffc107 !important;
 }
 
 /* Responsive Styling */
@@ -159,6 +166,7 @@ height: 250px;
   .footer-container {
     flex-direction: column;
     align-items: center;
+  padding-bottom: 60px;
   }
 
   .footer-container > div {

@@ -1,0 +1,173 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.facility-container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading Section */
+.facility-header3 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.facility-header3 h1 {
+  text-align: left;
+  border-bottom: 2px solid #0f5286;
+  font-size: 2.5rem;
+  padding: 20px;
+  color: #0f5286;
+  font-weight: bold;
+  position: relative;
+
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Main Content Layout */
+.facility-main3 {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Sticky Image Section */
+.facility-image3 {
+  flex: 1;
+  position: sticky;
+  top: 20px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facility-image3 img {
+  max-width: 700px;
+  max-height: 600px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* Scrollable Text Section */
+.facility-content3 {
+  width: 100px;
+  flex: 2;
+ 
+  height: 60vh; 
+  padding-left: 20px;
+  scroll-behavior: smooth;  
+  overflow-y: auto;
+  margin: 20px;
+}
+
+.facility-content3 p,
+.facility-content3 ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.facility-content3 ul li{
+  margin-left: -20px;
+}
+.facility-content3 h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-boxe3 {
+  margin-bottom: 20px;
+}
+
+.info-boxe3 h4 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.info-boxe3 b {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+ 
+  font-family: Arial, sans-serif;
+}
+
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  .facility-main3 {
+    flex-direction: column;
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .facility-image3 {
+    position: relative; /* Remove sticky behavior */
+    height: auto; /* Let the height adjust dynamically */
+    margin-top: 80px;
+    width: 250px;
+   margin-left: 60px;
+  }
+
+  .facility-content3 {
+    width: 100%; /* Full width for text content */
+    margin: 0; /* Remove extra margins */
+    padding-left: 0; /* Align content properly */
+    height: auto; /* Let height adjust dynamically */
+    overflow-y: visible; /* Remove scroll for smaller screens */
+  }
+
+  .facility-header3 h1 {
+    font-size: 2rem; /* Reduce font size for headings */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .info-boxe3 h4,
+  .info-boxe3 b {
+    font-size: 16px; /* Adjust font size for readability */
+    margin: 10px 0; /* Add spacing for better layout */
+  }
+
+  .facility-content3 p,
+  .facility-content3 ul {
+    font-size: 14px; /* Slightly smaller font for smaller screens */
+  }
+  .roll-img{
+  width: 150px;
+  margin-left: 100px;
+  margin-top: -120px;
+  padding: 20px;
+  }
+  .compression-img{
+    margin-top: -120px;
+    padding: 20px;
+  }
+  .rubbermixing-img{
+  
+    padding: 40px;
+  }
+  .knitting-img{
+    width: 150px;
+ 
+  margin-top: -120px;
+  padding: 50px;
+  }
+}
+

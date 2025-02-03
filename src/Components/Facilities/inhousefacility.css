@@ -1,0 +1,447 @@
+
+/* General Styling */
+.page-container {
+
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Hero Section */
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-text-content {
+  max-width: 500px;
+  text-align: left;
+  margin-top: -150px;
+}
+
+.hero-title {
+
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  
+  line-height: 1.2;
+}
+
+.hero-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-button:hover {
+  background-color: #fff;
+  color: #000 !important;
+}
+
+.hero-right {
+  flex: 1;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+
+/* Grid Section */
+/* Section Styling */
+.gallery-section {
+  padding: 30px 30px;
+
+  background: linear-gradient(to right, #1e202c 0%, #1e202c 100%);
+  text-align: center;
+  background-attachment: fixed;
+}
+/* Gallery Container */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in a row */
+  gap: 20px;
+  margin: 0 auto;
+}
+
+/* Gallery Item */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+  width: 460px;
+
+
+}
+
+/* Image */
+.gallery-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+ 
+}
+
+
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+
+}
+
+
+/* Overlay Text */
+.overlay-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inhouseproduct-content{
+  width: 900px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+.inhouseproduct-content1{
+  width: 700px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 50px;
+  
+}
+
+
+.inhouse-article {
+ 
+	background-image: url('../../Images/inhousebg2.webp');
+
+  background-position:50% center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+	z-index: 1;
+	color: #000;
+	background-attachment: fixed;
+}
+article .content {
+  position: relative;
+  z-index: 2; 
+}
+@media screen and (min-width: 700px) {
+  
+	.inhouse-card {
+		background:white;
+		width: calc( 50% + 1px);
+		height: 80vh;
+		margin: 0 0 0 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+   z-index: 1000;
+
+			}
+	
+			.inhouse-card:nth-of-type(2n)::after {
+		right: 45%;
+		left: 5vmin;
+	}
+			.inhouse-card:nth-of-type(1) {
+		margin: 0 0 0 0;
+    height: 80vh;
+		width: 50%;
+    display: flex;
+    background-color: #1e202c !important;
+    
+    color:white;
+    background: url('../../svgfiles/diagonal2.svg');
+    background-attachment: fixed;
+			}
+
+	.inhouse-card:nth-of-type(2n) {
+		margin: 0 0 0 auto;
+    height: 60vh;
+		width: 100%;
+    background-image: url('../../svgfiles/diagonal.svg');
+  font-size: 16px;
+    color: black;
+    padding: 30px;
+ line-height: 1.6;
+    background-attachment: fixed;
+    
+			}
+      .inhouse-card:nth-of-type(3n) {
+        margin: 0 0 0 auto;
+        width: 100%;
+        background-image: url('../../Images/hoses2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+          }
+}
+@media screen and (max-width: 700px) {
+  
+	.inhouse-card {
+		background:white;
+		width: calc( 50% + 1px);
+		height: 80vh;
+		margin: 0 0 0 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+   z-index: 1000;
+
+			}
+	
+			.inhouse-card:nth-of-type(2n)::after {
+		right: 45%;
+		left: 5vmin;
+	}
+			.inhouse-card:nth-of-type(1) {
+		margin: 0 0 0 0;
+    height: 80vh;
+		width: 50%;
+    display: flex;
+    background-color: #1e202c !important;
+    
+    color:white;
+    background: url('../../svgfiles/diagonal2.svg');
+    background-attachment: fixed;
+			}
+
+	.inhouse-card:nth-of-type(2n) {
+		margin: 0 0 0 auto;
+    height: 60vh;
+		width: 100%;
+    background-image: url('../../svgfiles/diagonal.svg');
+  font-size: 16px;
+    color: black;
+    padding: 30px;
+ line-height: 1.6;
+    background-attachment: fixed;
+    
+			}
+      .inhouse-card:nth-of-type(3n) {
+        margin: 0 0 0 auto;
+        width: 100%;
+        background-image: url('../../Images/hoses2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+          }
+}
+
+
+
+/* Responsive for Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  /* Hero Section - Stack in Column */
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-left {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-text-content {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin: 30px;
+  }
+
+  .hero-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .hero-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-image {
+    width: 100%;
+    background-attachment: fixed;
+    object-fit: cover;
+  }
+
+  /* Gallery Section - 2 Columns */
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  /* In-House Facility Section */
+  .inhouseproduct-content,
+  .inhouseproduct-content1 {
+    width: 100%;
+    margin: 20px auto;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .inhouseproduct-content1 p,
+  .inhouseproduct-content p,
+  .inhouseproduct-content ul {
+    text-align: left;
+    width: 90%;
+  }
+
+  /* In-House Cards - Full Width */
+  .inhouse-card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .inhouse-card:nth-of-type(1),
+  .inhouse-card:nth-of-type(2n),
+  .inhouse-card:nth-of-type(3n) {
+    width: 100%;
+    height: auto;
+    background-attachment: scroll;
+    padding: 20px;
+  }
+}
+
+/* Responsive for Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  /* Hero Section Adjustments */
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  .hero-left {
+    padding: 15px;
+  }
+
+  .hero-text-content {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    margin: 20px;
+  }
+
+  .hero-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .hero-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  /* Gallery Section - Single Column */
+  .gallery-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  /* In-House Facility Section */
+  .inhouseproduct-content,
+  .inhouseproduct-content1 {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .inhouseproduct-content1 p,
+  .inhouseproduct-content p,
+  .inhouseproduct-content ul {
+    text-align: left;
+    width: 400px;
+  }
+
+  /* In-House Cards - Full Width */
+  .inhouse-card {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+  }
+
+  .inhouse-card:nth-of-type(1),
+  .inhouse-card:nth-of-type(2n),
+  .inhouse-card:nth-of-type(3n) {
+    width: 100%;
+    height: auto;
+    background-attachment: scroll;
+    padding: 15px;
+  }
+}

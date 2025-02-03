@@ -1,0 +1,655 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.siliconhero{
+	background-image: url('../../Images/hoses13.png');
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+	padding: 50px 20px;
+  background-attachment: fixed;
+}
+
+.subproduct-herodata{
+  margin-top: -170px;
+}
+.silicon-hero-heading {
+  position: absolute; /* Makes the heading container position relative to its parent */
+  top: 90px;
+  left: -80px;
+  width: 50%;
+  padding: 20px; /* Add some space inside */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  color: white;
+  z-index: 10;
+
+  margin-top: -20px;
+  flex: 2;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+/* media query for silicon hero section*/
+
+@media (max-width: 1024px) { 
+  .siliconhero {
+    height: 60vh;
+    padding: 40px 15px;
+  }
+
+  .silicon-hero-heading {
+    top: 100px;
+    left: 0;
+    width: 70%;
+    height: 30vh;
+    margin-left: 50px;
+  }
+
+  .subproduct-herodata {
+    margin-top: 10px;
+  }
+
+  .silicon-hero-heading h1 {
+    font-size: 28px;
+  }
+
+  .silicon-hero-heading h2 {
+    font-size: 20px;
+    margin-left: -60px !important;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .siliconhero {
+    height: 60vh;
+    padding: 30px 10px;
+   
+  }
+
+  .silicon-hero-heading {
+    top: 30px;
+    left: 0;
+    width: 70%;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Darken background for readability */
+  }
+
+  .subproduct-herodata {
+    margin-top: 20px;
+  }
+
+  .silicon-hero-heading h1 {
+    font-size: 24px;
+  }
+
+  .silicon-hero-heading h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) { /* Small Mobile */
+  .siliconhero {
+    height: 60vh;
+    padding: 20px 5px;
+  }
+
+  .silicon-hero-heading {
+    top: 30px;
+    left: 0;
+    width: 85%;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Darken background for readability */
+  }
+
+  .subproduct-herodata {
+    margin-top: 40px;
+    margin-left: -40px;
+  }
+
+  .silicon-hero-heading h1 {
+    font-size: 24px;
+  }
+
+  .silicon-hero-heading h2 {
+    font-size: 18px !important;
+    margin-left: -150px !important;
+  }
+}
+
+/**/
+.siliconproduct-section {
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -1; 
+}
+
+.product-content {
+text-align: left;
+padding:  30px;
+margin-top: -80px;
+margin: 30px;
+  
+}
+.product-content p{
+	font-size: 16px;
+	line-height: 1.8;
+}
+.product-image{
+display: flex;
+
+width: 300px !important;
+height: 200px;
+margin-left: 100px;
+
+}
+.siliconinfo-section {
+  height: 100vh;
+  background-image: url('../../Images/hoses8.avif');
+	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+	background-position: center !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.info-right h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.info-right p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+article {
+  background-image: url('../../Images/hoses16.jpg');
+	/*background-image: url('../../Images/hoses5.jpg'); */
+  background-position:50% center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+	z-index: 1;
+	color: #000;
+	background-attachment: fixed;
+}
+article .content {
+  position: relative;
+  z-index: 2; 
+}
+@media screen and (min-width: 700px) {
+  
+	.silicon-card {
+		background:white;
+		width: calc( 50% + 1px);
+		height: 100vh;
+		margin: 0 0 0 0;
+    padding: 30px 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+   z-index: 1000;
+
+			}
+	
+			.silicon-card:nth-of-type(2n)::after {
+		right: 45%;
+		left: 5vmin;
+	}
+			.silicon-card:nth-of-type(1) {
+		margin: 0 0 0 0;
+		width: 50%;
+			}
+			.silicon-card:nth-of-type(2n) {
+		margin: 0 0 0 auto;
+		
+			}
+     
+}
+
+
+/* For mobile view*/
+@media screen and (max-width: 700px) {
+  
+	.silicon-card {
+		background:white;
+		width: calc( 50% + 1px);
+		height: 100vh;
+		margin: 0 0 0 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+z-index: 1000;
+
+		
+	
+			}
+	
+			.silicon-card:nth-of-type(2n)::after {
+		right: 45%;
+		left: 5vmin;
+	}
+			.silicon-card:nth-of-type(1) {
+		margin: 0 0 0 0;
+		width: 50%;
+			}
+			.silicon-card:nth-of-type(2n) {
+		margin: 0 0 0 auto;
+		
+			}
+      .product-content p{
+        font-size: 14px !important;
+        margin: 60px;
+        line-height: 1.4;
+        text-align: left;
+      margin-top: -80px;
+      }
+      .product-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        height: 200px;
+        padding: 60px 30px;
+        margin-top: 200px;
+      
+        }
+       
+}
+
+@media screen and (max-width: 480px) {
+  
+	.silicon-card {
+		background:white;
+		width: calc( 50% + 1px);
+		height: 100vh !important;
+		margin: 0 0 0 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+z-index: 1000;
+
+		
+	
+			}
+	
+			.silicon-card:nth-of-type(2n)::after {
+		right: 45%;
+		left: 5vmin;
+	}
+			.silicon-card:nth-of-type(1) {
+		margin: 0 0 0 0;
+		width: 50%;
+			}
+			.silicon-card:nth-of-type(2n) {
+		margin: 0 0 0 auto;
+		
+			}
+      .product-content p{
+
+        font-size: 14px !important;
+        margin: 60px;
+        line-height: 1.4;
+        text-align: left;
+      margin-top: -80px;
+      }
+      .product-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       width: 300px;
+        height: 100px;
+        margin-top: 160px !important;
+
+        }
+       
+}
+/* Background Section */
+.background-section {
+  position: relative;
+  height: 100vh; /* Adjust height as needed */
+  background-image: url("../../Images/hoses4.jpg"); /* Replace with your background image path */
+  background-size: cover; /* Ensure the background covers the section */
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+  overflow: hidden; /* Ensure no extra content spills outside */
+}
+
+/* Overlay Content */
+.background-overlay {
+  position: relative;
+  z-index: 2; /* Ensure content appears above the SVG */
+}
+
+/* Diagonal SVG Overlay */
+.background-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../svgfiles/diagonal2.svg');
+  opacity: 0.5; /* Adjust opacity to control visibility of the diagonal lines */
+  z-index: 1; /* Ensure it appears below content but above the background image */
+  pointer-events: none; /* Prevent the SVG from interfering with user interactions */
+}
+
+/*TURBOCHARGER CSS*/
+.turbochargerhero{
+  background-image: url('../../Images/automotive-rubber-hoses.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+	padding: 50px 20px;
+  background-attachment: fixed;
+}
+.turbocharger{
+  height: 100vh;
+  background-image: url('../../Images/turbobg.jpg');
+	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+padding: 50px 20px;
+	background-position: center !important;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+/*MARINE CSS*/
+.marinehero{
+  background-image: url('../../Images/marinewetbg.avif');
+  height: 100vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+	padding: 50px 20px;
+  background-attachment: fixed;
+}
+.marine-wet{
+  height: 100vh;
+  background-image: url('../../Images/Marine-Hoses-SAEJ2006-R3-removebg-preview.png');
+	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+padding: 50px 20px;
+	background-position: center !important;
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/*EPDM CSS*/
+.epdmhero{
+  background-image: url('../../Images/epdmbg.jpg');
+  height: 80vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+	padding: 50px 20px;
+  background-attachment: fixed;
+}
+.epdm{
+  height: 50vh;
+  background-image: url('../../Images/epdmbg4.png');
+	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+padding: 50px 20px;
+	background-position: center !important;
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/*organic CSS*/
+.organichero{
+  background-image: url('../../Images/hoses13.jpg');
+  height: 80vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+	padding: 50px 20px;
+  background-attachment: fixed;
+}
+.organic{
+  height: 100vh;
+  background-image: url('../../Images/organic-industrial-rubber-hoses-485.jpg');
+	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+padding: 50px 20px;
+	background-position: center !important;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+
+/*Assembly CSS*/
+.Assemblyhero{
+  background-image: url('../../Images/assemblybg.jpg');
+  height: 80vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+	padding: 50px 20px;
+  background-attachment: fixed;
+}
+.Assembly{
+  height: 100vh;
+  background-image: url('../../Images/Assemblybg2.jpg');
+	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+padding: 50px 20px;
+	background-position: center !important;
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+
+/*wired CSS*/
+.wiredhero{
+  background-image: url('../../Images/hoses7.jpg');
+  height: 80vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+	padding: 50px 20px;
+  background-attachment: fixed;
+}
+.wired{
+  height: 100vh;
+  background-image: url('../../Images/wired11.png');
+	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+padding: 50px 20px;
+	background-position: center !important;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+
+/*wired CSS*/
+.fuelhero{
+  background-image: url('../../Images/hoses2.jpg');
+  height: 80vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+	padding: 50px 20px;
+  background-attachment: fixed;
+}
+.fuel{
+  height: 100vh;
+  background-image: url('../../Images/fuelhosesbg2.jpg');
+	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+
+	background-position: center !important;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+
+/*wired CSS*/
+.mouldedhero{
+  background-image: url('../../Images/mouldedbg.jpg');
+  height: 80vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+	padding: 50px 20px;
+  background-attachment: fixed;
+}
+.moulded{
+  height: 100vh;
+  background-image: url('../../Images/mouldedbg3.jpg');
+	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
+
+	background-position: center !important;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}

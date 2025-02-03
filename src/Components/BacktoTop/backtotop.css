@@ -1,0 +1,25 @@
+/* Back-to-Top Button */
+.back-to-top {
+  position: relative !important;
+  background-color:black;
+
+  border: none;
+
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  z-index: 1000;
+ 
+}
+
+
+/* Show Button */
+.back-to-top.show {
+  display: flex; 
+}
+
+
+
+

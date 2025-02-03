@@ -2,12 +2,11 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import "./aboutus.css";
-
+import { BsArrowDownCircle } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
-import Building from "../../Images/building6.png";
+import Building from "../../Images/image1.avif";
 
 const AboutUsHero = () => {
 
@@ -19,6 +18,12 @@ useEffect(() => {
   });
 }, []);
 //
+const handleScrollDown = () => {
+  window.scrollBy({
+    top: window.innerHeight,
+    behavior: "smooth",
+  });
+};
 
 
   return (
@@ -29,10 +34,14 @@ useEffect(() => {
           {/* Left Section */}
           <div className="vertical-line"></div>
           <div className="about-hero-heading">
+            
             <h1>
               <span>COMMITTED TO EXCELLENCE</span>
             </h1>
             <h2>Producing with meticulous attention to detail</h2>
+            <div className="scroll-down" onClick={handleScrollDown}>
+                     <BsArrowDownCircle size={30} />
+                    </div>
           </div>
 
           {/* Right Section */}
@@ -89,19 +98,21 @@ useEffect(() => {
             <h3 style={{ color: "#ffc107" }}>
               Precision Engineered Rubber Solutions
             </h3>
+            
             <p>
               Sheetal Rubber Products Pvt Ltd., located in Bhosari, Pune, is a
               leading manufacturer of high-quality rubber products with over two
-              decades of experience. They specialize in a diverse range of
+              decades of experience. We specialize in a diverse range of
               low-pressure hoses, including critical applications such as
               platinum silicone-lined medical tubing, FMK-lined fuel cell
-              hoses, and flame-retardant hoses. Their state-of-the-art
+              hoses, and flame-retardant hoses.Our state-of-the-art
               manufacturing facility in Bhosari, coupled with a strong emphasis
-              on research and development, allows them to consistently deliver
+              on research and development, allows to consistently deliver
               innovative and reliable solutions to customers across various
               industries.
             </p>
           </div>
+          
         </div>
       </section>
 
@@ -110,7 +121,7 @@ useEffect(() => {
         <div className="mission-vision-container">
           {/* Mission Section */}
           <div className="mission" 
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
           >
@@ -126,7 +137,7 @@ useEffect(() => {
 
           {/* Vision Section */}
           <div className="vision"
-        data-aos="fade-left"
+       data-aos="fade-up"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine">
             <h2>Our Vision</h2>
