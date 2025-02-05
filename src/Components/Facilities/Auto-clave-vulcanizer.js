@@ -1,9 +1,8 @@
 import React from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import Autoclave from "../../Images/Auto-clave-vulcanizer.png"; 
 import "./autoclave.css";
-import { Link } from "react-router-dom";
+
 import { BsArrowDownCircle } from "react-icons/bs";
 import hoses from "../../Images/autoclavebg.webp";
 

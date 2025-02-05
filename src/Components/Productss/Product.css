@@ -123,7 +123,7 @@ margin-bottom: 50px;
 
 /* Styling for the heading */
 .vertical-line h1 ,
-.Product-hero-heading h2 {
+.Product-hero-heading h2,.Product-hero-heading h1,.Product-hero-heading p{
   display: inline-block;
   animation: horizontalUnroll 2s ease-out;
   animation-fill-mode: forwards; 
@@ -232,39 +232,45 @@ margin-bottom: 50px;
   background: url('../../svgfiles/diagonal2.svg');
   background-attachment: fixed;
 
+  display: flex;
+  justify-content: center; /* Center content */
+  align-items: center;
+  background-color: #1e202c !important;
+  min-height: 50vh;
+  background: url('../../svgfiles/diagonal2.svg');
+  background-attachment: fixed;
+  padding: 20px;
 }
 
 
 .Product-info-container {
- position: relative;
- display: flex;
-flex-direction: column !important;
-overflow: visible !important;
+ 
+
+display: flex;
+  flex-direction: row; /* Ensures text goes right on larger screens */
+  justify-content:flex-end;
+  align-items: center;
+  width: 100%;
+
 }
 
 
 
 .Product-info-text {
-width: 100%;
-position: relative;
-display: flex;
-flex-direction: column !important;
-left: 900px;
- 
-visibility: visible !important;
-  opacity: 1 !important;
-  display: block !important;
+
+  flex: 1;
+  max-width: 600px;
   text-align: left;
-  max-width: 100%; /* Ensure it adapts to smaller screens */
   padding: 15px;
+  margin-left: auto;
 }
 
 
 .Product-info-text p {
-  width: 600px;
-  font-size:16px;
+  
+  font-size: 16px;
   line-height: 1.8;
-  color:white;
+  color: white;
   word-wrap: break-word;
 }
 
@@ -284,39 +290,44 @@ visibility: visible !important;
   top: 0; 
   z-index: 10;
 }
-/* Responsive Adjustments */
-@media (max-width: 767px) {
-  .Product-info-text h1 {
-    font-size: 1.8rem !important;
-    text-align: center;
-  }
-
-  .Product-info-text {
-    width: 100%;
-    text-align: center;
-  }
-
-  .Product-info-container {
-    padding: 10px;
-  }
-}
 /* Responsive Design */
 @media (max-width: 768px) {
   .Product-info-container {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .Product-info-image,
+  .Product-info-text {
+    max-width: 90%;
+    text-align: left;
+  }
+  .Product-info-text p {
+    font-size: 16px !important;
+  }
+}
+
+/* Mobile Screens - 480px */
+@media (max-width: 480px) {
+  .Product-info-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
   .Product-info-text {
     max-width: 100%;
+    text-align: left;
+    padding: 10px;
   }
 
-  .Product-info-text h3 {
-    font-size: 1.5rem;
+  .Product-info-text h1 {
+    font-size: 1.5rem !important;
   }
 
   .Product-info-text p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
 
@@ -326,7 +337,6 @@ visibility: visible !important;
   height: 80vh;
   background: radial-gradient(circle, #020202 0%, #020202 100%);
 
-  /* Replace with your image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover !important;
@@ -547,7 +557,7 @@ line-height: 1.6;
   }
 
   .Product-info-text p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .gallery-grid {
@@ -572,18 +582,24 @@ line-height: 1.6;
 
 /* For screens between 480px and 767px */
 @media (max-width: 767px) and (min-width: 480px) {
-  .Product-hero-heading h1 {
+ 
+  .product-herodata h1{
+   font-size: 2rem !important;
+  }
+.product-herodata h2{
+  font-size: 20px !important;
+}
+  .Product-info-text p {
+    font-size: 10px;
+    padding: 20px !important;
+  }
+  .product-herodata h1{
+    margin-top: 30px;
     font-size: 1.6rem !important;
   }
- 
-  .Product-hero-description p {
-    font-size: 0.9rem;
-  }
-
-  .Product-info-text p {
-    font-size: 13px;
-  }
-
+.product-herodata h2{
+  font-size: 20px !important;
+}
   .gallery-grid {
     grid-template-columns: repeat(1, 1fr); /* 1 column */
   }
@@ -613,7 +629,7 @@ line-height: 1.6;
 }
 
 /* For screens smaller than 480px */
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .Product-hero-heading h1 {
     font-size: 2rem !important;
   }
@@ -621,11 +637,16 @@ line-height: 1.6;
   .Product-hero-description p {
     font-size: 0.8rem;
   }
-
-  .Product-info-text p {
-    font-size: 12px;
+  .product-herodata h1{
+    margin-top: 30px;
+    font-size: 1.6rem !important;
   }
-
+.product-herodata h2{
+  font-size: 20px !important;
+}
+ .product-herodata p{
+ display: none;
+ }
   .gallery-grid {
     grid-template-columns: 1fr; /* 1 column */
   }

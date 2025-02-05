@@ -52,17 +52,21 @@ const ProductPage = () => {
 
 
     <section>
-   <article>
+   <article className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
-          <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
+          <div key={product.id} className="siliconproduct-section">
             <div className="product-content">
-              <img src={Marinewet1} alt={product.title} className="product-image" style={{width:"900px",height:"500px",marginBottom:"-100px"}} />
-              <h3>{product.title}</h3>
-              <p> Sheetal Rubber provides high-quality Marine Wet
+             <div style={{marginLeft:"-45px",marginTop:"-100px"}}>
+             <img src={Marinewet1} alt={product.title} className="product-image" style={{width:"900px",height:"600px",marginTop:"-50px"}} />
+             </div>
+           
+             <div style={{marginLeft:"25px"}}>
+             <p style={{marginTop:"-250px" }}> Sheetal Rubber provides high-quality Marine Wet
 Exhaust Hoses for engine and generator systems
 in in-board pleasure boats, ensuring durability and
-top performance in marine environments.<b>Marine wet exhaust hoses</b> are critical components in marine vessels, playing a vital role in safely and efficiently expelling exhaust gases from engines and generators. 1  These hoses are specifically designed to handle the unique challenges of the marine environment, including exposure to saltwater, extreme temperatures, and vibrations.</p>
+top performance in marine environments.<b>Marine wet exhaust hoses</b> are critical components in marine vessels, playing a vital role in safely and efficiently expelling exhaust gases from engines and generators.</p>
+             </div>
             </div>
           </div>
         ))}
@@ -73,9 +77,12 @@ top performance in marine environments.<b>Marine wet exhaust hoses</b> are criti
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-              <img src={Marinewet2} alt={product.title} className="product-image" style={{width:"500px",height:"400px"}}   />
-              <h3>{product.title}</h3>
-              <p>
+              <div >
+              <img src={Marinewet2} alt={product.title} className="product-image" style={{width:"300px",height:"300px" ,marginTop:"145px" }}   />
+              </div>
+              
+             <div  style={{marginLeft:"20px"}}>
+             <p style={{marginTop:"-60px" }}>
               <h3>Key Features and Benefits:</h3>
           <ul>
             <li>We are Manufacturing all hoses from only the highest quality rubber and reinforcement fabrics; they are designed to operate at temperatures up to + 180°C.
@@ -89,43 +96,13 @@ top performance in marine environments.<b>Marine wet exhaust hoses</b> are criti
 
            </li>
           </ul></p>
+             </div>
             </div>
           </div>
         ))}
 	</figure>
 	
-{/* 	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=737' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>#impoCSSible is nothing</h2>
-			<p>You don´t need Javascript or #CSS processors either for almost 100% of what you want to do.</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=870' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Idea from E.Bouças´s <a href='https://codepen.io/eduardoboucas/full/qdaOWv/'>pen</a></h2>
-			<p>Without jQuery or Javascript, nor fixed position (bye IOs problems)</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=743' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Images from unsplash.it</h2>
-			<p>Because it´s the best for demos. Thanks, guys!</p>
-		</div>
-	</section>
-	 */}
-	
+
 	
 </article>
     </section>

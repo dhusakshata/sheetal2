@@ -52,7 +52,7 @@ const ProductPage = () => {
 	<figure className="silicon-card">
 	
           <div  className="siliconproduct-section" >
-            <div className="product-content" >
+            <div className="inhouse-content2" >
             <ul style={{marginTop:"-150px"}}>
             <li>Those Heating Ovens are essential for curing, drying, and preheating for our rubber and silicone hoses during production process.</li>
       <li>This procedure ensures precise temperature control, enhancing the strength, flexibility, and durability to our hoses.</li>

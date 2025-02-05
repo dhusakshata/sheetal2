@@ -87,7 +87,7 @@ const Home = () => {
       {/* Main Hero Section */}
       <section  className={`hero-section ${backgroundChanged ? "bg-changed" : ""}`}>
         <div className="hero-content">
-        <h1 class="animate-top">Welcome to Sheetal Rubber Products (P) Ltd.</h1>
+        <h1 class="animate-top">Sheetal Rubber Products (P) Ltd.</h1>
 
           <div class="animated-text">
   <span class="designed">DESIGNED </span>
@@ -179,7 +179,7 @@ const Home = () => {
         </b>
       </p>
       <p>
-        Each product is meticulously crafted to ensure superior durability, flexibility, and resistance, catering to diverse industrial and automotive applications.
+      Our commitment to quality and precision engineering ensures reliable performance, even in the most demanding environments.
       </p>
     </div>
   </div>

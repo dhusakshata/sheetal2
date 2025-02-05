@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useEffect, useRef, useState } from "react";
 import "./inhousefacility.css";
 import { Link } from "react-router-dom";
 import { BsArrowRightCircle } from "react-icons/bs";
@@ -11,7 +12,8 @@ import Facility44 from "../../Images/Rheometer.png";
 import Facility55 from "../../Images/ozone_test_chamber-removebg-preview.png";
 import Facility66 from "../../Images/muffle_furnace-removebg-preview.png";
 
-
+import AOS from "aos";
+import "aos/dist/aos.css";
  
 const images = [
   { src: Facility1, 
@@ -38,7 +40,14 @@ const Inhousefacility = () => {
     });
   };
   
-
+//Annimation of About-info
+useEffect(() => {
+  AOS.init({
+    duration: 2000, // Animation duration in milliseconds
+    once: true, // Trigger animation only once
+  });
+}, []);
+//
   return (
     <div className="page-container">
       {/* Hero Section */}
@@ -75,7 +84,8 @@ const Inhousefacility = () => {
 	<figure className="inhouse-card">
 
           <div  className="inhouseproduct-section">
-            <div className="inhouseproduct-content1">
+            <div className="inhouseproduct-content1"  data-aos="fade-down" 
+           data-aos-offset="200" >
             <p>
 
 Quality has always been the cornerstone of our continued excellence and superior customer value. To ensure that we consistently deliver high-quality hoses, we have invested in a comprehensive in-house testing facility equipped with sophisticated equipment. This facility allows us to conduct rigorous quality control checks throughout the manufacturing process, from raw material inspection to finished product testing.  Our equipment includes burst pressure testers to determine the maximum pressure a hose can withstand, pulse testers to simulate dynamic pressure fluctuations, and fatigue testers to assess durability under cyclic stresses. We also utilize abrasion testers to evaluate wear and tear resistance, chemical resistance testers to determine compatibility with various fluids, and temperature testers to assess performance at extreme temperatures. Additionally, dimensional testers ensure that hoses meet precise specifications. This comprehensive testing infrastructure allows us to identify and address potential issues early on, continuously improve product performance, meet and exceed industry standards, and provide customers with confidence in the quality, reliability, and safety of our hoses. By investing in this state-of-the-art testing facility, we demonstrate our commitment to delivering exceptional quality and exceeding customer expectations.</p>
@@ -88,7 +98,8 @@ Quality has always been the cornerstone of our continued excellence and superior
 	<figure className="inhouse-card">
 	
           <div className="inhouseproduct-section">
-            <div className="inhouseproduct-content" >
+            <div className="inhouseproduct-content"  data-aos="fade-up" 
+           data-aos-offset="200" >
               
             <p>
           Quality has always been the cornerstone of our continued excellence and superior customer value.

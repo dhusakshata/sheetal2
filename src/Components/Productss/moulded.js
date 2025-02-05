@@ -55,12 +55,14 @@ const ProductPage = () => {
 
 
     <section>
-   <article>
+   <article className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
-          <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
+          <div key={product.id} className="siliconproduct-section">
             <div className="product-content">
+            <div style={{marginLeft:"-70px",marginTop:"-250px"}}>
               <img src={Moulded11} alt={product.title} className="product-image" />
+              </div>
               <h3>{product.title}</h3>
               <p>
               We specialize in high-performance,
@@ -79,11 +81,14 @@ and more.
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-              <img src={Moulded12} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
-             
+             <div style={{marginLeft:"-70px",marginTop:"-250px"}}>
+             <img src={Moulded12} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
+              </div>
+              <div style={{marginLeft:"20px"}}>
               <p>
               Moulded hoses are a type of hose that is manufactured using a moulding process, typically injection moulding or extrusion. This process allows the hose to be made in a variety of shapes and sizes, making it suitable for a wide range of applications.
         </p>
+        </div>
             </div>
           </div>
         ))}
@@ -93,8 +98,8 @@ and more.
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-              <img src={Moulded13} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
-             
+             <div style={{marginLeft:"-30px"}}> <img src={Moulded13} alt={product.title} className="product-image" style={{marginRight:"15px"}} /></div>
+              <div style={{marginLeft:"20px"}}>
               <p>
          
         <h3>Key Features and Benefits:</h3>
@@ -111,6 +116,7 @@ and more.
          
         </ul>
         </p>
+        </div>
             </div>
           </div>
         ))}
@@ -119,8 +125,10 @@ and more.
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-              <img src={Moulded14} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
-             
+              <div style={{marginLeft:"-30px"}}>
+                <img src={Moulded14} alt={product.title} className="product-image" style={{marginRight:"15px"}} /></div>
+
+              <div style={{marginLeft:"20px"}}>
               <p>
          
         <h3>Applications of Molded Hoses:</h3>
@@ -133,6 +141,8 @@ and more.
          
         </ul>
         </p>
+        </div>
+
             </div>
           </div>
         ))}

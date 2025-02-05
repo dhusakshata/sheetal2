@@ -46,7 +46,7 @@ const ProductPage = () => {
 	<figure className="silicon-card">
 	
           <div  className="siliconproduct-section" >
-            <div className="product-content" >
+            <div className="inhouse-content1" >
             <ul style={{marginTop:"-80px"}}>
             <li>Our Burst Pressure Test Machine (Horizontal) with Hydraulic Testing Facility ensures that silicone and rubber hoses meet high-pressure performance requirements.</li>
         <li>This service verifies the strength, flexibility, and endurance of hoses under extreme hydraulic conditions.</li>

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsArrowRightCircle } from "react-icons/bs";
 import "./facilities.css";
 import { Link } from "react-router-dom";
 import manufacturinghoses from "../../Images/hoses9.avif";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Facility4 from "../../Images/hot-feed-rubber-extruder-machine-removebg-preview.png"; 
 import Facility5 from "../../Images/coextrusion.png"; 
@@ -59,6 +61,15 @@ const Manufacturing = () => {
   };
   
 
+//Annimation of About-info
+useEffect(() => {
+  AOS.init({
+    duration: 2000, // Animation duration in milliseconds
+    once: true, // Trigger animation only once
+  });
+}, []);
+//
+
   return (
     <div className="page-container">
       {/* Hero Section */}
@@ -95,7 +106,8 @@ const Manufacturing = () => {
 	<figure className="manufacturing-card">
 
           <div  className="manufacturing-section">
-            <div className="manufacturing-content1">
+            <div className="manufacturing-content1" data-aos="fade-down" 
+           data-aos-offset="200">
             <p>
             Manufacturing facilities rely heavily on hoses for various operations, from transporting fluids and gases to powering machinery. These hoses come in diverse types, such as hydraulic hoses for high-pressure systems, pneumatic hoses for compressed air, chemical hoses for corrosive substances, and steam hoses for heating processes. Selecting the right hose is crucial, considering factors like fluid compatibility, pressure rating, temperature tolerance, flexibility, abrasion resistance, and chemical resistance. Proper maintenance, including regular inspections and pressure testing, is essential to ensure the safe and reliable operation of hoses within the manufacturing environment.</p>
             </div>
@@ -107,7 +119,10 @@ const Manufacturing = () => {
 	<figure className="manufacturing-card">
 	
           <div className="manufacturing-section">
-            <div className="manufacturing-content" >
+            <div className="manufacturing-content" 
+             data-aos="fade-up" 
+             data-aos-offset="200" 
+            >
             <p 
         >
         To help our customers with high-performance products and a cost advantage, we continually strive to improve our manufacturing and business processes, such as:

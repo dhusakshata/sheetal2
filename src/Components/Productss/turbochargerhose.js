@@ -56,10 +56,10 @@ const ProductPage = () => {
 
 
     <section>
-   <article>
+   <article className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
-          <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
+          <div key={product.id} className="siliconproduct-section">
             <div className="product-content">
               <img src={Turbocharger11} alt={product.title} className="product-image" />
               <h3>{product.title}</h3>
@@ -79,6 +79,7 @@ const ProductPage = () => {
             <div className="product-content" >
               <img src={Turbocharger12} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
              
+              <div style={{marginLeft:"20px"}}>
               <p>
               <h3>Key Features and Benefits:</h3>
           <ul>
@@ -93,6 +94,7 @@ const ProductPage = () => {
            
           </ul>
         </p>
+        </div>
             </div>
           </div>
         ))}

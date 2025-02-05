@@ -247,7 +247,7 @@ margin-top: -10px !important;
 .about-section {
 padding: 50px 20px;
   height: 100vh; /* Full viewport height */
-  background: url('../../Images/warehouse2.jpg'); /* Full background image */
+  background: url('../../Images/image1.avif'); /* Full background image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -580,16 +580,16 @@ margin-top: -20px;
 /* For medium-sized screens (tablets) */
 @media (max-width: 1024px) {
   .logo-item {
-    width: 250px; /* Smaller logos for tablets */
-    height: 150px;
+    width: 200px; /* Smaller logos for tablets */
+    height: 200px;
   }
 }
 
 /* For smaller screens (smartphones) */
 @media (max-width: 768px) {
   .logo-item {
-    width: 200px; 
-    height: 200px;
+    width: 180px; 
+    height: 180px;
   }
   .swiper-button-next,
 .swiper-button-prev {
@@ -601,8 +601,8 @@ margin-top: -20px;
 /* For extra small screens (very small devices) */
 @media (max-width: 400px) {
   .logo-item {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
 
   .logo-container h1 {
@@ -640,11 +640,11 @@ margin-top: -20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 550px;
+  width: 600px;
   position: relative;
-  top: 50px;
-  left: 30px;
-  line-height: 1.8;
+  top: 10px;
+  left: 20px;
+  line-height: 1.6;
 }
 
 /* Responsive Rules */

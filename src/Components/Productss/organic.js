@@ -51,20 +51,25 @@ const ProductPage = () => {
       </section>
 
 
-    <section>
-   <article>
+    
+   <article className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
-          <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
+          <div key={product.id}className="siliconproduct-section">
             <div className="product-content">
+              <div >
               <img src={Organic1} alt={product.title} className="product-image" style={{width:"900px",height:"500px",marginBottom:"-100px"}}/>
-              <h3>{product.title}</h3>
-              <p><b>Organic rubber hoses</b>, primarily made from natural rubber (NR), offer a unique blend of properties and sustainability. Derived from the sap of rubber trees, natural rubber provides excellent elasticity, resilience, and durability.Designed for low-temperature air, water, and fuel
+              </div>
+          
+            <div>
+            <p><b>Organic rubber hoses</b>, primarily made from natural rubber (NR), offer a unique blend of properties and sustainability. Derived from the sap of rubber trees, natural rubber provides excellent elasticity, resilience, and durability.Designed for low-temperature air, water, and fuel
            transfer, with material options like SBR,
           PVC/NBR, Neoprene, Vamac, and NBR for
            specific needs.
        </p>
+           
             </div>
+             </div>
           </div>
         ))}
 	</figure>
@@ -74,8 +79,8 @@ const ProductPage = () => {
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-              <img src={Organic1} alt={product.title} className="product-image" style={{width:"900px",height:"500px",marginBottom:"-100px"}} />
-             
+              <img src={Organic1} alt={product.title} className="product-image" style={{width:"500px",height:"300px",marginBottom:"-100px"}} />
+              <div style={{marginLeft:"20px"}}>
               <p>
               
           <h3>Key Features and Benefits:</h3>
@@ -90,6 +95,7 @@ const ProductPage = () => {
           
           </ul>
         </p>
+        </div>
             </div>
           </div>
         ))}
@@ -129,7 +135,8 @@ const ProductPage = () => {
 	
 	
 </article>
-    </section>
+   
+
 
     <section className="background-section">
   <div className="background-overlay">

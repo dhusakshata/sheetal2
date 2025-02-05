@@ -278,10 +278,26 @@ article .content {
           }
 }
 
+/* For screens smaller than 1200px (Large screens) */
+@media (max-width: 1400px) and (min-width: 1000px) {
+  .image-gallery-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .inhouseproduct-content {
+    width: 450px !important;
+    margin-left: -100px;
+  }
+
+  .inhouseproduct-content1 {
+    width: 450px !important;
+    margin-left: 100px;
+  }
+}
 
 
 /* Responsive for Tablets (max-width: 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   /* Hero Section - Stack in Column */
   .hero-container {
     flex-direction: column;

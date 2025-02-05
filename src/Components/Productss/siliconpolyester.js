@@ -53,10 +53,10 @@ const ProductPage = () => {
 
 
     <section>
-   <article>
+   <article  className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
-          <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
+          <div key={product.id} className="siliconproduct-section" >
             <div className="product-content">
               <img src={Silicon11} alt={product.title} className="product-image" />
               <h3>{product.title}</h3>
@@ -69,11 +69,14 @@ const ProductPage = () => {
 	
 	<figure className="silicon-card">
 	{siliconproducts.map((product, index) => (
-          <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
+          <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
+              <div style={{marginLeft:"-70px",}}>
               <img src={Silicon12} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
-              <h3>{product.title}</h3>
-              <p><h3>Key Features and Benefits:</h3>
+              </div>
+              
+            <div style={{marginLeft:"20px",marginTop:"-100px"}}>
+                <p style={{marginLeft:"20px",marginTop:"-50px"}}><h3>Key Features and Benefits:</h3>
           <ul>
             <li>
               Our Silicone Hoses are having good resistance to weather and ozone and resist
@@ -89,6 +92,7 @@ const ProductPage = () => {
               diesel combustion bye products / exhaust gas recycle.
             </li>
           </ul></p>
+            </div>
             </div>
           </div>
         ))}

@@ -33,7 +33,6 @@ const ProductPage = () => {
                  
               </div>
              
-             
                <div className="subproduct-herodata">
                <h1 style={{textAlign:"left",marginLeft:"30px"}}>
                  ASSEMBLY HOSES
@@ -55,13 +54,16 @@ const ProductPage = () => {
 
 
     <section>
-   <article>
+   <article className="Product-article"s>
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
-          <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
+          <div key={product.id} className="siliconproduct-section">
             <div className="product-content">
+           
+              <div style={{marginLeft:"-65px"}}>
               <img src={Assemblyy11} alt={product.title} className="product-image" />
-              <h3>{product.title}</h3>
+              </div>
+           
               <p> Sheetal Rubber provides flexible hoses with custom couplings for efficient media transfer, operating from -40°C to +140°C in sizes 6–75 mm.
        </p>
             </div>
@@ -74,10 +76,10 @@ const ProductPage = () => {
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
+            <div style={{marginLeft:"-65px"}}>
               <img src={Assemblyy12} alt={product.title} className="product-image"  />
-             
+             </div>
               <p>
-              
               <h3>Key Features and Benefits:</h3>
           <ul>
             <li>

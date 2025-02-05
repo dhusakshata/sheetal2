@@ -73,7 +73,7 @@ const Inhousefacility = () => {
           <div className="sub-section1">
           <h1 style={{textAlign:"center", margin:"30px",fontSize:"2rem",textTransform:"uppercase"}}>Cold Feed Extruder</h1>
             <div className="sub-content2" >
-            <img src={ColdFeed} alt="Hot Feed Extruder" style={{width:"500px"}} className="cold-img"/>
+            <img src={ColdFeed} alt="cold Feed Extruder" style={{width:"500px"}} className="cold-img"/>
            
             <ul>
               <li>Processes rubber compounds at ambient or slightly elevated temperatures without pre-heating, offering versatility in handling various compounds and profiles.</li>

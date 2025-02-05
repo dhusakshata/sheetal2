@@ -115,7 +115,14 @@ useEffect(() => {
             PRODUCT | APPLICATIONS
             </h1></div>
             <p>
-            Our company specializes in providing innovative and industry-leading fluid handling solutions, including manipulated tubes, various hoses, and high-performance systems. We cater to a diverse range of applications, delivering optimized solutions that meet the unique demands of each project. Our expertise extends to extreme environments, such as high-temperature applications with silicone hose systems, as well as cutting-edge technologies like cooling systems.
+              We specialize in
+              manufacturing a full range of low-pressure hoses, including
+              platinum silicone-lined, FMK-lined fuel cell hoses,
+              flame-retardant hoses, and various moulded components. Our
+              commitment to product expertise, engineering excellence, rigorous
+              testing, and strict quality controls has established us as a
+              preferred partner for major manufacturers in India and a favored
+              exporter internationally.
             </p>
           </div>
         </div>

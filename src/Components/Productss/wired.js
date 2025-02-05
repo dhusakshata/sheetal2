@@ -61,13 +61,18 @@ const ProductPage = () => {
   {siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content">
+              <div style={{marginLeft:"-80px"}}>
               <img src={Wired1} alt={product.title} className="product-image" />
-              <h3>{product.title}</h3>
-              <p> Engineered for reliability in demanding
+              </div>
+              
+          <div style={{marginLeft:"-20px"}}>
+          <p> Engineered for reliability in demanding
 environments, with a temperature range of
 -40°C to +140°C and sizes from 20 mm to
 200 mm.
        </p>
+          </div>
+             
             </div>
           </div>
         ))}
@@ -79,10 +84,9 @@ environments, with a temperature range of
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
               <img src={Wired11} alt={product.title} className="product-image"  />
-             
-              <p>
-              
-            
+
+              <div style={{marginLeft:"20px"}}>
+ <p>
         <h3>Key Features and Benefits:</h3>
         <ul>
           <li>The suction hose is designed to maintain vacuum integrity for the transfer of fluids and air.
@@ -97,6 +101,8 @@ environments, with a temperature range of
           <li>	It is useful for air cleaner applications in automotive filters.</li>
         </ul>
         </p>
+              </div>
+             
             </div>
           </div>
         ))}

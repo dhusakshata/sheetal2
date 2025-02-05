@@ -59,10 +59,7 @@ const Inhousefacility = () => {
             Our production line includes advanced Knitting Machines that play a crucial role in the production of
               knitted rubber components. These machines utilize precise knitting techniques to create strong and
               flexible rubber fabrics, ensuring consistent quality and durability. The ability to knit various patterns
-              and thicknesses allows for customization based on specific product requirements. By streamlining the
-              knitting process, our machines enhance production efficiency while maintaining high standards in the
-              final rubber products, meeting the diverse needs of our customers.
-              
+              and thicknesses allows for customization based on specific product requirements.
             
 
             </p>

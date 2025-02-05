@@ -52,7 +52,7 @@ const ProductPage = () => {
 
 
     <section>
-   <article>
+   <article className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>

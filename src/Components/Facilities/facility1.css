@@ -193,10 +193,7 @@
 	color: #000;
 	background-attachment: fixed;
 }
-article .content {
-  position: relative;
-  z-index: 2; 
-}
+
 @media screen and (min-width: 700px) {
   
 	.sub-card {
@@ -320,7 +317,7 @@ background-attachment: fixed;
   flex-direction: column !important;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 90px;
   margin-top: -70px;
 }
 .subimg{
@@ -340,13 +337,13 @@ background-attachment: fixed;
 .sub-content2 {
   width: 600px !important;
   height: 60vh;
-  gap: 40px;
+  gap: 20px;
   text-align: left;
   display: flex;
   flex-direction: column !important;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 90px;
   margin-top: -70px;
 
 }
@@ -367,13 +364,13 @@ background-attachment: fixed;
 .sub-content3{
   width: 600px !important;
   height: 60vh;
-  gap: 40px;
+  gap: 20px;
   text-align: left;
   display: flex;
   flex-direction: column !important;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 90px;
   margin-top: -70px;
 
 }
@@ -457,41 +454,44 @@ background-attachment: fixed;
          color: black;
         }
 .sub-content {
-  width: 600px !important;
+  width: 400px !important;
   height: 60vh;
-  gap: 40px;
+  gap: 10px;
   text-align: left;
   display: flex;
   flex-direction: column !important;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 40px;
   margin-top: -70px;
 }
 .subimg{
   width: 300px;
   margin-left:-100px;
 }
+.sub-content p{
+  margin-top: -80px !important;
+}
 
 .sub-content1 p{
-  width: 300px;
-  font-size: 16px;
+  width: 200px !important;
+  font-size: 14px;
   line-height: 1.6;
   text-align: left;
- margin-left: -350px;
+ margin-left: -450px;
   
   
 }
 .sub-content2 {
-  width: 600px !important;
+  width: 400px !important;
   height: 60vh;
-  gap: 40px;
+  gap: 10px;
   text-align: left;
   display: flex;
   flex-direction: column !important;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 40px;
   margin-top: -70px;
 
 }
@@ -510,15 +510,15 @@ background-attachment: fixed;
   margin-top: 140px;
 }
 .sub-content3{
-  width: 600px !important;
+  width: 400px !important;
   height: 60vh;
-  gap: 40px;
+  gap: 10px;
   text-align: left;
   display: flex;
   flex-direction: column !important;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 40px;
   margin-top: -70px;
 
 }
@@ -546,3 +546,159 @@ background-attachment: fixed;
 
 
 
+@media screen and (min-width: 601px) and (max-width: 1230px) {
+  
+	.sub-card {
+		background:white;
+		width: calc( 50% + 1px);
+		height: 80vh;
+		margin: 0 0 0 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+   z-index: 1000;
+
+			}
+	
+			.sub-card:nth-of-type(2n)::after {
+		right: 45%;
+		left: 5vmin;
+	}
+			.sub-card:nth-of-type(1) {
+		margin: 0 0 0 0;
+    height: 80vh;
+		width: 50%;
+    display: flex;
+    background-color: #1e202c !important;
+    color:white;
+    background: url('../../svgfiles/diagonal2.svg');
+    background-attachment: fixed;
+			}
+
+	.sub-card:nth-of-type(2n) {
+margin: 0 0 0 auto;
+height: 80vh;
+width: 100%;
+background-image: url('../../svgfiles/diagonal.svg');
+font-size: 16px;
+color: black;
+margin-top: -50px;
+line-height: 1.6;
+background-attachment: fixed;
+   
+    
+			}
+      .sub-card:nth-of-type(3n) {
+     margin: 0 0 0 auto;
+height: 80vh;
+width: 100%;
+display: flex;
+background-color: #1e202c !important;
+color: black;
+background: url('../../svgfiles/diagonal2.svg');
+background-attachment: fixed;
+font-size: 16px;
+color: white;
+
+line-height: 1.6;
+background-attachment: fixed;
+          }
+          .sub-section{
+            height: 100vh ;
+          }
+          .sub-section1{
+            height: 100vh ;
+           background-color: white !important;
+           color: black;
+          }
+  .sub-content {
+    width: 600px !important;
+    height: 80vh;
+    gap: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    margin-top: -70px;
+  }
+  .sub-content p{
+    margin-top: -200px !important;
+  }
+  .subimg{
+    width: 300px;
+    margin-left:-100px;
+    margin-top: -250px !important;
+  }
+  
+  .sub-content1 p{
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+   margin-left: -350px;
+    
+    
+  }
+  .sub-content2 {
+    width: 600px !important;
+    height: 80vh;
+    gap: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    margin-top: -200px;
+  
+  }
+  .sub-content2 p{
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+   margin-left: -450px;
+    margin-top: -30px !important;
+    
+  }
+  .cold-img{
+    width: 300px !important;
+    margin-left:-100px;
+    margin-top: 140px;
+  }
+  .sub-content3{
+    width: 600px !important;
+    height: 80vh;
+    gap: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    margin-top: -200px;
+  
+  }
+  .co-img{
+    width: 300px !important;
+    margin-top: 100px;
+  }
+  .sub-content3 p{
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+   margin-left: -400px;
+    margin-top: -30px !important;
+    
+  }
+  .sub-content img {
+    max-width: 100%; /* Prevents image overflow */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional for aesthetics */
+    margin-bottom: 20px; /* Space below the image */
+  }
+  
+}

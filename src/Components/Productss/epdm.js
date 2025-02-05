@@ -56,12 +56,14 @@ const ProductPage = () => {
 
 
     <section>
-   <article>
+   <article className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
-          <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
+          <div key={product.id} className="siliconproduct-section">
             <div className="product-content">
-              <img src={EPDM1} alt={product.title} className="product-image" />
+              <div style={{marginLeft:"-70px"}}>
+              <img src={EPDM1} alt={product.title} className="epdm-image product-image" />
+              </div>
               <h3>{product.title}</h3>
               <p>
           <b>EPDM rubber hoses</b> are versatile and widely used in various industries due to their excellent resistance to heat, ozone, weathering, and many chemicals. They are made from EPDM (Ethylene Propylene Diene Monomer), a synthetic rubber known for its durability and flexibility.  
@@ -79,7 +81,8 @@ const ProductPage = () => {
             <div className="product-content" >
               <img src={EPDM2} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
              
-              <p>
+          <div style={{marginLeft:"20px"}}>
+          <p>
               <h3>Key Features and Benefits:</h3>
           <ul>
             <li>Available in reinforcement as well as non-reinforcement options.
@@ -92,43 +95,13 @@ const ProductPage = () => {
             
           </ul>
         </p>
+          </div>
             </div>
           </div>
         ))}
 	</figure>
 	
-{/* 	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=737' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>#impoCSSible is nothing</h2>
-			<p>You don´t need Javascript or #CSS processors either for almost 100% of what you want to do.</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=870' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Idea from E.Bouças´s <a href='https://codepen.io/eduardoboucas/full/qdaOWv/'>pen</a></h2>
-			<p>Without jQuery or Javascript, nor fixed position (bye IOs problems)</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=743' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Images from unsplash.it</h2>
-			<p>Because it´s the best for demos. Thanks, guys!</p>
-		</div>
-	</section>
-	 */}
-	
+
 	
 </article>
     </section>
