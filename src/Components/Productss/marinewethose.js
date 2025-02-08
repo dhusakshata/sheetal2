@@ -4,7 +4,7 @@ import "./silicon.css";
 import Marinewet1 from "../../Images/Marine-wet1.png";
 import Marinewet2 from "../../Images/marinehoses.png";
 
-import { Link } from "react-router-dom"; 
+import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 
 const ProductPage = () => {
   const siliconproducts = [
@@ -26,6 +26,7 @@ const ProductPage = () => {
   return (
     <div className="silicon-page">
       {/* Hero Section */}
+      <Breadcrumb currentPage="MARINE WET EXHAUST HOSES" isSubProduct={true} />
       <Parallax  strength={500} className="siliconhero-section">
   <section className="marinehero">
   <div className="siliconhero-content">
@@ -36,7 +37,7 @@ const ProductPage = () => {
                <h1 style={{textAlign:"left",marginLeft:"30px"}}>
                  MARINE WET EXHAUST HOSES
                 </h1>
-               <h2  style={{textAlign:"left",margin:"30px" ,fontWeight:"bold",fontSize:"24px"}}>Seaworthy Exhaust. Smooth Sailing.
+               <h2  style={{textAlign:"left",margin:"30px" , marginLeft:"-90px",fontWeight:"bold",fontSize:"24px"}}>Seaworthy Exhaust. Smooth Sailing.
                 </h2>
                 
              </div>
@@ -62,7 +63,7 @@ const ProductPage = () => {
              </div>
            
              <div style={{marginLeft:"25px"}}>
-             <p style={{marginTop:"-250px" }}> Sheetal Rubber provides high-quality Marine Wet
+             <p style={{marginTop:"-200px" }}> Sheetal Rubber provides high-quality Marine Wet
 Exhaust Hoses for engine and generator systems
 in in-board pleasure boats, ensuring durability and
 top performance in marine environments.<b>Marine wet exhaust hoses</b> are critical components in marine vessels, playing a vital role in safely and efficiently expelling exhaust gases from engines and generators.</p>
@@ -78,11 +79,11 @@ top performance in marine environments.<b>Marine wet exhaust hoses</b> are criti
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
               <div >
-              <img src={Marinewet2} alt={product.title} className="product-image" style={{width:"300px",height:"300px" ,marginTop:"145px" }}   />
+              <img src={Marinewet2} alt={product.title} className="product-image" style={{width:"300px",height:"260px" ,marginTop:"135px" }}   />
               </div>
               
              <div  style={{marginLeft:"20px"}}>
-             <p style={{marginTop:"-60px" }}>
+             <p style={{marginTop:"-15px" }}>
               <h3>Key Features and Benefits:</h3>
           <ul>
             <li>We are Manufacturing all hoses from only the highest quality rubber and reinforcement fabrics; they are designed to operate at temperatures up to + 180°C.

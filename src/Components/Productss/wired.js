@@ -3,7 +3,8 @@ import { Parallax } from "react-parallax";
 import "./silicon.css";
 import Wired1 from "../../Images/wire.png";
 import Wired11 from "../../Images/wired11.png";
-import { Link } from "react-router-dom"; 
+
+import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 
 const ProductPage = () => {
   const siliconproducts = [
@@ -25,7 +26,8 @@ const ProductPage = () => {
   return (
     <div className="silicon-page">
       {/* Hero Section */}
-
+      <Breadcrumb currentPage="WIRE REINFORCED
+                 HOSES" isSubProduct={true} />
   <section className="wiredhero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
@@ -40,7 +42,7 @@ const ProductPage = () => {
                  WIRE REINFORCED
                  HOSES
                 </h1>
-               <h2  style={{textAlign:"left",margin:"30px" ,fontWeight:"bold",fontSize:"24px"}}>Wire Strong. Performance Strong.
+               <h2  style={{textAlign:"left",marginLeft:"-150px" ,fontWeight:"bold",fontSize:"24px"}}>Wire Strong. Performance Strong.
                 </h2>
                 
              </div>
@@ -56,12 +58,12 @@ const ProductPage = () => {
 
 
     <section>
-   <article>
+   <article className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content">
-              <div style={{marginLeft:"-80px"}}>
+              <div style={{marginLeft:"-80px",marginTop:"-200px"}}>
               <img src={Wired1} alt={product.title} className="product-image" />
               </div>
               

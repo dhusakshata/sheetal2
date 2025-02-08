@@ -32,16 +32,16 @@ const handleScrollDown = () => {
       <section className="about-hero">
         <div className="about-hero-content">
           {/* Left Section */}
-          <div className="vertical-line"></div>
+          <div className="vertical-line" style={{height:"180px"}}></div>
           <div className="about-hero-heading">
             
             <h1>
               <span>COMMITTED TO EXCELLENCE</span>
             </h1>
             <h2>Producing with meticulous attention to detail</h2>
-            <div className="scroll-down" onClick={handleScrollDown}>
-                     <BsArrowDownCircle size={30} />
-                    </div>
+            {/* <div className="scroll-down" onClick={handleScrollDown} >
+                     <BsArrowDownCircle size={35} style={{marginTop:"20px"}}/>
+                    </div> */}
           </div>
 
           {/* Right Section */}

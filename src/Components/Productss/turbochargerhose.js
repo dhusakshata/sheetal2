@@ -4,6 +4,7 @@ import "./silicon.css";
 import Turbocharger11 from "../../Images/turbocharger11.png";
 import Turbocharger12 from "../../Images/turbocharger12.png";
 
+import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 import { Link } from "react-router-dom"; 
 
 const ProductPage = () => {
@@ -26,7 +27,7 @@ const ProductPage = () => {
   return (
     <div className="silicon-page">
       {/* Hero Section */}
-  
+      <Breadcrumb currentPage=" TURBOCHARGER AND CAC HOSES" isSubProduct={true} />
   <section className="turbochargerhero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
@@ -40,7 +41,7 @@ const ProductPage = () => {
                <h1 style={{textAlign:"left",marginLeft:"30px"}}>
                  TURBOCHARGER AND CAC HOSES
                 </h1>
-               <h2  style={{textAlign:"left",margin:"30px" ,fontWeight:"bold",fontSize:"24px"}}>Turbocharged Power. Connected Right.
+               <h2  style={{textAlign:"left",marginLeft:"-80px",fontWeight:"bold",fontSize:"24px"}}>Turbocharged Power. Connected Right.
                 </h2>
                 
              </div>
@@ -77,10 +78,10 @@ const ProductPage = () => {
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-              <img src={Turbocharger12} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
+              <div><img src={Turbocharger12} alt={product.title} className="product-image" style={{marginRight:"15px",marginTop:"50px"}} /></div>
              
               <div style={{marginLeft:"20px"}}>
-              <p>
+              <p style={{marginLeft:"20px",marginTop:"-30px"}}>
               <h3>Key Features and Benefits:</h3>
           <ul>
             <li>Design to operate at Temperature range: -50°C to + 230°C.

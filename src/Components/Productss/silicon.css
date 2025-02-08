@@ -49,6 +49,9 @@ body {
   font-weight: bold;
 }
 
+
+
+
 /* media query for silicon hero section*/
 
 @media (max-width: 1024px) { 
@@ -79,7 +82,7 @@ body {
   }
 }
 
-@media (max-width: 768px) { /* Mobile */
+@media (max-width: 780px) { /* Mobile */
   .siliconhero {
     height: 60vh;
     padding: 30px 10px;
@@ -99,11 +102,12 @@ body {
   }
 
   .silicon-hero-heading h1 {
-    font-size: 24px;
-  }
+    font-size: 24px !important;
+   
+   }
 
   .silicon-hero-heading h2 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
@@ -127,7 +131,7 @@ body {
   }
 
   .silicon-hero-heading h1 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   .silicon-hero-heading h2 {
@@ -414,14 +418,14 @@ z-index: 1000;
   width: 100%;
   height: 100%;
   background: url('../../svgfiles/diagonal2.svg');
-  opacity: 0.5; /* Adjust opacity to control visibility of the diagonal lines */
-  z-index: 1; /* Ensure it appears below content but above the background image */
-  pointer-events: none; /* Prevent the SVG from interfering with user interactions */
+  opacity: 0.5; 
+  z-index: 1;
+  pointer-events: none; 
 }
 
 /*TURBOCHARGER CSS*/
 .turbochargerhero{
-  background-image: url('../../Images/automotive-rubber-hoses.jpg');
+  background-image: url('../../Images/turbobg1.jpg');
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -487,9 +491,9 @@ padding: 50px 20px;
 
 /*EPDM CSS*/
 .epdmhero{
-  background-image: url('../../Images/epdmbg.jpg');
+  background-image: url('../../Images/Epdmbg1.jpg');
   height: 80vh;
-  background-position: center;
+  background-position: top right !important;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -502,13 +506,13 @@ padding: 50px 20px;
   background-attachment: fixed;
 }
 .epdm{
-  height: 50vh;
-  background-image: url('../../Images/epdmbg4.png');
+  height: 80vh;
+  background-image: url('../../Images/8668.png');
 	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
 padding: 50px 20px;
-	background-position: center !important;
+	background-position:center !important;
   background-repeat:no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -520,7 +524,7 @@ padding: 50px 20px;
 
 /*organic CSS*/
 .organichero{
-  background-image: url('../../Images/hoses13.jpg');
+  background-image: url('../../Images/SDC10815-Photoroom.png');
   height: 80vh;
 
   background-position: center;
@@ -571,8 +575,8 @@ padding: 50px 20px;
   background-attachment: fixed;
 }
 .Assembly{
-  height: 100vh;
-  background-image: url('../../Images/Assemblybg2.jpg');
+  height: 80vh;
+  background-image: url('../../Images/8130.png');
 	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
 padding: 50px 20px;
 	background-position: center !important;
@@ -606,13 +610,13 @@ padding: 50px 20px;
   background-attachment: fixed;
 }
 .wired{
-  height: 100vh;
-  background-image: url('../../Images/wired11.png');
+  height: 80vh !important;
+  background-image: url('../../Images/Wire-Reinforced-Hosesbg.webp') !important;
 	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
-padding: 50px 20px;
+padding: 20px 20px;
 	background-position: center !important;
   background-repeat:no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -627,7 +631,6 @@ padding: 50px 20px;
 .fuelhero{
   background-image: url('../../Images/hoses2.jpg');
   height: 80vh;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -676,8 +679,8 @@ padding: 50px 20px;
   background-attachment: fixed;
 }
 .moulded{
-  height: 100vh;
-  background-image: url('../../Images/mouldedbg3.jpg');
+  height: 80vh !important;
+  background-image: url('../../Images/8063.png') !important;
 	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
 
 	background-position: center !important;

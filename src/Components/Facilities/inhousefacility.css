@@ -279,19 +279,21 @@ article .content {
 }
 
 /* For screens smaller than 1200px (Large screens) */
-@media (max-width: 1400px) and (min-width: 1000px) {
+@media (max-width: 1400px) and (min-width: 900px) {
   .image-gallery-container {
     grid-template-columns: repeat(4, 1fr);
   }
 
   .inhouseproduct-content {
-    width: 450px !important;
-    margin-left: -100px;
+    width: 700px !important;
+    margin-left: 200px !important;
   }
 
   .inhouseproduct-content1 {
     width: 450px !important;
-    margin-left: 100px;
+    margin-left: 50px;
+    margin-top: -2px;
+    font-size: 15px;
   }
 }
 
@@ -349,10 +351,11 @@ article .content {
   /* In-House Facility Section */
   .inhouseproduct-content,
   .inhouseproduct-content1 {
-    width: 100%;
+    width: 600px;
     margin: 20px auto;
     text-align: left;
     padding: 10px;
+    font-size: 15px;
   }
 
   .inhouseproduct-content1 p,
@@ -436,6 +439,7 @@ article .content {
     margin: 10px auto;
     text-align: center;
     padding: 10px;
+    font-size: 14px;
   }
 
   .inhouseproduct-content1 p,

@@ -3,7 +3,7 @@ import { Parallax } from "react-parallax";
 import "./silicon.css";
 import Assemblyy11 from "../../Images/Assembly11.png";
 import Assemblyy12 from "../../Images/Assembly2.png";
-import { Link } from "react-router-dom"; 
+import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 
 const ProductPage = () => {
   const siliconproducts = [
@@ -25,7 +25,7 @@ const ProductPage = () => {
   return (
     <div className="silicon-page">
       {/* Hero Section */}
-      
+      <Breadcrumb currentPage="ASSEMBLY HOSES" isSubProduct={true} />
   <section className="Assemblyhero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
@@ -38,7 +38,7 @@ const ProductPage = () => {
                  ASSEMBLY HOSES
                 </h1>
                 
-               <h2  style={{textAlign:"left",margin:"30px" ,fontWeight:"bold",fontSize:"24px"}}>Connect with Confidence.
+               <h2  style={{textAlign:"left",margin:"30px" ,marginLeft:"-205px",fontWeight:"bold",fontSize:"24px"}}>Connect with Confidence.
                 </h2>
                 
              </div>
@@ -60,11 +60,11 @@ const ProductPage = () => {
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content">
            
-              <div style={{marginLeft:"-65px"}}>
+              <div style={{marginLeft:"-65px",marginTop:"-120px"}}>
               <img src={Assemblyy11} alt={product.title} className="product-image" />
               </div>
            
-              <p> Sheetal Rubber provides flexible hoses with custom couplings for efficient media transfer, operating from -40°C to +140°C in sizes 6–75 mm.
+              <p style={{marginTop:"-20px"}}> Sheetal Rubber provides flexible hoses with custom couplings for efficient media transfer, operating from -40°C to +140°C in sizes 6–75 mm.
        </p>
             </div>
           </div>

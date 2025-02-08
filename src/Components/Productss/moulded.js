@@ -1,11 +1,12 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import "./silicon.css";
-import Moulded11 from "../../Images/moulded11.png";
-import Moulded12 from "../../Images/moulded12.png";
+import Moulded11 from "../../Images/8036.png";
+import Moulded12 from "../../Images/8093.png";
 import Moulded13 from "../../Images/moulded13.png";
 import Moulded14 from "../../Images/moulded14.png";
 
+import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 import { Link } from "react-router-dom"; 
 
 const ProductPage = () => {
@@ -28,7 +29,7 @@ const ProductPage = () => {
   return (
     <div className="silicon-page">
       {/* Hero Section */}
-   
+      <Breadcrumb currentPage=" MOULDED HOSES" isSubProduct={true} />
   <section className="mouldedhero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
@@ -39,7 +40,7 @@ const ProductPage = () => {
                <h1 style={{textAlign:"left",marginLeft:"30px"}}>
                  MOULDED HOSES
                 </h1>
-               <h2  style={{textAlign:"left",margin:"30px" ,fontWeight:"bold",fontSize:"24px"}}>The Versatile Choice for Hosing.
+               <h2  style={{textAlign:"left",margin:"30px" , marginLeft:"-150px",fontWeight:"bold",fontSize:"24px"}}>The Versatile Choice for Hosing.
                 </h2>
                 
              </div>
@@ -84,11 +85,7 @@ and more.
              <div style={{marginLeft:"-70px",marginTop:"-250px"}}>
              <img src={Moulded12} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
               </div>
-              <div style={{marginLeft:"20px"}}>
-              <p>
-              Moulded hoses are a type of hose that is manufactured using a moulding process, typically injection moulding or extrusion. This process allows the hose to be made in a variety of shapes and sizes, making it suitable for a wide range of applications.
-        </p>
-        </div>
+            
             </div>
           </div>
         ))}
@@ -125,7 +122,7 @@ and more.
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-              <div style={{marginLeft:"-30px"}}>
+              <div style={{marginLeft:"-30px",marginTop:"-40px"}}>
                 <img src={Moulded14} alt={product.title} className="product-image" style={{marginRight:"15px"}} /></div>
 
               <div style={{marginLeft:"20px"}}>

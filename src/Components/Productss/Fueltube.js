@@ -3,7 +3,7 @@ import { Parallax } from "react-parallax";
 import "./silicon.css";
 import FuelTube1 from "../../Images/Fuel-Tubes11.png";
 
-import { Link } from "react-router-dom"; 
+import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 
 const ProductPage = () => {
   const siliconproducts = [
@@ -25,7 +25,7 @@ const ProductPage = () => {
   return (
     <div className="silicon-page">
       {/* Hero Section */}
-    
+      <Breadcrumb currentPage="FUEL HOSES" isSubProduct={true} />
   <section className="fuelhero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
@@ -36,7 +36,7 @@ const ProductPage = () => {
                <h1 style={{textAlign:"left",marginLeft:"30px"}}>
                  FUEL HOSES
                 </h1>
-               <h2  style={{textAlign:"left",margin:"30px" ,fontWeight:"bold",fontSize:"24px"}}>The Backbone of Fuel Systems.
+               <h2  style={{textAlign:"left",margin:"30px" ,marginLeft:"-150px",fontWeight:"bold",fontSize:"24px"}}>The Backbone of Fuel Systems.
                 </h2>
                 
              </div>
@@ -57,9 +57,9 @@ const ProductPage = () => {
   {siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content">
-              <img src={FuelTube1} alt={product.title} className="product-image" />
+            <div style={{marginLeft:"-80px",marginTop:"-80px"}}>  <img src={FuelTube1} alt={product.title} className="product-image" /></div>
               <h3>{product.title}</h3>
-              <p>
+              <p style={{width:"500px"}}>
               Engineered for safe and efficient fluid
 transfer in automotive and industrial
 systems, with inner diameters ranging from

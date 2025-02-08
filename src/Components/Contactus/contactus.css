@@ -200,7 +200,7 @@ margin-left: -200px;
   display: flex;
   justify-content: space-between;
   background-color: #121212;
-height: 80vh; /* Full screen height */
+height: 100vh; /* Full screen height */
   background-attachment: fixed;
 padding: 50px 20px;
 }
@@ -269,6 +269,35 @@ padding: 50px 20px;
 
 .submit-btn:hover {
   background-color: #333;
+}
+
+.upload-btn {
+  background-color: #555;
+  color: white;
+  width: 150px;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+}
+
+.upload-btn:hover {
+  background-color: #333;
+}
+
+.upload-status {
+  margin-top: 5px;
+  font-size: 14px;
+  color:white;
+}
+
+.upload-status.success {
+  color: #ffc107; /* Green for success */
+}
+
+.upload-status.error {
+  color: #dc3545; /* Red for error */
 }
 /* For Tablets (1024px and below) */
 @media (max-width: 1024px) {

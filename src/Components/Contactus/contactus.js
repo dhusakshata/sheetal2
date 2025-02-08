@@ -29,8 +29,27 @@ useEffect(() => {
   });
 }, []);
 //
+const [selectedFile, setSelectedFile] = useState(null);
+  const [uploadStatus, setUploadStatus] = useState("");
 
+  const handleFileChange = (event) => {
+    setSelectedFile(event.target.files[0]);
+    setUploadStatus(""); // Reset status on file change
+  };
 
+  const handleFileUpload = () => {
+    if (!selectedFile) {
+      setUploadStatus("Please select a file first.");
+      return;
+    }
+
+    // Simulate file upload (Replace with actual API call if needed)
+    setTimeout(() => {
+      setUploadStatus("File uploaded successfully!");
+    }, 1000);
+  };
+
+  
   return (
     <div >
       {/* Hero Section */}
@@ -47,7 +66,7 @@ useEffect(() => {
           For inquiries related to Sheetal Rubber Pvt Ltd's operations in Bhosari, please use the contact form below or reach out directly using the provided email and contact details.
           </p>
           <div className="scroll-down" onClick={handleScrollDown}>
-           <BsArrowDownCircle size={30} />
+           <BsArrowDownCircle size={35} />
           </div>
         </div>
       </div>
@@ -56,24 +75,7 @@ useEffect(() => {
 
 
 
-      <section className="map-section">
-      
-  <div className="map-container">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.5735064498363!2d73.83004327496596!3d18.638243282478317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9c745555555%3A0xc7aa3d886bd44d2a!2sSheetal%20Rubber%20Products%20(P)%20Ltd!5e0!3m2!1sen!2sin!4v1733346721960!5m2!1sen!2sin&center=18.638243282478317,73.83004327496596&zoom=15"
-    style={{
-      border: 0,
-      width: "100%",
-      height: "50vh",
-    }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  />
-  </div>
-</section>
-
-
+   
       {/* Form Section */}
       <section className="form-section-container">
       <div className="address-info">
@@ -81,6 +83,7 @@ useEffect(() => {
         <p>J-395, MIDC, Bhosari, Pune-411026 (INDIA)</p>
         <p><FaPhoneAlt className="icon" />  +91 -20 -27130244 ,+91 -20 -27130794</p>
         <p><FaEnvelope className="icon" />  sheetalrubber@gmail.com</p>
+        <p><FaEnvelope className="icon" />  sales@sheetalrubber.co.in</p>
        </div>
       <div className="form-section">
   
@@ -109,11 +112,53 @@ useEffect(() => {
             <label htmlFor="message">Long answer *</label>
             <textarea id="message" placeholder="Your message" rows="4" required></textarea>
           </div>
+       {/* File Attachment Section with Upload Button */}
+       <div className="form-group">
+              <label htmlFor="attachment">Attachment (PDF, JPG, PNG, DOC)</label>
+              <input
+                type="file"
+                id="attachment"
+                accept=".pdf, .jpg, .png, .doc, .docx"
+                onChange={handleFileChange}
+              />
+              <button type="button" className="upload-btn" onClick={handleFileUpload}>
+                Upload Attachment
+              </button>
+              {uploadStatus && (
+                <p
+                  className={`upload-status ${
+                    uploadStatus === "File uploaded successfully!"
+                      ? "success"
+                      : "error"
+                  }`}
+                >
+                  {uploadStatus}
+                </p>
+              )}
+            </div>
           <button type="submit" className="submit-btn">Submit</button>
         </form>
       </div>
     </section>
 
+    <section className="map-section">
+      
+      <div className="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.5735064498363!2d73.83004327496596!3d18.638243282478317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9c745555555%3A0xc7aa3d886bd44d2a!2sSheetal%20Rubber%20Products%20(P)%20Ltd!5e0!3m2!1sen!2sin!4v1733346721960!5m2!1sen!2sin&center=18.638243282478317,73.83004327496596&zoom=15"
+        style={{
+          border: 0,
+          width: "100%",
+          height: "50vh",
+        }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+      </div>
+    </section>
+    
+    
       <section className="factory-img">
         </section>
   

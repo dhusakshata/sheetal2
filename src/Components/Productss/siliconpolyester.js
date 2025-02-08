@@ -6,6 +6,8 @@ import Silicon12 from "../../Images/silicon12.png";
 import carImage from "../../Images/car2.jpeg";
 import { Link } from "react-router-dom"; 
 
+import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
+
 const ProductPage = () => {
   const siliconproducts = [
     {
@@ -18,7 +20,7 @@ const ProductPage = () => {
       id: 2,
       
       image: Silicon12,
-      description: "Description of Product 2. Crafted with premium materials for longevity.",
+    
     },
     
   ];
@@ -26,8 +28,9 @@ const ProductPage = () => {
   return (
     <div className="silicon-page">
       {/* Hero Section */}
-     
+      <Breadcrumb currentPage="SILICON-POLYESTER HOSES" isSubProduct={true} />
   <section className="siliconhero">
+ 
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
               <div className="vertical-line">
@@ -37,7 +40,7 @@ const ProductPage = () => {
                <h1 style={{textAlign:"left",marginLeft:"30px" }}>
               SILICON-POLYESTER HOSES
                 </h1>
-               <h2  style={{textAlign:"left",margin:"20px" ,fontWeight:"bold",fontSize:"24px"}}>Silicone Power. Flexible Solutions.
+               <h2  style={{textAlign:"left",marginLeft:"-160px" ,fontWeight:"bold",fontSize:"24px"}}>Silicone Power. Flexible Solutions.
                 </h2>
                 
              </div>
@@ -58,9 +61,14 @@ const ProductPage = () => {
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section" >
             <div className="product-content">
+              <div style={{marginLeft:"-70px",}}>
               <img src={Silicon11} alt={product.title} className="product-image" />
-              <h3>{product.title}</h3>
-              <p><b>Silicone-Polyester hoses </b>are designed specifically for use in demanding radiator, heater, and coolant transfer applications. Constructed from high-quality silicone reinforced with durable polyester fabric, these hoses offer excellent resilience and reliable performance in harsh conditions. This combination of versatility, durability, and adaptability to extreme environments makes Silicone-Polyester hoses a premium choice for automotive, industrial, and other applications requiring reliable coolant and heat transfer solutions.</p>
+              </div>
+             
+              <div style={{marginLeft:"20px",marginTop:"-40px"}}>
+              <p style={{marginLeft:"20px",marginTop:"80px"}}><b>Silicone-Polyester hoses </b>are designed specifically for use in demanding radiator, heater, and coolant transfer applications. Constructed from high-quality silicone reinforced with durable polyester fabric, these hoses offer excellent resilience and reliable performance in harsh conditions. This combination of versatility, durability, and adaptability to extreme environments makes Silicone-Polyester hoses a premium choice for automotive, industrial, and other applications requiring reliable coolant and heat transfer solutions.
+              </p>
+              </div>
             </div>
           </div>
         ))}
@@ -75,8 +83,8 @@ const ProductPage = () => {
               <img src={Silicon12} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
               </div>
               
-            <div style={{marginLeft:"20px",marginTop:"-100px"}}>
-                <p style={{marginLeft:"20px",marginTop:"-50px"}}><h3>Key Features and Benefits:</h3>
+            <div style={{marginLeft:"20px",marginTop:"-20px"}}>
+                <p style={{marginLeft:"20px",marginTop:"80px"}}><h3>Key Features and Benefits:</h3>
           <ul>
             <li>
               Our Silicone Hoses are having good resistance to weather and ozone and resist

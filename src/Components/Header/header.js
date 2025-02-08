@@ -366,14 +366,19 @@ function Header() {
     { id: 8, name: "Inhouse", link: "/inhouse" },
 
     //Product 
-    { id: 9, name: "Assembly", link: "/Assembly" },
-    { id: 10, name: "EPDM", link: "/epdm" },
-    { id: 11, name: "Fuel Tube", link: "/Fueltube" },
-    { id: 12, name: "Marine Wet Hose", link: "/marinewethose" },
-    { id: 13, name: "Moulded", link: "/moulded" },
-    { id: 14, name: "Organic", link: "/organic" },
-    { id: 15, name: "Silicon Polyester", link: "/siliconpolyester" },
-    { id: 16, name: "Turbocharger", link: "/turbochargerhose" },
+    { id: 9, name: "Silicon Polyester", link: "/siliconpolyester" },
+    { id: 10, name: "Turbocharger", link: "/turbochargerhose" },
+    { id: 11, name: "Marine Wet Hose", link: "/marinewethose" },
+    { id: 12, name: "EPDM", link: "/epdm" },
+     { id: 13, name: "Organic", link: "/organic" },
+    { id: 14, name: "Assembly", link: "/Assembly" },
+    { id: 15, name: "Wired Reinforced", link: "/wired" },
+   
+    { id: 16, name: "Fuel Tube", link: "/Fueltube" },
+
+    { id: 17, name: "Moulded", link: "/moulded" },
+
+   
   
     // Manufacturing facilities
     { id: 17, name: "hot-cold-feed", link: "/hot-cold-feed" },
@@ -504,7 +509,7 @@ function Header() {
         />
         </Logo>
         <ContactInfo>
-          <span> <a href="tel:+91 9922058133" className="Contact-item">
+          <span> <a href="tel:+ 91 -20 -27130244 " className="Contact-item">
               <FaPhoneAlt className="icon" />  +91 -20 -27130244 ,+91 -20 -27130794
              </a></span>
           <span>

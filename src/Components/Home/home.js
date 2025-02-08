@@ -50,10 +50,15 @@ const Home = () => {
     };
   }, []);
 
- 
+
 
  // Array of imported images
- const images = [Img1, Img2, Img3, Img4, Img5, Img6];
+ const images = [{ src: Img1, name: "Commercial Vehicles" },
+  { src: Img2, name: "Marine" },
+  { src: Img3, name: "Industrial" },
+  { src: Img4, name: "Construction" },
+  { src: Img5, name: " Military" },
+  { src: Img6, name: "Agriculture" }];
 
  const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -67,6 +72,22 @@ const Home = () => {
 
    return () => clearInterval(interval); // Cleanup on component unmount
  }, [images.length]);
+
+
+// Array of imported images
+
+
+// Automatically switch images every 3 seconds
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  }, 3000); // Change slide every 3 seconds
+
+  return () => clearInterval(interval); // Cleanup on component unmount
+}, [images.length]);
+
 
 
   const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
@@ -86,7 +107,11 @@ const Home = () => {
     <div>
       {/* Main Hero Section */}
       <section  className={`hero-section ${backgroundChanged ? "bg-changed" : ""}`}>
+        
         <div className="hero-content">
+        <div className="scroll-down" onClick={handleScrollToBottom}>
+                     <BsArrowDownCircle size={40}  style={{color:"black"}} />
+                    </div>
         <h1 class="animate-top">Sheetal Rubber Products (P) Ltd.</h1>
 
           <div class="animated-text">
@@ -96,9 +121,7 @@ const Home = () => {
 </div>
 
 
-            <div className="scroll-down" onClick={handleScrollToBottom}>
-                     <BsArrowDownCircle size={50}  style={{color:"black"}} />
-                    </div>
+            
         </div>
       </section>
 
@@ -135,7 +158,7 @@ const Home = () => {
       {/* Product Section */}
       <section className="product-section" id="product">
       <div className="section-content">
-        <h2>PRODUCTS</h2>
+        <h2>OUR PRODUCTS</h2>
         <p>
           At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including:
           <b>
@@ -226,22 +249,28 @@ const Home = () => {
 </section>
 
 
-
-
-
-
       
  {/* Application Section  */}
       <section
       className="application-section"
-      style={{ backgroundImage: `url(${images[currentIndex]})` }}
+      style={{ backgroundImage: `url(${images[currentIndex].src})` ,
+     backgroundSize: "cover",
+        backgroundPosition: "center"
+    }}
       id="application"
     >
       <div className="section-content   application-content">
-        <h2 className="application-heading">OUR APPLICATIONS</h2>
-      
+        
+       {/* Display the name of the current image */}
+       <h3 className="image-name">{images[currentIndex].name}</h3>
+
       </div>
     </section>
+
+
+
+
+
     </div>
   );
 };

@@ -30,7 +30,7 @@ function CareerPage() {
           We're Hiring! Find Your Dream Role Here
           </p>
           <div className="scroll-down" onClick={handleScrollDown}>
-           <BsArrowDownCircle size={30} />
+           <BsArrowDownCircle size={40} style={{margin:"30px"}}/>
           </div>
         </div>
       </div>

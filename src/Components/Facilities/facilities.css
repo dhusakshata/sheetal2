@@ -472,10 +472,12 @@ margin-top: -50px;
   .manufacturing-content {
     width: 500px !important;
     margin-left: 150px;
+    font-size: 15px;
   }
 
   .manufacturing-content1 {
     width: 500px !important;
+    font-size: 15px;
   }
 }
 
@@ -503,11 +505,13 @@ margin-top: -50px;
   .manufacturing-content {
     width: 90%;
     margin-left: 5%;
+    font-size: 15px;
   }
 
   .manufacturing-content1 {
     width: 90%;
     margin-left: 5%;
+    font-size: 15px;
   }
 
   .manufacturing-card:nth-of-type(1),
@@ -546,6 +550,7 @@ margin-top: -50px;
     margin-left: 0;
     padding: 10px;
     text-align: center;
+    font-size: 15px;
   }
 
   .manufacturing-card {

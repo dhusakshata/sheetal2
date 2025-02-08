@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Product.css";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
+import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 import { Link } from "react-router-dom"; 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -60,6 +61,7 @@ useEffect(() => {
   return (
     <div className="Product-page">
       {/* Hero Section */}
+      <Breadcrumb currentPage="Products" />
       <section className=" Product-hero" >
         <div className="Product-hero-content">
           {/* Left Section */}
@@ -72,7 +74,7 @@ useEffect(() => {
            <h1 style={{textAlign:"left",marginLeft:"30px"}}>
            HIGH PERFORMANCE PRODUCTS
             </h1>
-           <h2  style={{textAlign:"left",margin:"20px" ,fontWeight:"bold",fontSize:"24px"}}>Flexible Solutions. Lasting Performance.
+           <h2  style={{textAlign:"left",margin:"20px", marginLeft:"32px" ,fontWeight:"bold",fontSize:"24px"}}>Flexible Solutions. Lasting Performance.
             </h2>
             
             <p  style={{textAlign:"left",fontWeight:"bold",fontSize:"16px",width:"700px",marginLeft:"30px",marginTop:"-20px"}} >
