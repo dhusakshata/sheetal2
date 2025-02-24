@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import "./aboutus.css";
+import GetInTouch from "../GetInTouch.js";
 import { BsArrowDownCircle } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -159,6 +160,9 @@ const handleScrollDown = () => {
           </div>
         </div>
       </section>
+      <section className="getin-touch">
+<GetInTouch />
+  </section>
     </div>
   );
 };

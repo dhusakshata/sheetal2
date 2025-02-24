@@ -1,6 +1,6 @@
 import React,{ useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 import "./home.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,10 +8,10 @@ import { Navigation,Autoplay } from "swiper/modules"; // Correct way to import N
 import "swiper/css";
 import "swiper/css/navigation";
 import { BsArrowDownCircle } from "react-icons/bs";
-
 import ProductSection2 from "./Productsection2.js";
-
-
+import GetInTouch from "../GetInTouch.js";
+import HeroSection from "./herosection.js";
+import Banner from "./banner.js";
 //Logos
 import logo1 from "../../Images/client1.png"; 
 import logo2 from "../../Images/client2.jpg";
@@ -25,10 +25,16 @@ import logo7 from "../../Images/client7.png";
 // Application Area Images
 import Img1 from "../../Images/Commercial-Vehicle.png";
 import Img2 from "../../Images/marine3.jpg";
-import Img3 from "../../Images/images-hoses.webp";
+import Img3 from "../../Images/Aviation.jpg";
 import Img4 from "../../Images/Image4.png";
 import Img5 from "../../Images/automotive-rubber-hoses.jpg";
 import Img6 from "../../Images/Agricultural-Spray-Hose.jpg";
+import Img7 from "../../Images/military.jpg";
+import Img8 from "../../Images/off-highway-truck.jpg";
+import Img9 from "../../Images/mining.jpg";
+import Img10 from "../../Images/railway.png";
+
+
 
 const Home = () => {
   const [backgroundChanged, setBackgroundChanged] = useState(false);
@@ -53,40 +59,56 @@ const Home = () => {
 
 
  // Array of imported images
- const images = [{ src: Img1, name: "Commercial Vehicles" },
+ const images = [
+  { src: Img1, name: "Automobiles" },
   { src: Img2, name: "Marine" },
-  { src: Img3, name: "Industrial" },
+  { src: Img3, name: "Aviation" },
   { src: Img4, name: "Construction" },
-  { src: Img5, name: " Military" },
-  { src: Img6, name: "Agriculture" }];
+  { src: Img5, name: "Automobile" },
+  { src: Img6, name: "Agriculture" },
+  { src: Img7, name: "Defence" },
+  { src: Img8, name: "OffHighway" },
+  { src: Img9, name: "Minning" },
+  { src: Img10, name: "Railway" },
+];
 
- const [currentIndex, setCurrentIndex] = useState(0);
+//  const [currentIndex, setCurrentIndex] = useState(0);
 
- // Automatically switch images every 3 seconds
- useEffect(() => {
-   const interval = setInterval(() => {
-     setCurrentIndex((prevIndex) =>
-       prevIndex === images.length - 1 ? 0 : prevIndex + 1
-     );
-   }, 3000); // Change slide every 3 seconds
+//  // Automatically switch images every 3 seconds
+//  useEffect(() => {
+//    const interval = setInterval(() => {
+//      setCurrentIndex((prevIndex) =>
+//        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+//      );
+//    }, 3000); // Change slide every 3 seconds
 
-   return () => clearInterval(interval); // Cleanup on component unmount
- }, [images.length]);
+//    return () => clearInterval(interval); // Cleanup on component unmount
+//  }, [images.length]);
 
+const [currentIndex, setCurrentIndex] = useState(0);
+const [loaded, setLoaded] = useState(true); // Track loading state
 
-// Array of imported images
+// Preload images
+useEffect(() => {
+  images.forEach((image) => {
+    const img = new Image();
+    img.src = image.src;
+  });
+}, []);
 
-
-// Automatically switch images every 3 seconds
 useEffect(() => {
   const interval = setInterval(() => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  }, 3000); // Change slide every 3 seconds
+    setLoaded(false); // Start fade-out effect
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+      setLoaded(true); // Start fade-in effect after changing image
+    }, 500); // Match CSS transition duration
+  }, 3000); // Change every 3 seconds
 
-  return () => clearInterval(interval); // Cleanup on component unmount
-}, [images.length]);
+  return () => clearInterval(interval);
+}, []);
 
 
 
@@ -101,17 +123,17 @@ useEffect(() => {
     });
   };
   
- 
+  
 
   return (
     <div>
       {/* Main Hero Section */}
-      <section  className={`hero-section ${backgroundChanged ? "bg-changed" : ""}`}>
+        {/* <section  className={`hero-section ${backgroundChanged ? "bg-changed" : ""}`}>
         
         <div className="hero-content">
-        <div className="scroll-down" onClick={handleScrollToBottom}>
-                     <BsArrowDownCircle size={40}  style={{color:"black"}} />
-                    </div>
+         <div className="scroll-down" onClick={handleScrollToBottom}>
+                     <BsArrowDownCircle size={40}  style={{color:"white"}} />
+                    </div> 
         <h1 class="animate-top">Sheetal Rubber Products (P) Ltd.</h1>
 
           <div class="animated-text">
@@ -119,12 +141,10 @@ useEffect(() => {
   <span class="to"> TO </span>
   <span class="perform"> PERFORM</span>
 </div>
-
-
-            
         </div>
-      </section>
-
+      </section>   */}
+       {/* <Banner />  */}
+   <HeroSection/>   
       {/* About Us Section */}
 <section className="about-section" id="about">
   <div className="overlay1">
@@ -251,25 +271,41 @@ useEffect(() => {
 
       
  {/* Application Section  */}
-      <section
+      {/* <section
       className="application-section"
       style={{ backgroundImage: `url(${images[currentIndex].src})` ,
-     backgroundSize: "cover",
-        backgroundPosition: "center"
+     backgroundSize: "contain",
+        backgroundPosition: "center",
     }}
       id="application"
     >
       <div className="section-content   application-content">
         
-       {/* Display the name of the current image */}
+       
        <h3 className="image-name">{images[currentIndex].name}</h3>
 
       </div>
-    </section>
+      
+    </section> */}
+ <section
+    className={`application-section ${loaded ? "fade-in" : "fade-out"}`}
+    style={{
+      backgroundImage: `url(${images[currentIndex].src})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+    id="application"
+  >
+    <div className="section-content application-content">
+      <h3 className="image-name">{images[currentIndex].name}</h3>
+    </div>
+  </section>
 
 
-
-
+ <section className="getin-touch">
+<GetInTouch />
+  </section> 
+  
 
     </div>
   );

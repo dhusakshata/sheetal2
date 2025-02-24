@@ -454,11 +454,11 @@ background-attachment: fixed;
   
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image fills the space without distortion */
+    object-fit: cover !important; /* Ensures the image fills the space without distortion */
   }
 .roll{
   height: 80vh;
-  background-image: url('../../Images/3rollbg3.jpg');
+  background-image: url('../../Images/3rollcalendaringbg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -471,7 +471,7 @@ background-attachment: fixed;
   position: relative;
 }
 .roll-article{
-  background-image: url('../../Images/3rollbg3.jpg');
+  background-image: url('../../Images/3rollcalendaringbg.jpg');
   background-position:50% center !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -528,7 +528,7 @@ background-attachment: fixed;
 /*Rubber-Mixing*/
 .rubber-mixing{
   height: 80vh;
-  background-image: url('../../Images/rubbermixing\ bg.jpg');
+  background-image: url('../../Images/rubber\ mixing\ mill.avif') !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -541,7 +541,7 @@ background-attachment: fixed;
   position: relative;
 }
 .rubber-mixing-article{
-  background-image: url('../../Images/rubbermixing\ bg.jpg');
+  background-image: url('../../Images/rubber\ mixing\ mill.avif');
   background-position:50% center !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -551,20 +551,6 @@ background-attachment: fixed;
 	z-index: 1;
 	color: #000;
 	background-attachment: fixed;
-}
-.rubber-mixing{
-  height: 100vh;
-  background-image: url('../../Images/rubbermixing\ bg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  position: relative;
 }
 .rubbermixing-hero{
   background-size: cover !important;
@@ -612,5 +598,6 @@ background-attachment: fixed;
   position: relative;
 }
 .knittinghero-image{
-  background-size: cover;
+  background-size: cover !important;
+  width: 100%;
 }

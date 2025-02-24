@@ -4,7 +4,7 @@ import Knitting from "../../Images/knitting2.png";
 import "./autoclave.css";
 import { Link } from "react-router-dom";
 import { BsArrowDownCircle } from "react-icons/bs";
-import hoses from "../../Images/knittingbg2.jpg";
+import hoses from "../../Images/knnitingbg.jpg";
 
 const Inhousefacility = () => {
 
@@ -23,9 +23,9 @@ const Inhousefacility = () => {
         <div className="subhero-left">
           <div className="subhero-text-content">
           <h1 style={{fontSize:"3rem",textTransform:"uppercase"}}>Knitting Machines</h1>
-          <div className="scroll-down" onClick={handleScrollDown}>
+          {/* <div className="scroll-down" onClick={handleScrollDown}>
                                <BsArrowDownCircle size={30} />
-                              </div>
+                              </div> */}
           </div>
         </div>
         <div className="subhero-right">

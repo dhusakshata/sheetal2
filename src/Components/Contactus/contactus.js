@@ -1,10 +1,12 @@
 
 
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "./contactus.css";
 import { BsArrowDownCircle } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 import {
   FaPhoneAlt,
  FaEnvelope,
@@ -13,6 +15,7 @@ import {
 
 
 const ContactUs = () => {
+  const navigate = useNavigate();
 
   const handleScrollDown = () => {
     window.scrollBy({
@@ -58,7 +61,7 @@ const [selectedFile, setSelectedFile] = useState(null);
         <div className="contact-hero-content">
       
       <div className="contact-content">
-        <div className="vertical-line22"></div>
+      
         <div className="contact-text">
           <h1>GET IN TOUCH</h1>
           <h2>How can we help?</h2>
@@ -84,6 +87,21 @@ const [selectedFile, setSelectedFile] = useState(null);
         <p><FaPhoneAlt className="icon" />  +91 -20 -27130244 ,+91 -20 -27130794</p>
         <p><FaEnvelope className="icon" />  sheetalrubber@gmail.com</p>
         <p><FaEnvelope className="icon" />  sales@sheetalrubber.co.in</p>
+
+
+        <div className="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.5735064498363!2d73.83004327496596!3d18.638243282478317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9c745555555%3A0xc7aa3d886bd44d2a!2sSheetal%20Rubber%20Products%20(P)%20Ltd!5e0!3m2!1sen!2sin!4v1733346721960!5m2!1sen!2sin&center=18.638243282478317,73.83004327496596&zoom=15"
+        style={{
+          border: 0,
+          width: "100%",
+          height: "50vh",
+        }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+      </div>
        </div>
       <div className="form-section">
   
@@ -141,7 +159,7 @@ const [selectedFile, setSelectedFile] = useState(null);
       </div>
     </section>
 
-    <section className="map-section">
+    {/* <section className="map-section">
       
       <div className="map-container">
       <iframe
@@ -156,11 +174,48 @@ const [selectedFile, setSelectedFile] = useState(null);
         referrerPolicy="no-referrer-when-downgrade"
       />
       </div>
-    </section>
+    </section> */}
     
+    <section className="partnership-section">
+  <div className="partnership-content">
+    <div className="partnership-text">
+      <h2>We Are Open For Partnership !!!</h2>
+      <p>
+        Due to our flexible structure, we are always open to partners.
+      </p>
+      <p>
+        This creates conditions for long-term and fruitful cooperation.
+        Individual approach to collaboration allows us to develop mutually
+        beneficial relationships with each of the partners.
+      </p>
+      <p>
+        We work with our partners, suppliers, startups, universities, students, 
+        talents, technology enthusiasts, creators, and creative minds to turn 
+        exciting ideas into innovations and bring them to life.
+      </p>
+      {/* <button className="contact-button" onClick={() => window.location.href = "/contactus"}>
+        Contact Us
+      </button> */}
+ 
+<Link 
+      to="/contactus" 
+      className="contact-button" 
+      onClick={() => window.scrollTo(0, 0)}
     
-      <section className="factory-img">
-        </section>
+    >
+      Contact Us
+    </Link>
+
+
+    </div>
+    <div className="partnership-image">
+      <img src={require("../../Images/partnership.jpg")} alt="Partnership" />
+    </div>
+  </div>
+</section>
+
+      {/* <section className="factory-img">
+        </section> */}
   
     </div>
   );

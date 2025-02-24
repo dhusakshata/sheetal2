@@ -9,6 +9,7 @@ import Product from "./Components/Productss/Product.js";
 import Career from "./Components/careers/career.js"
 import ContactUs from "./Components/Contactus/contactus.js";
 import Footer from "./Components/Footer/footer.js";
+import GetInTouch from "./Components/GetInTouch.js";
 
 import SiliconPolyester from "./Components/Productss/siliconpolyester.js";
 import Turbocharger from "./Components/Productss/turbochargerhose.js";
@@ -98,8 +99,9 @@ const App = () => {
         <Route path="/Muffle-furnance" element={<Inhouse6 />} />
       </Routes>
     
-
+{/* <GetInTouch /> */}
       {/* Shared footer */}
+
       <Footer />
     </Router>
   );

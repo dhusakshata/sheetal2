@@ -138,6 +138,7 @@
 
 .dispersionsub-content4{
   width: 1200px;
+ 
   gap: 60px;
   text-align: left;
   display: flex;
@@ -161,6 +162,9 @@
 	z-index: 1;
 	color: #000;
 	background-attachment: fixed;
+}
+.content4{
+  height: 60vh !important;
 }
 article .content {
   position: relative;

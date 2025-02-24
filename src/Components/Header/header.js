@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { FaSearch, FaChevronDown, FaTimes, FaBars } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import Logos from "../../Images/logo1.png";
+import Logos from "../../Images/logo2.webp";
 import { useTranslation } from "react-i18next";
 import "../../i18n"; // Import your i18n configuration
-
+import { BsArrowDownCircle } from "react-icons/bs";
 
 import {
   FaPhoneAlt,
@@ -329,6 +329,17 @@ const Sidebar = styled.div`
 
 function Header() {
 
+
+  const handleScrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+
+
+
+
   const { t } = useTranslation();
 
 
@@ -443,6 +454,7 @@ function Header() {
   const handleLinkClick = () => {
     setShowSearch(false);
     setActiveDropdown(null);
+    setIsDropdownOpen(false);
   };
 
   const products = [
@@ -520,6 +532,9 @@ function Header() {
         </ContactInfo>  
       </TopSection>
       <NavBar style={{ backgroundColor: "#1e202c", borderTop: "1px solid gray" }}>
+      <div className="scroll-down" onClick={handleScrollToBottom}>
+                     <BsArrowDownCircle size={40}  style={{color:"white",marginTop:"-30px"}} />
+                    </div>
         <NavItem>
           <Link to="/" style={{ color: 'white', fontWeight: "bold", textDecoration: 'none' }}>   {t("home")}</Link>
         </NavItem>
@@ -581,14 +596,19 @@ function Header() {
             onMouseEnter={() => setActiveSubDropdown(facility.name)}
             onMouseLeave={() => setActiveSubDropdown(null)}
           >
-            <Link to={facility.link} style={{ color: "white", textDecoration: "none" }}>
+            <Link to={facility.link} style={{ color: "white", textDecoration: "none" }} 
+               onClick={handleLinkClick}
+            >
               {facility.name}
+              
             </Link>
 
             <SubDropdownMenu isOpen={activeSubDropdown === facility.name}>
               {facility.subItems.map((subItem, idx) => (
                 <DropdownItem key={idx}>
-                  <Link to={subItem.link} style={{ color: "white", textDecoration: "none" }}>
+                  <Link to={subItem.link} style={{ color: "white", textDecoration: "none" }}
+                    onClick={handleLinkClick} 
+                  >
                     {subItem.name}
                   </Link>
                 </DropdownItem>
@@ -707,3 +727,4 @@ function Header() {
 }
 
 export default Header;
+

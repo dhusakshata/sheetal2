@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;  
+  height: 50vh;  
   background: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
   background-attachment: fixed; 
   color: #fff;
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-margin-top: -100px;
+margin-top: -50px;
 margin-left: -200px;
   gap: 20px;
   z-index: 10;
@@ -484,5 +484,88 @@ opacity: 0.6;
 
   .contact-text p {
     font-size: 1rem;
+  }
+}
+
+
+.partnership-section {
+  background: url('../../Images/offering2.avif'); /* Full background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  padding: 60px 10px;
+  color:black;
+}
+
+.partnership-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
+}
+
+.partnership-text {
+  flex: 1;
+}
+
+.partnership-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.partnership-text p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.contact-button {
+  background-color: #ffa800;
+  color: white !important;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  background-color:  #fcc14c;
+  color: black !important;
+}
+
+.partnership-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.partnership-image img {
+  max-width: 100%;
+  height: auto;
+  border: 4px solid white;
+  transition: transform 0.3s ease-in-out; /* Ensures smooth scaling effect */
+}
+
+.partnership-image img:hover {
+  transform: scale(1.05); /* Slight zoom effect without shifting */
+}
+
+@media (max-width: 768px) {
+  .partnership-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .partnership-content {
+    flex-direction: column;
+    gap: 30px;
   }
 }

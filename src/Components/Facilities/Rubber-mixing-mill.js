@@ -23,13 +23,13 @@ const Inhousefacility = () => {
         <div className="subhero-left">
           <div className="subhero-text-content">
           <h1 style={{fontSize:"3rem",textTransform:"uppercase"}}>rubber mixing mill</h1>
-          <div className="scroll-down" onClick={handleScrollDown}>
+          {/* <div className="scroll-down" onClick={handleScrollDown}>
                                <BsArrowDownCircle size={30} />
-                              </div>
+                              </div> */}
           </div>
         </div>
         <div className="subhero-right">
-          <img src={hoses} alt="Hero Background" className="rollhero-image" />
+          <img src={RubberMixing} alt="Hero Background" className="rollhero-image" />
         </div>
       </div>
     <section className="rubber-mixing">

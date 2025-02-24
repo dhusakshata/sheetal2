@@ -1,0 +1,81 @@
+.homepage-container {
+  width: 100%;
+  height: 80vh !important;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Swiper container */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Container for each slide */
+.slide-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  
+}
+
+
+/* Styling for the images */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;   opacity: 1 !important; 
+  filter: none !important; /* Remove unwanted effects */
+}
+
+/* Overlay for text */
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent !important; /* Make sure it's fully transparent */
+  opacity: 1 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text styling */
+.slide-text {
+  margin-top: -200px !important;
+  color: white !important;
+  font-size: 4rem !important;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow words to wrap */
+}
+
+/* Split words into two parts */
+.designed, .perform {
+  display: inline-block;
+  padding: 0.5rem;
+}
+/* Container for the split effect */
+.image-slice {
+  position: absolute;
+  width: 5%; /* Adjust for smoother slicing */
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

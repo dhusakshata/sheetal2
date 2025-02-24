@@ -127,7 +127,7 @@ const Inhousefacility = () => {
 
 </figure>
 
-<figure className="sub-card">
+<figure className="sub-card content4">
 	
   <div className="sub-section">
   <h1 style={{textAlign:"center", margin:"30px"}}>Why This Sequence is Important for a Rubber-Producing Company?</h1>

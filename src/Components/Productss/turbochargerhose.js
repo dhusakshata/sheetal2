@@ -1,6 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import "./silicon.css";
+import GetInTouch from "../GetInTouch.js";
 import Turbocharger11 from "../../Images/turbocharger11.png";
 import Turbocharger12 from "../../Images/turbocharger12.png";
 
@@ -31,8 +32,8 @@ const ProductPage = () => {
   <section className="turbochargerhero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
-              <div className="vertical-line">
-              </div>
+              {/* <div className="vertical-line" style={{marginLeft:"50px"}}>
+              </div> */}
                 
                 
               
@@ -137,11 +138,14 @@ const ProductPage = () => {
 </article>
     </section>
 
-    <section className="background-section">
+    {/* <section className="background-section">
   <div className="background-overlay">
     
   </div>
-</section>
+</section> */}
+<section className="getin-touch">
+<GetInTouch />
+  </section>
 
     </div>
   );

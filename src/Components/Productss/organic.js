@@ -1,9 +1,9 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import "./silicon.css";
-import Organic1 from "../../Images/organic-rubber1.png";
-import Organic2 from "../../Images/organic-industrial-rubber-hoses-485.jpg";
-import carImage from "../../Images/car.avif";
+import Organic1 from "../../Images/8513.png";
+import Organic2 from "../../Images/8552.png";
+import GetInTouch from "../GetInTouch.js";
 import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 
 const ProductPage = () => {
@@ -17,7 +17,7 @@ const ProductPage = () => {
     {
       id: 2,
       
-      image: Organic1,
+      image: Organic2,
       
     },
     
@@ -30,8 +30,8 @@ const ProductPage = () => {
   <section className="organichero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
-              <div className="vertical-line">
-                </div>
+              {/* <div className="vertical-line" style={{marginLeft:"50px"}}>
+                </div> */}
 
                <div className="subproduct-herodata">
                <h1 style={{textAlign:"left",marginLeft:"30px"}}>
@@ -58,11 +58,11 @@ const ProductPage = () => {
   {siliconproducts.map((product, index) => (
           <div key={product.id}className="siliconproduct-section">
             <div className="product-content">
-              <div style={{marginTop:"-230px"}} >
-              <img src={Organic1} alt={product.title} className="product-image" style={{width:"900px",height:"500px",marginBottom:"-100px",marginLeft:"10px"}}/>
+              <div style={{marginTop:"-150px"}} >
+              <img src={Organic1} alt={product.title} className="product-image" style={{width:"900px",marginTop:"-200px",marginLeft:"10px",marginTop:"-50px"}}/>
               </div>
           
-            <div style={{marginTop:"-150px"}} >
+            <div style={{marginTop:"-50px"}} >
             <p><b>Organic rubber hoses</b>, primarily made from natural rubber (NR), offer a unique blend of properties and sustainability. Derived from the sap of rubber trees, natural rubber provides excellent elasticity, resilience, and durability.Designed for low-temperature air, water, and fuel
            transfer, with material options like SBR,
           PVC/NBR, Neoprene, Vamac, and NBR for
@@ -83,7 +83,12 @@ const ProductPage = () => {
   {siliconproducts.map((product, index) => (
     <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
       <div className="product-content">
-        <div style={{ marginLeft: "20px",marginTop:"320px"}}>
+      <div style={{marginTop:"-80px"}} >
+              <img src={Organic2} alt={product.title} className="product-image" style={{width:"1000px",marginTop:"-90px",marginLeft:"10px"}}/>
+              </div>
+          
+
+        <div style={{ marginLeft: "20px",marginTop:"-10px"}}>
           <h3>Key Features and Benefits:</h3>
           <ul>
             <li>The reinforcement fabrics used in our hoses are typically made from Polyester and Nylon, with Kevlar/Aramid sometimes used for higher temperatures or based on customer specifications.</li>
@@ -104,12 +109,14 @@ const ProductPage = () => {
    
 
 
-    <section className="background-section">
+    {/* <section className="background-section">
   <div className="background-overlay">
     
   </div>
-</section>
-
+</section> */}
+<section className="getin-touch">
+<GetInTouch />
+  </section>
     </div>
   );
 };

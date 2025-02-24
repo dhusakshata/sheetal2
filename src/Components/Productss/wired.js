@@ -1,9 +1,9 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import "./silicon.css";
-import Wired1 from "../../Images/wire.png";
-import Wired11 from "../../Images/wired11.png";
-
+import Wired1 from "../../Images/wired11.png";
+import Wired11 from "../../Images/wirede12-removebg-preview.png";
+import GetInTouch from "../GetInTouch.js";
 import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 
 const ProductPage = () => {
@@ -31,9 +31,9 @@ const ProductPage = () => {
   <section className="wiredhero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
-              <div className="vertical-line">
+              {/* <div className="vertical-line" style={{marginLeft:"50px"}}>
                  
-              </div>
+              </div> */}
                  
                 
              
@@ -85,7 +85,7 @@ environments, with a temperature range of
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-              <img src={Wired11} alt={product.title} className="product-image"  />
+              <img src={Wired11} alt={product.title} className="product-image" style={{width:"500px"}} />
 
               <div style={{marginLeft:"20px"}}>
  <p>
@@ -110,43 +110,19 @@ environments, with a temperature range of
         ))}
 	</figure>
 	
-{/* 	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=737' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>#impoCSSible is nothing</h2>
-			<p>You don´t need Javascript or #CSS processors either for almost 100% of what you want to do.</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=870' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Idea from E.Bouças´s <a href='https://codepen.io/eduardoboucas/full/qdaOWv/'>pen</a></h2>
-			<p>Without jQuery or Javascript, nor fixed position (bye IOs problems)</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=743' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Images from unsplash.it</h2>
-			<p>Because it´s the best for demos. Thanks, guys!</p>
-		</div>
-	</section>
-	 */}
-	
 	
 </article>
     </section>
 
- 
+    {/* <section className="background-section">
+  <div className="background-overlay">
+    
+  </div>
+</section> */}
+<section className="getin-touch">
+<GetInTouch />
+  </section>
+
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import "./silicon.css";
+import GetInTouch from "../GetInTouch.js";
 import Silicon11 from "../../Images/silicon11.png";
 import Silicon12 from "../../Images/silicon12.png";
 import carImage from "../../Images/car2.jpeg";
@@ -33,8 +34,8 @@ const ProductPage = () => {
  
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
-              <div className="vertical-line">
-              </div>
+              {/* <div className="vertical-line" style={{marginLeft:"50px"}}>
+              </div> */}
                
                <div className="subproduct-herodata">
                <h1 style={{textAlign:"left",marginLeft:"30px" }}>
@@ -111,13 +112,16 @@ const ProductPage = () => {
 	
 </article>
     </section>
-    <section className="background-section">
+    
+    {/* <section className="background-section">
   <div className="background-overlay">
     
   </div>
-</section>
+</section> */}
 
-
+<section className="getin-touch">
+<GetInTouch />
+  </section>
  
     </div>
   );

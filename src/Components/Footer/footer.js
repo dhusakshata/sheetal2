@@ -348,7 +348,7 @@ const Footer = () => {
             </a>
             <a href="mailto:sales@sheetalrubber.co.in" className="Contact-item">
               <FaEnvelope className="icon" />sales@sheetalrubber.co.in
-            </a>
+            </a>   
           </div>
 
           {/* Social Icons Section */}
@@ -371,9 +371,10 @@ const Footer = () => {
           <ul>
             <li><Link to="/siliconpolyester">Silicone–Polyester Hoses</Link></li>
             <li><Link to="/turbochargerhose">Turbocharger and CAC Hoses</Link></li>
+            <li><Link to="/marinewethose">Marine Wet Exhaust Hoses</Link></li>
             <li><Link to="/epdm">EPDM Rubber Hoses</Link></li>
             <li><Link to="/organic">Organic Rubber Hoses</Link></li>
-            <li><Link to="/marinewethose">Marine Wet Exhaust Hoses</Link></li>
+           
             <li><Link to="/Assembly">Assembly Hoses</Link></li>
             <li><Link to="/wired">Wire Reinforced Hoses</Link></li>
             <li><Link to="/fueltube">Fuel Hoses</Link></li>

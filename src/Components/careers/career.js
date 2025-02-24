@@ -1,5 +1,6 @@
 import React from "react";
 import "./career.css";
+import GetInTouch from "../GetInTouch.js";
 import { BsArrowDownCircle } from "react-icons/bs";
 import {
   FaPhoneAlt,
@@ -22,7 +23,7 @@ function CareerPage() {
         <div className="contact-hero-content">
       
       <div className="contact-content">
-        <div className="vertical-line22"></div>
+        {/* <div className="vertical-line22"></div> */}
         <div className="contact-text">
           <h1>Build Your Career with Us.</h1>
           <h2> Together, We'll Achieve Great Things.</h2>
@@ -102,6 +103,10 @@ function CareerPage() {
              </form>
            </div>
          </section>
+         
+<section className="getin-touch">
+<GetInTouch />
+  </section>
     </div>
   );
 }

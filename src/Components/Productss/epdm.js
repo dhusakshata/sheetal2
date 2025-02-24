@@ -1,6 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import "./silicon.css";
+import GetInTouch from "../GetInTouch.js";
 import EPDM1 from "../../Images/epdm11.png";
 import EPDM2 from "../../Images/epdm.png";
 
@@ -30,9 +31,9 @@ const ProductPage = () => {
   <section className="epdmhero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
-              <div className="vertical-line">
+              {/* <div className="vertical-line" style={{marginLeft:"50px"}}>
               </div>
-                
+                 */}
                 
               
               
@@ -62,7 +63,7 @@ const ProductPage = () => {
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content">
               <div style={{marginLeft:"-70px"}}>
-              <img src={EPDM1} alt={product.title} className="epdm-image product-image" />
+              <img src={EPDM1} alt={product.title} className="epdm-image product-image" style={{marginTop:"-10px"}} />
               </div>
               <h3>{product.title}</h3>
               <p>
@@ -79,9 +80,9 @@ const ProductPage = () => {
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-              <img src={EPDM2} alt={product.title} className="product-image" style={{marginRight:"15px",width:"500px",marginTop:"10px"}} />
+              <img src={EPDM2} alt={product.title} className="epdm-image2" style={{marginRight:"15px",width:"500px",marginTop:"10px"}} />
              
-          <div style={{marginLeft:"20px",marginTop:"20px"}}>
+          <div style={{marginLeft:"20px",marginTop:"10px"}}>
           <p>
               <h3>Key Features and Benefits:</h3>
           <ul>
@@ -106,11 +107,15 @@ const ProductPage = () => {
 </article>
     </section>
 
-    <section className="background-section">
+    {/* <section className="background-section">
   <div className="background-overlay">
     
   </div>
-</section>
+</section> */}
+<section className="getin-touch">
+<GetInTouch />
+  </section>
+
 
     </div>
   );

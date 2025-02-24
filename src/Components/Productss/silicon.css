@@ -25,7 +25,7 @@ body {
 }
 
 .subproduct-herodata{
-  margin-top: -170px;
+  margin-top: 20px !important;
 }
 .silicon-hero-heading {
   position: absolute; 
@@ -491,11 +491,12 @@ padding: 50px 20px;
 
 /*EPDM CSS*/
 .epdmhero{
-  background-image: url('../../Images/Epdmbg1.jpg');
+  /* background-image: url('../../Images/SDC10818.JPG') !important; */
+  background-image: url('../../Images/epdmbonnet2.jpg') !important;
   height: 80vh;
-  background-position: top right !important;
+  background-position: top center !important;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -521,7 +522,9 @@ padding: 50px 20px;
   color: white;
   position: relative;
 }
-
+.epdm-image2{
+  width: 550px !important;
+}
 /*organic CSS*/
 .organichero{
   background-image: url('../../Images/SDC10815-Photoroom.png');
@@ -541,10 +544,10 @@ padding: 50px 20px;
 }
 .organic{
   height: 100vh;
-  background-image: url('../../Images/organic-industrial-rubber-hoses-485.jpg');
+  background-image: url('../../Images/8671.png');
 	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
-padding: 50px 20px;
-	background-position: center !important;
+padding: 30px 20px;
+	background-position: bottom center !important;
   background-repeat:no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -559,7 +562,7 @@ padding: 50px 20px;
 
 /*Assembly CSS*/
 .Assemblyhero{
-  background-image: url('../../Images/assemblybg.jpg');
+  background-image: url('../../Images/Assemblyhero.webp');
   height: 80vh;
 
   background-position: center;
@@ -574,22 +577,45 @@ padding: 50px 20px;
 	padding: 50px 20px;
   background-attachment: fixed;
 }
-.Assembly{
-  height: 80vh;
-  background-image: url('../../Images/8130.png');
-	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
-padding: 50px 20px;
-	background-position: center !important;
-  background-repeat:no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
+
+/* Slideshow Container */
+.Assembly {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set height to 80% of viewport */
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
-  position: relative;
+  color: black; /* Adjust text color for contrast */
+  
 }
+
+/* Slideshow Wrapper */
+.slideshow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Individual Slide */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Active Slide */
+.slide.active {
+  opacity: 1;
+}
+
 
 
 /*wired CSS*/
@@ -611,7 +637,7 @@ padding: 50px 20px;
 }
 .wired{
   height: 80vh !important;
-  background-image: url('../../Images/Wire-Reinforced-Hosesbg.webp') !important;
+  background-image: url('../../Images/wireharness.webp') !important;
 	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
 padding: 20px 20px;
 	background-position: center !important;
@@ -627,9 +653,9 @@ padding: 20px 20px;
 }
 
 
-/*wired CSS*/
+/*fuel CSS*/
 .fuelhero{
-  background-image: url('../../Images/hoses2.jpg');
+  background-image: url('../../Images/fuelhosesbg.jpg') !important;
   height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -663,7 +689,7 @@ padding: 20px 20px;
 
 /*wired CSS*/
 .mouldedhero{
-  background-image: url('../../Images/mouldedbg.jpg');
+  background-image: url('../../Images/molded\ hoses\ \(1\).jpeg') !important;
   height: 80vh;
 
   background-position: center;
@@ -693,4 +719,8 @@ padding: 20px 20px;
   text-align: center;
   color: white;
   position: relative;
+}
+
+.moulded-image{
+  width: 450px !important;
 }

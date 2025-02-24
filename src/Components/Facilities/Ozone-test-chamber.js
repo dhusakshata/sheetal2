@@ -14,7 +14,7 @@ const ProductPage = () => {
   <section className="Ozone-hero">
   <div className="subinhousehero-content">
      <div className="Product-hero-heading subinhouse-hero-heading  ">
-              <div className="vertical-line">
+              <div className="vertical-line" style={{marginLeft:"50px"}}>
                
                 </div>
                <div className="subfacility-herodata">

@@ -3,7 +3,7 @@ import { Parallax } from "react-parallax";
 import "./silicon.css";
 import Marinewet1 from "../../Images/Marine-wet1.png";
 import Marinewet2 from "../../Images/marinehoses.png";
-
+import GetInTouch from "../GetInTouch.js";
 import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 
 const ProductPage = () => {
@@ -31,8 +31,8 @@ const ProductPage = () => {
   <section className="marinehero">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
-              <div className="vertical-line">
-                </div>
+              {/* <div className="vertical-line" style={{marginLeft:"50px"}}>
+                </div> */}
                <div className="subproduct-herodata">
                <h1 style={{textAlign:"left",marginLeft:"30px"}}>
                  MARINE WET EXHAUST HOSES
@@ -79,11 +79,11 @@ top performance in marine environments.<b>Marine wet exhaust hoses</b> are criti
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
               <div >
-              <img src={Marinewet2} alt={product.title} className="product-image" style={{width:"300px",height:"260px" ,marginTop:"135px" }}   />
+              <img src={Marinewet2} alt={product.title} className="product-image" style={{width:"300px",height:"260px" ,marginTop:"115px" }}   />
               </div>
               
              <div  style={{marginLeft:"20px"}}>
-             <p style={{marginTop:"-15px" }}>
+             <p style={{marginTop:"-20px" }}>
               <h3>Key Features and Benefits:</h3>
           <ul>
             <li>We are Manufacturing all hoses from only the highest quality rubber and reinforcement fabrics; they are designed to operate at temperatures up to + 180°C.
@@ -108,12 +108,14 @@ top performance in marine environments.<b>Marine wet exhaust hoses</b> are criti
 </article>
     </section>
 
-    <section className="background-section">
+    {/* <section className="background-section">
   <div className="background-overlay">
     
   </div>
-</section>
-
+</section> */}
+<section className="getin-touch">
+<GetInTouch />
+  </section>
     </div>
   );
 };

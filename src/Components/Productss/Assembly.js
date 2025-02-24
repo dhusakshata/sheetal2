@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Parallax } from "react-parallax";
+import GetInTouch from "../GetInTouch.js";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./silicon.css";
 import Assemblyy11 from "../../Images/Assembly11.png";
 import Assemblyy12 from "../../Images/Assembly2.png";
+
+import Assemblyy13 from "../../Images/8130.png";
+import Assemblyy14 from "../../Images/8146.png";
+
 import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 
 const ProductPage = () => {
+
+  const images = [Assemblyy13, Assemblyy14]; // Two images for the slideshow
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
   const siliconproducts = [
     {
       id: 1,
@@ -29,10 +49,10 @@ const ProductPage = () => {
   <section className="Assemblyhero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
-              <div className="vertical-line">
+              {/* <div className="vertical-line" style={{marginLeft:"50px"}}>
                  
-              </div>
-             
+              </div> */}
+{/*              
                <div className="subproduct-herodata">
                <h1 style={{textAlign:"left",marginLeft:"30px"}}>
                  ASSEMBLY HOSES
@@ -41,16 +61,31 @@ const ProductPage = () => {
                <h2  style={{textAlign:"left",margin:"30px" ,marginLeft:"-205px",fontWeight:"bold",fontSize:"24px"}}>Connect with Confidence.
                 </h2>
                 
+             </div> */}
+             
+             <div className="subproduct-herodata">
+               <h1 style={{textAlign:"left",marginLeft:"30px"}}>
+               ASSEMBLY HOSES
+                </h1>
+               <h2  style={{textAlign:"left",margin:"30px" , marginLeft:"-150px",fontWeight:"bold",fontSize:"24px"}}>Connect with Confidence.
+                </h2>
+                
              </div>
               </div>
   </div>
   </section>
 
-
-
-      <section className="siliconinfo-section Assembly">
-       
-      </section>
+  <section className="Assembly">
+      <div className="slideshow">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`slide ${index === currentIndex ? "active" : ""}`}
+            style={{ backgroundImage: `url(${image})` }}
+          ></div>
+        ))}
+      </div>
+    </section>
 
 
     <section>
@@ -131,11 +166,15 @@ const ProductPage = () => {
 	
 </article>
     </section>
-    <section className="background-section">
+    {/* <section className="background-section">
   <div className="background-overlay">
     
   </div>
-</section>
+</section> */}
+<section className="getin-touch">
+<GetInTouch />
+  </section>
+
 
  
     </div>

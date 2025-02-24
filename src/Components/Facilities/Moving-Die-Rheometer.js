@@ -14,9 +14,9 @@ const ProductPage = () => {
   <section className="subinhousehero">
   <div className="subinhousehero-content">
      <div className="Product-hero-heading subinhouse-hero-heading  ">
-              <div className="vertical-line">
+              <div className="vertical-line" style={{marginLeft:"50px"}}>
                 </div>
-               <div className="subproduct-herodata">
+               <div className="subfacility-herodata">
                <h1 style={{textAlign:"left",marginLeft:"30px",textTransform:"uppercase" }}>
                  Moving Die Rheometer
                 </h1>

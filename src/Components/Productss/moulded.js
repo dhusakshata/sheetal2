@@ -1,6 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import "./silicon.css";
+import GetInTouch from "../GetInTouch.js";
 import Moulded11 from "../../Images/8036.png";
 import Moulded12 from "../../Images/8093.png";
 import Moulded13 from "../../Images/moulded13.png";
@@ -33,9 +34,9 @@ const ProductPage = () => {
   <section className="mouldedhero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
-              <div className="vertical-line">
+              {/* <div className="vertical-line" style={{marginLeft:"50px"}}>
                 
-                </div>
+                </div> */}
                <div className="subproduct-herodata">
                <h1 style={{textAlign:"left",marginLeft:"30px"}}>
                  MOULDED HOSES
@@ -61,16 +62,14 @@ const ProductPage = () => {
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content">
-            <div style={{marginLeft:"-70px",marginTop:"-250px"}}>
-              <img src={Moulded11} alt={product.title} className="product-image" />
+            <div style={{marginLeft:"-10px",marginTop:"-250px"}}>
+              <img src={Moulded11} alt={product.title} className="moulded-image" />
               </div>
               <h3>{product.title}</h3>
               <p>
               We specialize in high-performance,
 custom-moulded parts for various
-industries, using materials like SBR,
-EPDM, PVC/NBR, Silicone, Neoprene,
-and more.
+industries.
        </p>
             </div>
           </div>
@@ -82,10 +81,12 @@ and more.
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-             <div style={{marginLeft:"-70px",marginTop:"-250px"}}>
-             <img src={Moulded12} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
+             <div style={{marginLeft:"10px",marginTop:"-250px"}}>
+             <img src={Moulded12} alt={product.title} className="moulded-image" style={{marginRight:"15px"}} />
               </div>
-            
+            <p>We are using materials like SBR,
+EPDM, PVC/NBR, Silicone, Neoprene,
+and more.</p>
             </div>
           </div>
         ))}
@@ -95,7 +96,8 @@ and more.
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-             <div style={{marginLeft:"-30px"}}> <img src={Moulded13} alt={product.title} className="product-image" style={{marginRight:"15px"}} /></div>
+             <div style={{marginLeft:"10px"}}>
+               <img src={Moulded13} alt={product.title} className="moulded-image" style={{marginRight:"15px"}} /></div>
               <div style={{marginLeft:"20px"}}>
               <p>
          
@@ -122,13 +124,13 @@ and more.
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-              <div style={{marginLeft:"-30px",marginTop:"-40px"}}>
-                <img src={Moulded14} alt={product.title} className="product-image" style={{marginRight:"15px"}} /></div>
+              <div style={{marginLeft:"-20px",marginTop:"-40px"}}>
+                <img src={Moulded14} alt={product.title} className="moulded-image" style={{marginRight:"15px"}} /></div>
 
               <div style={{marginLeft:"20px"}}>
               <p>
          
-        <h3>Applications of Molded Hoses:</h3>
+        <h3>Applications of Moulded Hoses:</h3>
         <ul>
           <li>Automotive: Fuel lines, coolant lines, power steering lines
 </li>
@@ -144,47 +146,19 @@ and more.
           </div>
         ))}
 	</figure>
-{/* 	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=737' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>#impoCSSible is nothing</h2>
-			<p>You don´t need Javascript or #CSS processors either for almost 100% of what you want to do.</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=870' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Idea from E.Bouças´s <a href='https://codepen.io/eduardoboucas/full/qdaOWv/'>pen</a></h2>
-			<p>Without jQuery or Javascript, nor fixed position (bye IOs problems)</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=743' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Images from unsplash.it</h2>
-			<p>Because it´s the best for demos. Thanks, guys!</p>
-		</div>
-	</section>
-	 */}
+	 
 	
 	
 </article>
     </section>
-    <section className="background-section">
+    {/* <section className="background-section">
   <div className="background-overlay">
     
   </div>
-</section>
-
+</section> */}
+<section className="getin-touch">
+<GetInTouch />
+  </section>
  
     </div>
   );

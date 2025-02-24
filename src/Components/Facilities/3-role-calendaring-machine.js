@@ -23,9 +23,9 @@ const Inhousefacility = () => {
         <div className="subhero-left">
           <div className="subhero-text-content">
           <h1 style={{fontSize:"3rem",textTransform:"uppercase"}}>3 roll calendaring Machine</h1>
-          <div className="scroll-down" onClick={handleScrollDown}>
+          {/* <div className="scroll-down" onClick={handleScrollDown}>
                                <BsArrowDownCircle size={30} />
-                              </div>
+                              </div> */}
           </div>
         </div>
         <div className="subhero-right">

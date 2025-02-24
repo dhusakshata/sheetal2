@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Product.css";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
+import GetInTouch from "../GetInTouch.js";
 import { Link } from "react-router-dom"; 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -67,8 +68,7 @@ useEffect(() => {
           {/* Left Section */}
          
           <div className="Product-hero-heading">
-          <div className="Product-vertical-line">
-            </div>
+       
 
            <div className="product-herodata">
            <h1 style={{textAlign:"left",marginLeft:"30px"}}>
@@ -186,6 +186,10 @@ useEffect(() => {
   </div>
 </section>
 
+
+<section className="getin-touch">
+<GetInTouch />
+  </section>
 
    
   

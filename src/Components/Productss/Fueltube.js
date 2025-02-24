@@ -2,7 +2,7 @@ import React from "react";
 import { Parallax } from "react-parallax";
 import "./silicon.css";
 import FuelTube1 from "../../Images/Fuel-Tubes11.png";
-
+import GetInTouch from "../GetInTouch.js";
 import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
 
 const ProductPage = () => {
@@ -29,8 +29,8 @@ const ProductPage = () => {
   <section className="fuelhero ">
   <div className="siliconhero-content">
      <div className="Product-hero-heading silicon-hero-heading  ">
-              <div className="vertical-line">
-                </div>
+              {/* <div className="vertical-line" style={{marginLeft:"50px"}}>
+                </div> */}
                <div className="subproduct-herodata">
                 
                <h1 style={{textAlign:"left",marginLeft:"30px"}}>
@@ -138,12 +138,14 @@ systems, with inner diameters ranging from
 	
 </article>
     </section>
-    <section className="background-section">
+    {/* <section className="background-section">
   <div className="background-overlay">
     
   </div>
-</section>
-
+</section> */}
+<section className="getin-touch">
+<GetInTouch />
+  </section>
  
     </div>
   );

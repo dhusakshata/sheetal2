@@ -142,7 +142,7 @@ Quality has always been the cornerstone of our continued excellence and superior
           </div>
         
 	</figure>
-	<figure className="inhouse-card">
+	<figure className="manufacturing-card">
 	
        
 	</figure>
