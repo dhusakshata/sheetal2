@@ -114,7 +114,7 @@ body {
 @media (max-width: 480px) { /* Small Mobile */
   .siliconhero {
     height: 60vh;
-    padding: 20px 5px;
+  
   }
 
   .silicon-hero-heading {
@@ -123,20 +123,28 @@ body {
     width: 85%;
     margin-left: 20px;
     background-color: rgba(0, 0, 0, 0.7); /* Darken background for readability */
+    margin-left: 0;
+    font-size: 1.2rem;
+    text-align: left;
   }
 
   .subproduct-herodata {
-    margin-top: 40px;
-    margin-left: -40px;
+    margin-top: 80px;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    word-break: break-word;
+    text-align: left;
   }
 
   .silicon-hero-heading h1 {
-    font-size: 24px !important;
+    margin-top: 30px;
+    font-size: 1.5rem !important;
   }
 
-  .silicon-hero-heading h2 {
-    font-size: 18px !important;
-    margin-left: -150px !important;
+  .subproduct-herodata h2 {
+    font-size: 16px !important;
+   margin-left: 50px !important;
   }
 }
 
@@ -177,6 +185,15 @@ height: 200px;
 margin-left: 100px;
 
 }
+.marine-img{
+  width: 900px !important;
+height: 600px;
+margin-top: -150px;
+
+}
+.marine-article{
+  margin-top: -100px !important;
+}
 .epdm-image{
   padding: 60px;
   width: 290px !important;
@@ -208,7 +225,7 @@ margin-top: -80px;
 	background-color: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
 	background-position: center !important;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -217,6 +234,37 @@ margin-top: -80px;
   color: white;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  .siliconinfo-section {
+    height: 60vh;
+    
+    padding: 60px 20px;
+    background-size: cover;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .siliconinfo-section {
+    height: 60vh;
+    
+    padding: 50px 15px;
+    background-size: cover;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .siliconinfo-section {
+    height: 60vh;
+    
+    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+}
+
 .info-right h2 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -281,7 +329,7 @@ article .content {
   
 	.silicon-card {
 		background:white;
-		width: calc( 50% + 1px);
+		width: calc( 100% + 1px);
 		height: 100vh;
 		margin: 0 0 0 0;
 		position: sticky;
@@ -294,17 +342,18 @@ z-index: 1000;
 			}
 	
 			.silicon-card:nth-of-type(2n)::after {
-		right: 45%;
+		right: 50%;
 		left: 5vmin;
 	}
 			.silicon-card:nth-of-type(1) {
 		margin: 0 0 0 0;
-		width: 50%;
+		width: 80%;
 			}
 			.silicon-card:nth-of-type(2n) {
 		margin: 0 0 0 auto;
 		
 			}
+      
       .product-content p{
         font-size: 14px !important;
         margin: 60px;
@@ -322,14 +371,116 @@ z-index: 1000;
         margin-top: 200px;
       
         }
+        .silicon-img{
+          margin-top: -180px !important;
+        }
+        
+        .silicon-article p{
+          width: 95% !important;
+          margin: 0 auto;
+          padding: 25px;
+          text-align: center;
+          background-size: cover; 
+          margin-top: -120px !important;
+          margin-left: -50px !important;
+        }
+
+        .turbo-img{
+          margin-top: 155px !important;
+        }
+        .turbo-article{
+          margin-top: -100px !important;
+          width: 480px !important;
+        }
        
 }
 
+
+@media screen and (max-width: 768px) {
+  
+	.silicon-card {
+		background:white;
+		width: calc( 100% + 1px);
+		height: 100vh;
+		margin: 0 0 0 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+z-index: 1000;
+
+		
+	
+			}
+	
+			.silicon-card:nth-of-type(2n)::after {
+		right: 50%;
+		left: 5vmin;
+	}
+			.silicon-card:nth-of-type(1) {
+		margin: 0 0 0 0;
+		width: 50%;
+			}
+			.silicon-card:nth-of-type(2n) {
+		margin: 0 0 0 auto;
+		width: 50%;
+  
+			}
+      .silicon-card:nth-of-type(3n) {
+        margin: 0 0 0 auto;
+        height: 60vh !important;
+        width: 100%;
+          }
+          .silicon-card:nth-of-type(4) {
+            margin: 0 0 0 auto;
+            width: 100%;
+            height: 60vh !important;
+              }
+      .product-content p{
+        font-size: 14px !important;
+        margin: 60px;
+        line-height: 1.4;
+        text-align: left;
+      margin-top: -40px;
+      }
+      .product-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        height: 200px;
+        padding: 60px 30px;
+        margin-top: 100px;
+      
+        }
+        .silicon-img{
+          margin-top: -180px !important;
+          
+        }
+        
+        .silicon-article p{
+          width: 80% !important;
+          margin: 0 auto;
+          padding: 25px;
+          text-align: left;
+          background-size: cover; 
+          margin-top: -80px !important;
+          margin-left: -50px !important;
+        }
+
+        .turbo-img{
+          margin-top: -250px !important;
+        }
+        .turbo-article{
+          margin-top: 60px !important;
+          width: 400px !important;
+        }
+       
+}
 @media screen and (max-width: 480px) {
   
 	.silicon-card {
 		background:white;
-		width: calc( 50% + 1px);
+		width: calc( 100% + 1px);
 		height: 100vh !important;
 		margin: 0 0 0 0;
 		position: sticky;
@@ -340,16 +491,16 @@ z-index: 1000;
 			}
 	
 			.silicon-card:nth-of-type(2n)::after {
-		right: 45%;
+		right: 50%;
 		left: 5vmin;
 	}
 			.silicon-card:nth-of-type(1) {
 		margin: 0 0 0 0;
-		width: 50%;
+		width: 100%;
 			}
 			.silicon-card:nth-of-type(2n) {
 		margin: 0 0 0 auto;
-		
+    width: 100% !important;
 			}
       
       .product-content p{
@@ -386,6 +537,30 @@ z-index: 1000;
        .product-content2 p{
         width: 200px !important;
        }
+       .silicon-img{
+        margin-top: -180px !important;
+      }
+      
+      
+        .silicon-article p{
+          width: 95% !important;
+          margin: 0 auto;
+          padding: 25px;
+          text-align: center;
+          background-size: cover; 
+          margin-top: -120px !important;
+          margin-left: -50px !important;
+        
+      }
+      .turbocontent{
+        width: 100px !important;
+        text-align: center;
+        margin-left: -360px !important;
+       
+      }
+
+     
+      
 }
 /* Background Section */
 .background-section {
@@ -564,7 +739,6 @@ padding: 30px 20px;
 .Assemblyhero{
   background-image: url('../../Images/Assemblyhero.webp');
   height: 80vh;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -642,7 +816,7 @@ padding: 30px 20px;
 padding: 20px 20px;
 	background-position: center !important;
   background-repeat:no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -724,3 +898,7 @@ padding: 20px 20px;
 .moulded-image{
   width: 450px !important;
 }
+
+
+
+

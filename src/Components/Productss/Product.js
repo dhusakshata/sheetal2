@@ -77,7 +77,16 @@ useEffect(() => {
            <h2  style={{textAlign:"left",margin:"20px", marginLeft:"32px" ,fontWeight:"bold",fontSize:"24px"}}>Flexible Solutions. Lasting Performance.
             </h2>
             
-            <p  style={{textAlign:"left",fontWeight:"bold",fontSize:"16px",width:"700px",marginLeft:"30px",marginTop:"-20px"}} >
+            <p  style={{
+    textAlign: "left",
+    fontWeight: "bold",
+    fontSize: "16px",
+    maxWidth: "100%",
+    marginLeft: "30px",
+    marginTop: "-20px",
+    paddingRight: "30px", // optional for padding on the right
+    boxSizing: "border-box",
+  }}>
   
   At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including 
      <b>
@@ -188,7 +197,7 @@ useEffect(() => {
 
 
 <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section>
 
    

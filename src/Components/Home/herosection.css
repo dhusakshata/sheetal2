@@ -1,30 +1,33 @@
 .homepage-container {
+  position: relative;
   width: 100%;
-  height: 80vh !important;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 80vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
 }
 
 /* Swiper container */
 .swiper-container {
+  position: absolute;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 /* Container for each slide */
 .slide-container {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 100%;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden;
+
   
 }
 
@@ -34,8 +37,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.2s ease;   opacity: 1 !important; 
-  filter: none !important; /* Remove unwanted effects */
+  /* transition: transform 0.2s ease;   opacity: 1 !important; 
+  filter: none !important; */
 }
 
 /* Overlay for text */
@@ -45,7 +48,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: transparent !important; /* Make sure it's fully transparent */
+  background: transparent !important;
   opacity: 1 !important;
   display: flex;
   justify-content: center;
@@ -64,6 +67,23 @@
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap; /* Allow words to wrap */
+  text-align: center;
+ 
+}
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-text {
+  animation: fadeIn 1s ease-out;
 }
 
 /* Split words into two parts */
@@ -71,11 +91,40 @@
   display: inline-block;
   padding: 0.5rem;
 }
-/* Container for the split effect */
-.image-slice {
-  position: absolute;
-  width: 5%; /* Adjust for smoother slicing */
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+
+
+/* 🪄 Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .homepage-container {
+    height: 80vh;
+  }
+
+  .slide-container {
+    height: 80vh;
+  }
+
+  .slide-text {
+    margin-top: -100px !important;
+    font-size: 2.5rem !important; /* Smaller font for mobile */
+    padding: 0 1rem; /* Add padding to avoid edge clipping */
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homepage-container {
+    height: 80vh;
+  }
+
+  .slide-container {
+    height: 80vh;
+  }
+
+  .slide-text {
+    margin-top: -60px !important;
+    font-size: 2.5rem !important;
+    padding: 0 1rem;
+    text-align: center;
+  }
 }

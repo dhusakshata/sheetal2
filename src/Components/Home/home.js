@@ -12,6 +12,7 @@ import ProductSection2 from "./Productsection2.js";
 import GetInTouch from "../GetInTouch.js";
 import HeroSection from "./herosection.js";
 import Banner from "./banner.js";
+
 //Logos
 import logo1 from "../../Images/client1.png"; 
 import logo2 from "../../Images/client2.jpg";
@@ -127,24 +128,9 @@ useEffect(() => {
 
   return (
     <div>
-      {/* Main Hero Section */}
-        {/* <section  className={`hero-section ${backgroundChanged ? "bg-changed" : ""}`}>
-        
-        <div className="hero-content">
-         <div className="scroll-down" onClick={handleScrollToBottom}>
-                     <BsArrowDownCircle size={40}  style={{color:"white"}} />
-                    </div> 
-        <h1 class="animate-top">Sheetal Rubber Products (P) Ltd.</h1>
+      {/* <Banner/> */}
+   <HeroSection/>
 
-          <div class="animated-text">
-  <span class="designed">DESIGNED </span>
-  <span class="to"> TO </span>
-  <span class="perform"> PERFORM</span>
-</div>
-        </div>
-      </section>   */}
-       {/* <Banner />  */}
-   <HeroSection/>   
       {/* About Us Section */}
 <section className="about-section" id="about">
   <div className="overlay1">
@@ -178,7 +164,7 @@ useEffect(() => {
       {/* Product Section */}
       <section className="product-section" id="product">
       <div className="section-content">
-        <h2>OUR PRODUCTS</h2>
+        <h2 className="main-product-heading">OUR PRODUCTS</h2>
         <p>
           At Sheetal Rubber Products, we specialize in a comprehensive range of high-performance rubber solutions, including:
           <b>
@@ -303,7 +289,7 @@ useEffect(() => {
 
 
  <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section> 
   
 

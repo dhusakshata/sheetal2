@@ -256,7 +256,7 @@ background-attachment: fixed;
   
 	.sub-card {
 		background:white;
-		width: calc( 50% + 1px);
+		width: calc( 100% + 1px);
 		height: 80vh;
 		margin: 0 0 0 0;
 		position: sticky;
@@ -267,13 +267,13 @@ background-attachment: fixed;
 			}
 	
 			.sub-card:nth-of-type(2n)::after {
-		right: 45%;
+		right: 50%;
 		left: 5vmin;
 	}
 			.sub-card:nth-of-type(1) {
 		margin: 0 0 0 0;
     height: 80vh;
-		width: 50%;
+		width: 100% !important;
     display: flex;
     background-color: #1e202c !important;
     
@@ -291,26 +291,38 @@ background-attachment: fixed;
     color: black;
     
 			}
-      .sub-card:nth-of-type(3n) {
+     
+       .sub-card:nth-of-type(3n) {
         margin: 0 0 0 auto;
         width: 100%;
-        background-image: url('../../Images/hoses2.jpg');
+        background: #f9f9f9 !important; /* Light background for type 2 */
+        color: black;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
           }
+          .sub-card:nth-of-type(4n) {
+            margin: 0 0 0 auto;
+            width: 100%;
+         
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+              }
         .sub-section{
           height: 100vh ;
         }
         .sub-section1{
           height: 100vh ;
-         background-color: white !important;
+       
+        
          color: black;
         }
 .sub-content {
-  width: 600px !important;
-  height: 60vh;
+  width: 80% !important;
+  height: 80vh;
   gap: 40px;
   text-align: left;
   display: flex;
@@ -401,7 +413,7 @@ background-attachment: fixed;
   
 	.sub-card {
 		background:white;
-		width: calc( 50% + 1px);
+		width: calc( 100% + 1px);
 		height: 80vh;
 		margin: 0 0 0 0;
 		position: sticky;
@@ -412,13 +424,13 @@ background-attachment: fixed;
 			}
 	
 			.sub-card:nth-of-type(2n)::after {
-		right: 45%;
+		right: 50%;
 		left: 5vmin;
 	}
 			.sub-card:nth-of-type(1) {
 		margin: 0 0 0 0;
     height: 80vh;
-		width: 50%;
+		width: 100% !important;
     display: flex;
     background-color: #1e202c !important;
     
@@ -439,7 +451,7 @@ background-attachment: fixed;
       .sub-card:nth-of-type(3n) {
         margin: 0 0 0 auto;
         width: 100%;
-        background-image: url('../../Images/hoses2.jpg');
+        
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -454,7 +466,7 @@ background-attachment: fixed;
          color: black;
         }
 .sub-content {
-  width: 400px !important;
+  width: 100% !important;
   height: 60vh;
   gap: 10px;
   text-align: left;
@@ -469,17 +481,18 @@ background-attachment: fixed;
   width: 300px;
   margin-left:-100px;
 }
-.sub-content p{
-  margin-top: -80px !important;
+.sub-content li{
+  width: 80% !important;
+  font-size: 14px !important;
+  line-height: 1.6;
+
 }
 
 .sub-content1 p{
-  width: 200px !important;
-  font-size: 14px;
+  width: 55% !important;
+  font-size: 14px !important;
   line-height: 1.6;
-  text-align: left;
- margin-left: -450px;
-  
+
   
 }
 .sub-content2 {
@@ -495,13 +508,11 @@ background-attachment: fixed;
   margin-top: -70px;
 
 }
-.sub-content2 p{
-  width: 300px;
-  font-size: 16px;
+.sub-content2 li{
+  width: 100% !important;
+  font-size: 14px !important;
   line-height: 1.6;
-  text-align: left;
- margin-left: -350px;
-  margin-top: -30px !important;
+ 
   
 }
 .cold-img{
@@ -526,13 +537,11 @@ background-attachment: fixed;
   width: 300px !important;
   margin-top: 100px;
 }
-.sub-content3 p{
-  width: 300px;
-  font-size: 16px;
+.sub-content3 li{
+  width: 100% !important;
+  font-size: 14px !important;
   line-height: 1.6;
-  text-align: left;
- margin-left: -400px;
-  margin-top: -30px !important;
+ 
   
 }
 .sub-content img {
@@ -550,7 +559,7 @@ background-attachment: fixed;
   
 	.sub-card {
 		background:white;
-		width: calc( 50% + 1px);
+		width: calc( 100% + 1px);
 		height: 80vh;
 		margin: 0 0 0 0;
 		position: sticky;
@@ -561,13 +570,13 @@ background-attachment: fixed;
 			}
 	
 			.sub-card:nth-of-type(2n)::after {
-		right: 45%;
+		right: 50%;
 		left: 5vmin;
 	}
 			.sub-card:nth-of-type(1) {
 		margin: 0 0 0 0;
     height: 80vh;
-		width: 50%;
+		width: 100% !important;
     display: flex;
     background-color: #1e202c !important;
     color:white;
@@ -608,8 +617,8 @@ background-attachment: fixed;
           }
           .sub-section1{
             height: 100vh ;
-           background-color: white !important;
-           color: black;
+          
+           color:white !important;
           }
   .sub-content {
     width: 600px !important;
@@ -633,11 +642,11 @@ background-attachment: fixed;
   }
   
   .sub-content1 p{
-    width: 300px;
+    width: 100%;
     font-size: 16px;
     line-height: 1.6;
     text-align: left;
-   margin-left: -350px;
+  
     
     
   }

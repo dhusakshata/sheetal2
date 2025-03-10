@@ -108,7 +108,7 @@ padding: 30px;
 
 .autoclave-content2{
   width: 1200px;
-  gap: 20px;
+  gap: 15px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -218,7 +218,7 @@ background-attachment: fixed;
   
 	.autoclave-card {
 		background:white;
-		width: calc( 50% + 1px);
+		width: calc( 100% + 1px);
 		height: 100vh;
 		margin: 0 0 0 0;
 		position: sticky;
@@ -229,13 +229,13 @@ background-attachment: fixed;
 			}
 	
 			.autoclave-card:nth-of-type(2n)::after {
-		right: 45%;
+		right: 50%;
 		left: 5vmin;
 	}
 			.autoclave-card:nth-of-type(1) {
 		margin: 0 0 0 0;
     height: 100vh;
-		width: 50%;
+		width: 80% !important;
     display: flex;
     background-color: white !important;
     color:white;
@@ -246,7 +246,7 @@ background-attachment: fixed;
 .autoclave-card:nth-of-type(2n) {
 margin: 0 0 0 auto;
 height: 80vh;
-width: 50%;
+width: 100%;
 background-image: url('../../svgfiles/diagonal.svg');
 font-size: 16px;
 color: black;
@@ -271,61 +271,144 @@ line-height: 1.6;
 background-attachment: fixed;
           }
           .autoclave-content{
-     
-            font-size: 16px;
-            line-height: 1.6;
-            text-align: left;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            margin-left: -80px;
-            margin-top: 80px;
+
+            margin-left: 0;
+            margin-top: 50px;
+            width: 100%;
+            text-align: center;
             
           }
           .autoclave-content img{
-            width:350px !important;
-            
+            width: 90%;
+    max-width: 300px;
+           
+          }
+          .autoclave-content1 {
+            width: 90%;
+            padding: 20px;
+            margin: 40px auto;
           }
           .autoclave-content1 p{
-            width: 300px;
-            font-size: 16px;
-            line-height: 1.8;
-            margin-top: -120px;
-           color: black;
-            text-align: left;
-         padding: 30px;
-          margin-left: -400px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
           }
           
  .autoclave-content2{
-            width: 650px;
-            gap: 20px;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-left: 400px;
-          margin: 40px;
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
           }
-          .compression-content1 p{
-            width: 300px;
-            font-size: 16px;
-            line-height: 1.8;
-            margin-top: -120px !important;
-           color: black;
-            text-align: left;
-         padding: 30px;
-          margin-left: -400px;
-          }
+          
+}
+
+
+@media screen and (max-width: 768px) {
+  .subhero-container {
+    flex-direction: column; /* Stack hero section */
+    height: auto;
+  }
+
+  .subhero-left {
+    
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .subhero-text-content {
+    max-width: 90%;
+    margin-top: 0;
+  }
+
+  .subhero-title {
+    font-size: 2.5rem !important;
+  }
+
+  .subhero-right {
+    flex: 1;
+  }
+
+  .autoclave-content img{
+    width: 90%;
+max-width: 400px !important;
+   
+  }
+  .autoclave-card:nth-of-type(1) {
+		margin: 0 0 0 0;
+    height: 60vh;
+		width: 100% !important;
+    display: flex;
+    background-color: white !important;
+    color:white;
+   
+    background-attachment: fixed;
+			}
+      .autoclave-card:nth-of-type(2n) {
+        margin: 0 0 0 auto;
+        height: 80vh;
+        width: 100%;
+        background-image: url('../../svgfiles/diagonal.svg');
+        font-size: 16px;
+        color: black;
+        
+        line-height: 1.6;
+        background-attachment: fixed;
+           
+            
+              }
+  .autoclave-content,
+  .autoclave-content1,
+  .autoclave-content2 {
+    width: 90% !important;
+    max-width: 600px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 14px;
+   
+  }
+  .autoclave-content1 p{
+    margin-top: 10px !important;
+  }
+  .autoclave-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .autoclave-content1 p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .autoclave-content2 {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+ 
+  .autoclave-card:nth-of-type(2n) {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .autoclave-card:nth-of-type(3n) {
+    height: 80vh;
+  }
+
+  .autoclave {
+    height: 80vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
   
 	.autoclave-card {
 		background:white;
-		width: calc( 50% + 1px);
+		width: calc( 100% + 1px);
 		height: 100vh;
 		margin: 0 0 0 0;
 		position: sticky;
@@ -336,13 +419,13 @@ background-attachment: fixed;
 			}
 	
 			.autoclave-card:nth-of-type(2n)::after {
-		right: 45%;
+		right: 50%;
 		left: 5vmin;
 	}
 			.autoclave-card:nth-of-type(1) {
 		margin: 0 0 0 0;
-    height: 100vh;
-		width: 50%;
+    height: 60vh;
+		width: 100% !important;
     display: flex;
     background-color: white !important;
     color:white;
@@ -352,12 +435,11 @@ background-attachment: fixed;
 
 .autoclave-card:nth-of-type(2n) {
 margin: 0 0 0 auto;
-height: 80vh;
-width: 50%;
+height: 100vh !important;
+width: 100%;
 background-image: url('../../svgfiles/diagonal.svg');
 font-size: 16px;
 color: black;
-
 line-height: 1.6;
 background-attachment: fixed;
    
@@ -365,7 +447,7 @@ background-attachment: fixed;
 			}
 .autoclave-card:nth-of-type(3n) {
      margin: 0 0 0 auto;
-height: 80vh;
+     height: 100vh !important;
 width: 100%;
 display: flex;
 background-color: #1e202c !important;
@@ -378,42 +460,53 @@ line-height: 1.6;
 background-attachment: fixed;
           }
           .autoclave-content{
-     width: 450px;
-            font-size: 16px;
             line-height: 1.6;
+            width: 100%;
+            margin-top: 100px;
+            display: block;
             text-align: left;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            margin-left: -80px;
-            margin-top: 150px;
             
           }
           .autoclave-content img{
-            width:200px !important;
-            
+            /* width:200px !important; */
+            width: 100%;
+    max-width: 400px !important;
+          
+          }
+          .autoclave-content1 {
+            width: 100%;
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: left;
           }
           .autoclave-content1 p{
-            width: 200px;
+            /* width: 200px !important;
             font-size: 14px;
             line-height: 1.8;
             margin-top: -100px;
            color: black;
             text-align: left;
          padding: 30px;
-          margin-left: -500px;
+          margin-left: -500px; */
+          width: 90%;
+          font-size: 14px;
+          line-height: 1.5;
+          padding: 20px;
+          margin: 10px auto;
+          text-align: left;
           }
-          .autoclave-content1 ul{
-        font-size: 14px;
+          .autoclave-content2 ul{
+        font-size: 14px !important;
            
           }
-          .autoclave-content1 h4{
-            font-size: 14px !important;
+          .autoclave-content2 h4{
+            font-size: 16px !important;
+            font-weight: bold;
           }
           
  .autoclave-content2{
-            width: 400px;
+            /* width: 400px;
             gap: 20px;
             text-align: left;
             display: flex;
@@ -421,32 +514,53 @@ background-attachment: fixed;
             justify-content: center;
             align-items: center;
             margin-left: 50px !important;
-          margin: 10px;
+          margin: 10px; */
+          width: 90%;
+          text-align: left;
+          margin: 0 auto;
           }
           .autoclave-content2 p{
             font-size: 14px !important;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
           }
-          .autoclave-content2 ul{
+          .autoclave-content2 li{
             font-size: 14px !important;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
           }
           .autoclave-content2 h4{
             font-size: 14px !important;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
           }
           .compression-content1 p{
-            width: 200px;
+            /* width: 200px;
             font-size: 14px;
             line-height: 1.8;
             margin-top: -120px !important;
            color: black;
             text-align: left;
          padding: 30px;
-          margin-left: -500px;
+          margin-left: -500px; */
+          width: 90%;
+          font-size: 14px;
+          line-height: 1.5;
+          padding: 20px;
+          text-align: center;
+          margin: 10px auto;
           }
           .compression-img{
             margin-left: -50px;
             width: 250px !important;
           }
 }
+
+
+
 
 
 /*3 roll*/

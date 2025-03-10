@@ -1,34 +1,41 @@
-import React from 'react';
-import hero from "../../Images/car.avif"
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
+import image1 from "../../Images/car.avif";
+import image2 from "../../Images/images-hoses.webp";
+import image3 from "../../Images/homehose.png";
+import "./herosection.css";
 
-function App() {
- return (
-   <div className="w-screen h-screen text-white" style={{
-     background: "linear-gradient(90deg, rgba(131, 126, 226, 1) 24%, rgba(114, 114, 226, 1) 58%, rgba(0, 212, 255, 1) 100%)"
-   }}>
-     <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-       <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center" alt="hero" src={hero} />
-       <div class="text-center lg:w-5/12 w-full">
-         <h1 className="my-4 text-5xl font-bold leading-tight">
-           Turn your designs into production-ready frontend
-         </h1>
-         <p className="text-2xl mb-8">
-           Ship products 5-10x faster with your existing design tools, tech stacks & workflows!
-         </p>
-         <div className="flex justify-center mx-auto">
-           <button
-             className="hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8">
-             View Projects
-           </button>
-           <button
-             className="ml-4 hover:underline bg-white text-gray-800 font-bold rounded-full  py-4 px-8">
-             Plugins
-           </button>
-         </div>
-       </div>
-     </div>
-   </div >
- );
-}
+const images = [
+  { src: image1, text: "Sheetal Rubber Products (P) Ltd." },
+  { src: image2, text: "DESIGNED TO PERFORM" },
+  { src: image3, text: "Sheetal Rubber Products (P) Ltd." },
+];
 
-export default App
+const HomePage = () => {
+  return (
+    <div className="homepage-container">
+      <Swiper
+        modules={[Autoplay]}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        loop
+        className="swiper-container"
+      >
+        {images.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="slide-container">
+              <img src={item.src} alt={`Slide ${index + 1}`} className="slide-image" />
+              <div className="slide-overlay">
+                <h1 className="slide-text">{item.text}</h1>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};
+
+export default HomePage;

@@ -51,6 +51,69 @@ const ProductPage = () => {
       </section>
 
 
+      <section>
+   <article  className="Product-article">
+	<figure className="silicon-card">
+  {siliconproducts.map((product, index) => (
+          <div key={product.id} className="siliconproduct-section" >
+            <div className="product-content">
+              <div style={{marginLeft:"-70px",marginTop:"-150px"}}>
+              <img src={FuelTube1} alt={product.title} className="product-image silicon-img" />
+              </div>
+             
+              <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-40px"}}>
+              <p style={{marginLeft:"20px",marginTop:"80px"}}> Engineered for safe and efficient fluid
+transfer in automotive and industrial
+systems, with inner diameters ranging from
+2 mm to 45 mm.
+              </p>
+              </div>
+            </div>
+          </div>
+        ))}
+	</figure>
+
+	
+	<figure className="silicon-card">
+	{siliconproducts.map((product, index) => (
+          <div key={product.id} className="siliconproduct-section">
+            <div className="product-content" >
+              <div style={{marginLeft:"-70px",}}>
+              <img src={FuelTube1} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px"}} />
+              </div>
+              
+            <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-20px"}}>
+                <p style={{marginLeft:"20px",marginTop:"60px"}}><h3>Key Features and Benefits:</h3>
+                <ul>
+          <li>Sheetal Rubber offers single or double layer for automotive to meet requirement.
+</li>
+          <li>All fuel tubes are very flexible to fit and get shape as per design.
+</li>
+          <li>
+          We offer all fuel tubes in multiple colors.
+
+
+          </li>
+          <li>Our fuel flow tubes to help minimize pressure drop.
+
+          </li>
+          <li>
+          We also offer fuel tube with sleeves for heat and abrasion resistant.
+          </li>
+          
+        </ul></p>
+            </div>
+            </div>
+          </div>
+        ))}
+	</figure>
+  
+
+	
+	
+</article>
+    </section>
+{/* 
     <section>
    <article className="Product-article">
 	<figure className="silicon-card">
@@ -102,49 +165,17 @@ systems, with inner diameters ranging from
           </div>
         ))}
 	</figure>
-	
-{/* 	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=737' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>#impoCSSible is nothing</h2>
-			<p>You don´t need Javascript or #CSS processors either for almost 100% of what you want to do.</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=870' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Idea from E.Bouças´s <a href='https://codepen.io/eduardoboucas/full/qdaOWv/'>pen</a></h2>
-			<p>Without jQuery or Javascript, nor fixed position (bye IOs problems)</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=743' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Images from unsplash.it</h2>
-			<p>Because it´s the best for demos. Thanks, guys!</p>
-		</div>
-	</section>
-	 */}
-	
+
 	
 </article>
-    </section>
+    </section> */}
     {/* <section className="background-section">
   <div className="background-overlay">
     
   </div>
 </section> */}
 <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section>
  
     </div>

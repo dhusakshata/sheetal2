@@ -67,8 +67,8 @@ const ProductPage = () => {
               <img src={Wired1} alt={product.title} className="product-image" />
               </div>
               
-          <div style={{marginLeft:"-20px"}}>
-          <p> Engineered for reliability in demanding
+          <div className="silicon-article"style={{marginLeft:"20px",marginTop:"-40px"}}>
+          <p style={{marginLeft:"20px",marginTop:"-70px"}}> Engineered for reliability in demanding
 environments, with a temperature range of
 -40°C to +140°C and sizes from 20 mm to
 200 mm.
@@ -87,8 +87,8 @@ environments, with a temperature range of
             <div className="product-content" >
               <img src={Wired11} alt={product.title} className="product-image" style={{width:"500px"}} />
 
-              <div style={{marginLeft:"20px"}}>
- <p>
+              <div className="silicon-article"  style={{marginLeft:"80px",marginTop:"-40px"}}>
+ <p style={{marginLeft:"20px",marginTop:"-80px"}}>
         <h3>Key Features and Benefits:</h3>
         <ul>
           <li>The suction hose is designed to maintain vacuum integrity for the transfer of fluids and air.
@@ -120,7 +120,7 @@ environments, with a temperature range of
   </div>
 </section> */}
 <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section>
 
     </div>

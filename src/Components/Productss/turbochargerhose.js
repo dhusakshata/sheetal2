@@ -55,20 +55,24 @@ const ProductPage = () => {
       <section className="siliconinfo-section turbocharger">
        
       </section>
-
-
-    <section>
-   <article className="Product-article">
+      <section>
+   <article  className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
-          <div key={product.id} className="siliconproduct-section">
+          <div key={product.id} className="siliconproduct-section" >
             <div className="product-content">
-              <img src={Turbocharger11} alt={product.title} className="product-image" />
-              <h3>{product.title}</h3>
-              <p><b>Turbocharger hoses</b> are essential components in the automotive industry, particularly for vehicles equipped with turbocharged engines. These flexible tubes play a crucial role in connecting the turbocharger to the engine's intake manifold. Their primary function is to efficiently transport compressed air from the turbocharger to the engine's cylinders, enhancing performance and fuel economy.Engineered for high-performance connections in turbocharger and
+              <div style={{marginLeft:"-70px",}}>
+              <img src={Turbocharger11} alt={product.title} className="product-image  turbo-img" />
+              </div>
+             
+              <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-40px"}}>
+              <p style={{marginLeft:"20px",marginTop:"80px"}}><b>Turbocharger hoses</b> are essential components in the automotive industry, particularly for vehicles equipped with turbocharged engines. These flexible tubes play a crucial role in connecting the turbocharger to the engine's intake manifold. Their primary function is to efficiently transport compressed air from the turbocharger to the engine's cylinders, enhancing performance and fuel economy.Engineered for high-performance connections in turbocharger and
             charge air cooler systems, ensuring durability in demanding automotive
             and industrial applications.
-       </p>
+              </p>
+
+           
+              </div>
             </div>
           </div>
         ))}
@@ -77,14 +81,15 @@ const ProductPage = () => {
 	
 	<figure className="silicon-card">
 	{siliconproducts.map((product, index) => (
-          <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
+          <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
-              <div><img src={Turbocharger12} alt={product.title} className="product-image" style={{marginRight:"15px",marginTop:"50px"}} /></div>
-             
-              <div style={{marginLeft:"20px"}}>
-              <p style={{marginLeft:"20px",marginTop:"-30px"}}>
-              <h3>Key Features and Benefits:</h3>
-          <ul>
+              <div style={{marginLeft:"-70px",}}>
+              <img src={ Turbocharger12} alt={product.title} className="product-image  turbo-img" style={{marginRight:"15px"}} />
+              </div>
+              
+            <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-20px"}}>
+                <p style={{marginLeft:"20px",marginTop:"80px"}}><h3>Key Features and Benefits:</h3>
+                <ul>
             <li>Design to operate at Temperature range: -50°C to + 230°C.
            </li>
             <li>Our turbocharger hoses meets/exceeds SAEJ20 Class A specifications.
@@ -94,57 +99,23 @@ const ProductPage = () => {
             <li>These hoses are designed to provide both rigid and flexible connections, ensuring reliable performance in demanding environments such as generators and other heavy-duty machinery.
             </li>
            
-          </ul>
-        </p>
-        </div>
+          </ul></p>
+            </div>
             </div>
           </div>
         ))}
 	</figure>
-	
-{/* 	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=737' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>#impoCSSible is nothing</h2>
-			<p>You don´t need Javascript or #CSS processors either for almost 100% of what you want to do.</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=870' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Idea from E.Bouças´s <a href='https://codepen.io/eduardoboucas/full/qdaOWv/'>pen</a></h2>
-			<p>Without jQuery or Javascript, nor fixed position (bye IOs problems)</p>
-		</div>
-	</section>
-	
-	<figure>
-		<img src='https://unsplash.it/450/800?image=743' alt />
-	</figure>
-	<section>
-		<div>
-			<h2>Images from unsplash.it</h2>
-			<p>Because it´s the best for demos. Thanks, guys!</p>
-		</div>
-	</section>
-	 */}
+  
+
 	
 	
 </article>
     </section>
 
-    {/* <section className="background-section">
-  <div className="background-overlay">
-    
-  </div>
-</section> */}
+
+
 <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section>
 
     </div>

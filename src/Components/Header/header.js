@@ -39,17 +39,33 @@ const TopSection = styled.div`
 const Logo = styled.div`
   font-size: 24px;
   font-weight: bold;
+  
 `;
 
 const ContactInfo = styled.div`
   display: flex;
   gap: 15px;
-
+align-items: center;
 
     @media (max-width: 768px) {
-    display: flex; /* Show on smaller screens */
+    display: flex; 
     flex-direction:column;
+      gap: 10px;
   }
+     @media (max-width: 480px) {
+    display: flex; 
+      gap: 1px;
+    flex-direction:column;
+  font-size:10px;
+.contact-1 {
+     margin-left: -40px; 
+      }
+ .contact-2 {
+     margin-left: -15px; 
+      }
+  
+  }
+    
 `;
 
 const NavBar = styled.nav`
@@ -521,8 +537,11 @@ function Header() {
         />
         </Logo>
         <ContactInfo>
-          <span> <a href="tel:+ 91 -20 -27130244 " className="Contact-item">
-              <FaPhoneAlt className="icon" />  +91 -20 -27130244 ,+91 -20 -27130794
+          <span className="contact-1"> <a href="tel:+ 91 -20 -27130244 " className="Contact-item">
+              <FaPhoneAlt className="icon" />  +91 -20 -27130244
+             </a></span>
+             <span className="contact-2"> <a href="tel:+91 -20 -27130794 " className="Contact-item">
+            +91 -20 -27130794
              </a></span>
           <span>
             <a href="mailto:sheetalrubber@gmail.com" className="Contact-item">
@@ -722,7 +741,9 @@ function Header() {
           <SidebarLink to="/contactus" onClick={toggleSidebar}>Contact</SidebarLink>
         </SidebarNavItem>
       </Sidebar>
+      
     </HeaderContainer>
+    
   );
 }
 

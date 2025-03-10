@@ -1,7 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import "./silicon.css";
-import Marinewet1 from "../../Images/Marine-wet1.png";
+import Marinewet1 from "../../Images/MSHvarNew1-removebg-preview.png";
 import Marinewet2 from "../../Images/marinehoses.png";
 import GetInTouch from "../GetInTouch.js";
 import Breadcrumb from "../BreadCrumbs/Breadcrumbs.js";
@@ -51,8 +51,65 @@ const ProductPage = () => {
        
       </section>
 
+      <section>
+   <article  className="Product-article">
+	<figure className="silicon-card">
+  {siliconproducts.map((product, index) => (
+          <div key={product.id} className="siliconproduct-section" >
+            <div className="product-content">
+              <div style={{marginLeft:"-70px",}}>
+              <img src={Marinewet1} alt={product.title} className="product-image silicon-img " />
+              </div>
+             
+              <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-40px"}}>
+              <p style={{marginLeft:"20px",marginTop:"40px"}}>Sheetal Rubber provides high-quality Marine Wet
+Exhaust Hoses for engine and generator systems
+in in-board pleasure boats, ensuring durability and
+top performance in marine environments.<b>Marine wet exhaust hoses</b> are critical components in marine vessels, playing vital role in safely and efficiently expelling exhaust gases from engines and generators.
+              </p>
+              </div>
+            </div>
+          </div>
+        ))}
+	</figure>
 
-    <section>
+	
+	<figure className="silicon-card">
+	{siliconproducts.map((product, index) => (
+          <div key={product.id} className="siliconproduct-section">
+            <div className="product-content" >
+              <div style={{marginLeft:"-70px",}}>
+              <img src={Marinewet2} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px"}} />
+              </div>
+              
+            <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-20px"}}>
+                <p style={{marginLeft:"20px",marginTop:"100px"}}><h3>Key Features and Benefits:</h3>
+                <ul>
+            <li>We are Manufacturing all hoses from only the highest quality rubber and reinforcement fabrics; they are designed to operate at temperatures up to + 180°C.
+
+
+           </li>
+            <li>Our High Temperature Wet Exhaust and Turbo hoses, will operate at temperatures up to 230°C.
+            </li>
+            <li>
+           	We are tested our hoses and meet the requirements of SAE J2006 R3. Our EPDM hose meets the requirements of SAE J2006 R2.
+
+           </li>
+          </ul></p>
+            </div>
+            </div>
+          </div>
+        ))}
+	</figure>
+  
+
+	
+	
+</article>
+    </section>
+
+
+    {/* <section>
    <article className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
@@ -106,7 +163,7 @@ top performance in marine environments.<b>Marine wet exhaust hoses</b> are criti
 
 	
 </article>
-    </section>
+    </section> */}
 
     {/* <section className="background-section">
   <div className="background-overlay">
@@ -114,7 +171,7 @@ top performance in marine environments.<b>Marine wet exhaust hoses</b> are criti
   </div>
 </section> */}
 <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section>
     </div>
   );

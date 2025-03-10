@@ -105,7 +105,7 @@ function CareerPage() {
          </section>
          
 <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section>
     </div>
   );

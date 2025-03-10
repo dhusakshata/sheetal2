@@ -41,7 +41,7 @@ const Inhousefacility = () => {
 
           <div  className="autoclave-section">
             <div className="autoclave-content">
-            <img src={Compression} alt="Compression Transfer Moulding" style={{ width: "500px" }} 
+            <img src={Compression} alt="Compression Transfer Moulding" style={{ width: "500px",marginLeft:"120px" }} 
           className='compression-img'
           />
             </div>
@@ -54,7 +54,7 @@ const Inhousefacility = () => {
 	
           <div className="autoclave-section">
          
-            <div className="compression-content1" >
+            <div className="autoclave-content1" >
             <p style={{marginTop:"-60px"
             }}>
             Our production line utilizes Compression Transfer Moulding, a highly efficient process for shaping rubber

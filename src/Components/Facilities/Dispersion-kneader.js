@@ -36,10 +36,10 @@ const Inhousefacility = () => {
     </section>
 
     <article className="dispersion-article">
-	<figure className="sub-card">
+	<figure className="sub-card content4">
 
           <div  className="sub-section">
-            <div className="sub-content1">
+            <div className="sub-content1 ">
             <p>
             Our production line features advanced dispersion kneaders and internal mixers that ensure the uniform blending of raw materials. This equipment is essential for achieving the desired consistency and properties of rubber compounds, allowing for optimal performance in our finished products. Stock blenders further enhance the mixing process by facilitating the preparation of large batches, ensuring efficient production while maintaining high quality.
           For a rubber-producing company, the sequence of using a Dispersion Kneader, Internal Mixer, and Stock Blenders is crucial in ensuring high-quality rubber compounds. Each piece of equipment plays a unique role in the processing of raw rubber, fillers, and other additives, ultimately affecting the physical and chemical properties of the final product.
@@ -50,17 +50,17 @@ const Inhousefacility = () => {
 	</figure>
 
 	
-	<figure className="sub-card">
+	<figure className="sub-card content4">
 	
           <div className="sub-section">
           <h1 style={{textAlign:"center", margin:"10px",padding:"50px",fontSize:"2rem",textTransform:"uppercase"}}>Dispersion Kneader</h1>
             <div className="dispersionsub-content" >
-            <img src={Dispenser} alt="Dispersion Kneader"style={{width:"1000px",marginLeft:"50px"}} className="dispersion-img"/>
+            <img src={Dispenser} alt="Dispersion Kneader"className="dispersion-img"/>
            
-            <p>
+           <div className="disperssion-info">
+           <p>
             The dispersion kneader is the first step in the rubber mixing process. It is responsible for pre-mixing the base rubber with various additives. This machine ensures that the materials are evenly distributed within the rubber matrix before moving to the next stage.
        
-         
           <ul>
           <b>Functionality:</b>
             <li>The kneader contains two rotors in a chamber that rotate at different speeds, generating high shear forces.</li>
@@ -71,15 +71,17 @@ const Inhousefacility = () => {
           <ul>
           <b>Application:</b>
             <li>It is used in the early stages of rubber compound manufacturing, particularly for creating the masterbatch, where base rubber is mixed with fillers.</li></ul> </p>
+           </div>
+
             </div>
           </div>
         
 	</figure>
-
-  <figure className="sub-card">
+  
+  <figure className="sub-card content4">
 	
           <div className="sub-section">
-          <h1 style={{textAlign:"center", margin:"30px" ,fontSize:"2rem",textTransform:"uppercase"}}>Internal Mixer</h1>
+          <h1 style={{textAlign:"center", margin:"30px" ,fontSize:"2rem",textTransform:"uppercase" ,color:"white"}}>Internal Mixer</h1>
             <div className="dispersionsub-content2"style={{padding:"0 80px"}} >
   
             <p ><ul><b>Purpose:</b><li>The internal mixer is employed for more intensive mixing, refining the rubber compound by applying higher shear and pressure than a kneader. This is the core stage where the rubber, fillers, and all other components are fully homogenized.</li></ul> 
@@ -100,13 +102,13 @@ const Inhousefacility = () => {
           </div>
         
 	</figure>
-  <figure className="sub-card">
+  <figure className="sub-card content4">
 	
-  <div className="sub-section">
+  <div className="sub-section ">
   <h1 style={{textAlign:"center", margin:"30px",fontSize:"2rem",textTransform:"uppercase"}}>Stock Blender</h1>
     <div className="dispersionsub-content3" >
 
-    <img src={Stock} alt="Stock Blender" style={{width:"1000px"}} className="stock-img" />
+    <img src={Stock} alt="Stock Blender" className="stock-img" />
    
     <p>
       <b>Purpose:</b> After the rubber compound has been processed in the internal mixer, a stock blender is used to enhance the homogeneity of the mix and prevent temperature build-up, which could negatively impact the material properties.

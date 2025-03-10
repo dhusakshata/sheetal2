@@ -1,0 +1,586 @@
+
+/* General Styling */
+.page-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.subhero-container {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+}
+
+.subhero-left {
+  flex: 0.95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
+  color: #fff;
+  padding: 20px;
+}
+.subhero-text-content {
+ 
+  max-width: 600px;
+  text-align: center;
+  margin-top: -150px;
+}
+
+.subhero-title {
+
+  font-size: 3rem !important;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  
+  line-height: 1.2;
+}
+
+
+.subhero-right {
+  flex: 1;
+  overflow: hidden;
+}
+
+.subhero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+.hotbg{
+  height: 50vh;
+  background-image: url('../../Images/images-hoses.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+
+.roll-content{
+  width: 500px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 80px;
+  
+}
+/* .roll-content1{
+  font-size: 16px;
+  line-height: 1.8;
+  width: 700px;
+  margin-top: 80px;
+padding: 30px;
+ color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+} */
+.roll-content1 {
+  font-size: 16px;
+  line-height: 1.8;
+  width: 100%;
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 30px;
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.roll-content2{
+  width: 1200px;
+  gap: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+margin: 40px;
+}
+.roll-content img {
+  max-width: 100%; /* Prevents image overflow */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional for aesthetics */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+
+
+.roll-article {
+ 
+  background-image: url('../../Images/Autoclave-Vulcanizers-2-1.avif');
+  background-position:50% center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+	z-index: 1;
+	color: #000;
+	background-attachment: fixed;
+}
+article .content {
+  position: relative;
+  z-index: 2; 
+}
+@media screen and (min-width: 700px) {
+  
+	.roll-card {
+		background:white;
+		width: calc( 50% + 1px);
+		height: 100vh;
+		margin: 0 0 0 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+   z-index: 1000;
+
+			}
+	
+			.roll-card:nth-of-type(2n)::after {
+		right: 45%;
+		left: 5vmin;
+	}
+			.roll-card:nth-of-type(1) {
+		margin: 0 0 0 0;
+    height: 100vh;
+		width: 50%;
+    display: flex;
+    background-color: white !important;
+    color:white;
+   
+    background-attachment: fixed;
+			}
+
+	.roll-card:nth-of-type(2n) {
+margin: 0 0 0 auto;
+height: 80vh;
+width: 50%;
+background-image: url('../../svgfiles/diagonal.svg');
+font-size: 16px;
+color: black;
+
+line-height: 1.6;
+background-attachment: fixed;
+   
+    
+			}
+      .roll-card:nth-of-type(3n) {
+     margin: 0 0 0 auto;
+height: 100vh !important;
+width: 100%;
+display: flex;
+background-color: #1e202c !important;
+color:white;
+background: url('../../svgfiles/diagonal2.svg');
+background-attachment: fixed;
+font-size: 16px;
+color: white;
+
+line-height: 1.6;
+background-attachment: fixed;
+          }
+}
+       .roll-card:nth-of-type(4n) {
+        margin: 0 0 0 auto;
+   height: 80vh;
+   width: 100%;
+   display: flex;
+   
+   color: black !important;
+
+   background-attachment: fixed;
+   font-size: 16px;
+   color: white;
+   
+   line-height: 1.6;
+   background-attachment: fixed;
+             }
+   
+@media screen and (max-width: 700px) {
+  
+	.roll-card {
+		background:white;
+		width: calc( 100% + 1px);
+		height: 100vh;
+		margin: 0 0 0 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+   z-index: 1000;
+
+			}
+	
+			.roll-card:nth-of-type(2n)::after {
+		right: 50%;
+		left: 5vmin;
+	}
+			.roll-card:nth-of-type(1) {
+		margin: 0 0 0 0;
+    height: 100vh;
+		width: 80% !important;
+    display: flex;
+    background-color: white !important;
+    color:white;
+   
+    background-attachment: fixed;
+			}
+
+.roll-card:nth-of-type(2n) {
+margin: 0 0 0 auto;
+height: 80vh;
+width: 100%;
+background-image: url('../../svgfiles/diagonal.svg');
+font-size: 16px;
+color: black;
+
+line-height: 1.6;
+background-attachment: fixed;
+   
+    
+			}
+.roll-card:nth-of-type(3n) {
+     margin: 0 0 0 auto;
+height: 80vh;
+width: 100%;
+display: flex;
+background-color: #1e202c !important;
+color: black;
+background: url('../../svgfiles/diagonal2.svg');
+background-attachment: fixed;
+font-size: 16px;
+color: white;
+line-height: 1.6;
+background-attachment: fixed;
+          }
+          /* .roll-content{
+     
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: -80px;
+            margin-top: 80px;
+            
+          }
+          .roll-content img{
+            width:350px !important;
+            
+          }
+          .roll-content1 p{
+            width: 300px;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-top: -120px;
+           color: black;
+            text-align: left;
+         padding: 30px;
+          margin-left: -400px;
+          }
+          
+ .roll-content2{
+            width: 650px;
+            gap: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 400px;
+          margin: 40px;
+          }
+          .compression-content1 p{
+            width: 300px;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-top: -120px !important;
+           color: black;
+            text-align: left;
+         padding: 30px;
+          margin-left: -400px;
+          } */
+}
+
+@media screen and (max-width: 480px) {
+  
+	.roll-card {
+		background:white;
+		width: calc( 100% + 1px);
+		height: 100vh;
+		margin: 0 0 0 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+   z-index: 1000;
+
+			}
+	
+			.roll-card:nth-of-type(2n)::after {
+		right: 100%;
+		left: 5vmin;
+	}
+			.roll-card:nth-of-type(1) {
+		margin: 0 0 0 0;
+    height: 80vh;
+		width: 100% !important;
+    display: flex;
+    background-color: white !important;
+    color:white;
+   
+    background-attachment: fixed;
+			}
+
+.roll-card:nth-of-type(2n) {
+margin: 0 0 0 auto;
+height: 80vh;
+width: 100%;
+background-image: url('../../svgfiles/diagonal.svg');
+font-size: 16px;
+color: black;
+
+line-height: 1.6;
+background-attachment: fixed;
+   
+    
+			}
+.roll-card:nth-of-type(3n) {
+     margin: 0 0 0 auto;
+height: 80vh !important;
+width: 100%;
+display: flex;
+background-color: #1e202c !important;
+color: black;
+background: url('../../svgfiles/diagonal2.svg');
+background-attachment: fixed;
+
+color: white;
+line-height: 1.6;
+background-attachment: fixed;
+          }
+       
+          
+}
+
+/* Responsive Styling - Adjustments Only in Media Queries */
+
+/* Tablet and small desktop (max-width: 700px) */
+@media screen and (max-width: 700px) {
+  .roll-content {
+    margin-left: 0;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .roll-content img {
+    width: 90%;
+    max-width: 300px;
+   
+  }
+  .roll-content1 {
+    width: 90%;
+    padding: 20px;
+    margin: 40px auto;
+  }
+  .roll-content1 p {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .roll-content2 {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+ 
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .roll-content {
+    width: 100%;
+    margin-top: 100px;
+    display: block;
+    text-align: left;
+  }
+
+  .roll-content img {
+    width: 80%;
+    max-width: 250px;
+  }
+  .roll-content1 {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  .roll-content1 p {
+    width: 90%;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: left;
+  }
+  .roll-content1 ul {
+    font-size: 14px;
+  }
+
+  .roll-content1 h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .roll-content2 {
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .roll-content2 p,
+  .roll-content2 li,
+  .roll-content2 h4,
+  .roll-content2 b {
+    font-size: 14px !important;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .compression-content1 p {
+    width: 90%;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: center;
+    margin: 10px auto;
+  }
+}
+
+/*3 roll*/
+.rollhero-image{
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important; /* Ensures the image fills the space without distortion */
+  }
+.roll{
+  height: 80vh;
+  background-image: url('../../Images/3rollcalendaringbg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.roll-article{
+  background-image: url('../../Images/3rollcalendaringbg.jpg');
+  background-position:50% center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+	z-index: 1;
+	color: #000;
+	background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+  .subhero-container {
+    flex-direction: column; /* Stack hero section */
+    height: auto;
+  }
+
+  .subhero-left {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .subhero-text-content {
+    max-width: 90%;
+    margin-top: 0;
+  }
+
+  .subhero-title {
+    font-size: 2.5rem !important;
+  }
+
+  .subhero-right {
+    flex: 1;
+  }
+
+  .roll-content,
+  .roll-content1,
+  .roll-content2 {
+    width: 90% !important;
+    max-width: 600px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .roll-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .roll-content1 p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .roll-content2 {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+ 
+  .roll-card:nth-of-type(2n) {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .roll-card:nth-of-type(3n) {
+    height: 60vh;
+  }
+
+  .roll {
+    height: 50vh;
+  }
+}

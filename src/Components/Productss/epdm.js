@@ -55,21 +55,23 @@ const ProductPage = () => {
        
       </section>
 
-
-    <section>
-   <article className="Product-article">
+      <section>
+   <article  className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
-          <div key={product.id} className="siliconproduct-section">
+          <div key={product.id} className="siliconproduct-section" >
             <div className="product-content">
-              <div style={{marginLeft:"-70px"}}>
-              <img src={EPDM1} alt={product.title} className="epdm-image product-image" style={{marginTop:"-10px"}} />
+              <div style={{marginLeft:"-70px",}}>
+              <img src={EPDM1} alt={product.title} className="product-image silicon-img" />
               </div>
-              <h3>{product.title}</h3>
-              <p>
+             
+              <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-40px"}}>
+              <p style={{marginLeft:"20px",marginTop:"80px"}}>
           <b>EPDM rubber hoses</b> are versatile and widely used in various industries due to their excellent resistance to heat, ozone, weathering, and many chemicals. They are made from EPDM (Ethylene Propylene Diene Monomer), a synthetic rubber known for its durability and flexibility.  
               High-performance hoses for radiator and cooling systems, built to DIN73411 & SAEJ20 Class D standards for durability, flexibility, and heat resistance.
-       </p>
+       
+              </p>
+              </div>
             </div>
           </div>
         ))}
@@ -78,14 +80,15 @@ const ProductPage = () => {
 	
 	<figure className="silicon-card">
 	{siliconproducts.map((product, index) => (
-          <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
+          <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
-              <img src={EPDM2} alt={product.title} className="epdm-image2" style={{marginRight:"15px",width:"500px",marginTop:"10px"}} />
-             
-          <div style={{marginLeft:"20px",marginTop:"10px"}}>
-          <p>
-              <h3>Key Features and Benefits:</h3>
-          <ul>
+              <div style={{marginLeft:"-70px",}}>
+              <img src={EPDM2} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px",width:"500px"}}  />
+              </div>
+              
+            <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-20px"}}>
+                <p style={{marginLeft:"20px",marginTop:"80px"}}><h3>Key Features and Benefits:</h3>
+                <ul>
             <li>Available in reinforcement as well as non-reinforcement options.
            </li>
             <li>Nylon/polyester reinforcement gives flexibility and aramid / Kevlar gives high strength.
@@ -94,26 +97,23 @@ const ProductPage = () => {
             </li>
             <li>Also available in peroxide-cured hoses.</li>
             
-          </ul>
-        </p>
-          </div>
+          </ul> 
+          </p>
+            </div>
             </div>
           </div>
         ))}
 	</figure>
-	
+  
 
+	
 	
 </article>
     </section>
 
-    {/* <section className="background-section">
-  <div className="background-overlay">
-    
-  </div>
-</section> */}
+   
 <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section>
 
 

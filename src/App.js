@@ -99,7 +99,7 @@ const App = () => {
         <Route path="/Muffle-furnance" element={<Inhouse6 />} />
       </Routes>
     
-{/* <GetInTouch /> */}
+ <GetInTouch /> 
       {/* Shared footer */}
 
       <Footer />

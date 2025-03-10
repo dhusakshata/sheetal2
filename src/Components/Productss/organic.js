@@ -52,8 +52,59 @@ const ProductPage = () => {
       </section>
 
 
+      <section>
+   <article  className="Product-article">
+	<figure className="silicon-card">
+  {siliconproducts.map((product, index) => (
+          <div key={product.id} className="siliconproduct-section" >
+            <div className="product-content">
+              <div style={{marginLeft:"-70px",}}>
+              <img src={Organic1} alt={product.title} className="product-image silicon-img" />
+              </div>
+             
+              <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-40px"}}>
+              <p style={{marginLeft:"20px",marginTop:"80px"}}><b>Organic rubber hoses</b>, primarily made from natural rubber (NR), offer a unique blend of properties and sustainability. Derived from the sap of rubber trees, natural rubber provides excellent elasticity, resilience, and durability.Designed for low-temperature air, water, and fuel
+           transfer, with material options like SBR,
+          PVC/NBR, Neoprene, Vamac, and NBR for
+           specific needs.
+              </p>
+              </div>
+            </div>
+          </div>
+        ))}
+	</figure>
+
+	
+	<figure className="silicon-card">
+	{siliconproducts.map((product, index) => (
+          <div key={product.id} className="siliconproduct-section">
+            <div className="product-content" >
+              <div style={{marginLeft:"-70px",}}>
+              <img src={Organic2} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px"}} />
+              </div>
+              
+            <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-20px"}}>
+                <p style={{marginLeft:"20px",marginTop:"100px"}}><h3>Key Features and Benefits:</h3>
+                <ul>
+            <li>The reinforcement fabrics used in our hoses are typically made from Polyester and Nylon, with Kevlar/Aramid sometimes used for higher temperatures or based on customer specifications.</li>
+            <li>The materials for the inner tube and outer cover can vary, such as inner nitrile and outer neoprene, available in both reinforced and non-reinforced options.</li>
+            <li>We offer the option of developing non-reinforced extruded tubes for applications where service pressure requirements are very low.</li>
+            {/* <li>Our hoses are customizable to meet specific customer needs, with varying reinforcement and material combinations based on performance requirements.</li> */}
+          </ul></p>
+            </div>
+            </div>
+          </div>
+        ))}
+	</figure>
+  
+
+	
+	
+</article>
+    </section>
+
     
-   <article className="Product-article">
+   {/* <article className="Product-article">
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
           <div key={product.id}className="siliconproduct-section">
@@ -105,7 +156,7 @@ const ProductPage = () => {
 	
 	
 	
-</article>
+</article> */}
    
 
 
@@ -115,7 +166,7 @@ const ProductPage = () => {
   </div>
 </section> */}
 <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section>
     </div>
   );

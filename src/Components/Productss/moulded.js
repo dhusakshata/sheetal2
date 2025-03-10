@@ -66,7 +66,7 @@ const ProductPage = () => {
               <img src={Moulded11} alt={product.title} className="moulded-image" />
               </div>
               <h3>{product.title}</h3>
-              <p>
+              <p style={{marginLeft:"20px"}}>
               We specialize in high-performance,
 custom-moulded parts for various
 industries.
@@ -84,7 +84,7 @@ industries.
              <div style={{marginLeft:"10px",marginTop:"-250px"}}>
              <img src={Moulded12} alt={product.title} className="moulded-image" style={{marginRight:"15px"}} />
               </div>
-            <p>We are using materials like SBR,
+            <p style={{marginLeft:"40px"}}>We are using materials like SBR,
 EPDM, PVC/NBR, Silicone, Neoprene,
 and more.</p>
             </div>
@@ -95,7 +95,7 @@ and more.</p>
   <figure className="silicon-card">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
-            <div className="product-content" >
+            <div className="product-content" style={{marginTop:"-250px"}}>
              <div style={{marginLeft:"10px"}}>
                <img src={Moulded13} alt={product.title} className="moulded-image" style={{marginRight:"15px"}} /></div>
               <div style={{marginLeft:"20px"}}>
@@ -123,7 +123,7 @@ and more.</p>
   <figure className="silicon-card">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
-            <div className="product-content" >
+            <div className="product-content"style={{marginTop:"-250px"}} >
               <div style={{marginLeft:"-20px",marginTop:"-40px"}}>
                 <img src={Moulded14} alt={product.title} className="moulded-image" style={{marginRight:"15px"}} /></div>
 
@@ -157,7 +157,7 @@ and more.</p>
   </div>
 </section> */}
 <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section>
  
     </div>

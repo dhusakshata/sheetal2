@@ -33,7 +33,7 @@ const handleScrollDown = () => {
       <section className="about-hero">
         <div className="about-hero-content">
           {/* Left Section */}
-          <div className="vertical-line" style={{height:"180px"}}></div>
+          <div className="vertical-line" style={{height:"150px",marginTop:"100px"}}></div>
           <div className="about-hero-heading">
             
             <h1>
@@ -161,7 +161,7 @@ const handleScrollDown = () => {
         </div>
       </section>
       <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section>
     </div>
   );

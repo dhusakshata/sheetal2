@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./contactus.css";
-import { BsArrowDownCircle } from "react-icons/bs";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom";
@@ -68,9 +68,7 @@ const [selectedFile, setSelectedFile] = useState(null);
           <p>
           For inquiries related to Sheetal Rubber Pvt Ltd's operations in Bhosari, please use the contact form below or reach out directly using the provided email and contact details.
           </p>
-          <div className="scroll-down" onClick={handleScrollDown}>
-           <BsArrowDownCircle size={35} />
-          </div>
+         
         </div>
       </div>
      </div>

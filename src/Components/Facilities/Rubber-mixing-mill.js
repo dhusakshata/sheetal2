@@ -41,7 +41,7 @@ const Inhousefacility = () => {
 
           <div  className="autoclave-section">
             <div className="autoclave-content">
-            <img src={RubberMixing} alt="Compression Transfer Moulding" style={{ width: "500px" }} 
+            <img src={RubberMixing} alt="Compression Transfer Moulding" style={{ width: "600px" ,marginLeft:"120px"}} 
           className='compression-img'
           />
             </div>

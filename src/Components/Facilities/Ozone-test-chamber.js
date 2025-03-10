@@ -41,7 +41,7 @@ const ProductPage = () => {
 	<figure className="subinhouse-card">
  
           <div className="subinhouseproduct-section">
-            <div className="product-content">
+            <div className="inhouse-content">
               <img src={OzenTest}  className="facility-image" style={{width:"500px",height:"400px",marginTop:"-150px"}}/>
       
             </div>

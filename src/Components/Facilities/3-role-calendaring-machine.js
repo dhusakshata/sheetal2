@@ -1,7 +1,7 @@
 import React from "react";
 
 import Role from "../../Images/3_role-removebg-preview.png";
-import "./autoclave.css";
+import "./3roll.css";
 import { Link } from "react-router-dom";
 import { BsArrowDownCircle } from "react-icons/bs";
 import hoses from "../../Images/3rollbg.jpg";
@@ -37,10 +37,10 @@ const Inhousefacility = () => {
     </section>
 
     <article className="roll-article">
-	<figure className="autoclave-card">
+	<figure className="roll-card">
 
-          <div  className="autoclave-section">
-            <div className="autoclave-content">
+          <div  className="roll-section">
+            <div className="roll-content">
           
             <img src={Role} alt="Auto Clave Vulcanizer" style={{width:"700px" ,margin:"20px" }} />
             </div>
@@ -48,40 +48,33 @@ const Inhousefacility = () => {
  
 	</figure>
 
-	
-	<figure className="autoclave-card">
-	
-          <div className="autoclave-section">
-         
-            <div className="autoclave-content1">
-            <p>
-            The calendaring process is essential for producing high quality rubber products which are used in various applications. By maintaining stringent quality control, our calendaring
-              machines enhance the performance and durability of our finished products while maximizing production
-              efficiency.
-              
-              <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Purpose:</h4>
-              <ul><li>Shapes and finishes rubber sheets with precise thickness and uniformity.</li></ul>
-            <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Operation:</h4>
-            <ul>
-            <b>Roller System:</b> 
-              <li>Three horizontally aligned rollers compress and stretch rubber compounds into flat sheets.</li>
-              <b>Uniformity:</b>
-              <li> Ensures even distribution and desired properties.</li>
-            </ul>
+  <figure className="roll-card">
+  <div className="roll-section">
+    <div className="roll-content1">
+      <p>
+        The calendaring process is essential for producing high-quality rubber products, which are used in various applications. By maintaining stringent quality control, our calendaring machines enhance the performance and durability of our finished products while maximizing production efficiency.
+      </p>
 
-           
-            </p>
-            
-            </div>
-          </div>
-        
-	</figure>
+      <h4>Purpose:</h4>
+      <ul>
+        <li>Shapes and finishes rubber sheets with precise thickness and uniformity.</li>
+      </ul>
 
-  <figure className="autoclave-card">
+      <h4>Operation:</h4>
+      <ul>
+        <li><b>Roller System:</b> Three horizontally aligned rollers compress and stretch rubber compounds into flat sheets.</li>
+        <li><b>Uniformity:</b> Ensures even distribution and desired properties.</li>
+      </ul>
+    </div>
+  </div>
+</figure>
+
+
+  <figure className="roll-card">
 	
-          <div className="autoclave-section">
+          <div className="roll-section">
          
-            <div className="autoclave-content2"style={{marginTop:"20px"}} >
+            <div className="roll-content2"style={{marginTop:"20px"}} >
             
            
             <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Advantages:</h4>

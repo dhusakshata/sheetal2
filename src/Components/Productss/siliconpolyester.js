@@ -41,7 +41,7 @@ const ProductPage = () => {
                <h1 style={{textAlign:"left",marginLeft:"30px" }}>
               SILICON-POLYESTER HOSES
                 </h1>
-               <h2  style={{textAlign:"left",marginLeft:"-160px" ,fontWeight:"bold",fontSize:"24px"}}>Silicone Power. Flexible Solutions.
+               <h2  style={{textAlign:"left" ,fontWeight:"bold",fontSize:"24px"}}>Silicone Power. Flexible Solutions.
                 </h2>
                 
              </div>
@@ -63,10 +63,10 @@ const ProductPage = () => {
           <div key={product.id} className="siliconproduct-section" >
             <div className="product-content">
               <div style={{marginLeft:"-70px",}}>
-              <img src={Silicon11} alt={product.title} className="product-image" />
+              <img src={Silicon11} alt={product.title} className="product-image silicon-img" />
               </div>
              
-              <div style={{marginLeft:"20px",marginTop:"-40px"}}>
+              <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-40px"}}>
               <p style={{marginLeft:"20px",marginTop:"80px"}}><b>Silicone-Polyester hoses </b>are designed specifically for use in demanding radiator, heater, and coolant transfer applications. Constructed from high-quality silicone reinforced with durable polyester fabric, these hoses offer excellent resilience and reliable performance in harsh conditions. This combination of versatility, durability, and adaptability to extreme environments makes Silicone-Polyester hoses a premium choice for automotive, industrial, and other applications requiring reliable coolant and heat transfer solutions.
               </p>
               </div>
@@ -81,10 +81,10 @@ const ProductPage = () => {
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
               <div style={{marginLeft:"-70px",}}>
-              <img src={Silicon12} alt={product.title} className="product-image" style={{marginRight:"15px"}} />
+              <img src={Silicon12} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px"}} />
               </div>
               
-            <div style={{marginLeft:"20px",marginTop:"-20px"}}>
+            <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-20px"}}>
                 <p style={{marginLeft:"20px",marginTop:"80px"}}><h3>Key Features and Benefits:</h3>
           <ul>
             <li>
@@ -112,15 +112,10 @@ const ProductPage = () => {
 	
 </article>
     </section>
-    
-    {/* <section className="background-section">
-  <div className="background-overlay">
-    
-  </div>
-</section> */}
+  
 
 <section className="getin-touch">
-<GetInTouch />
+{/* <GetInTouch /> */}
   </section>
  
     </div>
