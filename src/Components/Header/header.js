@@ -325,8 +325,8 @@ const Sidebar = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px;
-  height: 100%;
+  width:90%;
+  height: 100vh;
   background-color: #222;
   z-index: 100;
   transform: ${({ isOpen }) => (isOpen ? "translateX(0)" : "translateX(-100%)")};
@@ -696,7 +696,6 @@ function Header() {
   </SidebarDropdown>
 </SidebarNavItem>
 
-  
 <SidebarNavItem>
   <DropdownToggle onClick={() => toggleDropdown("facilities")}>
     <SidebarLink to="/facility" onClick={toggleSidebar}>
@@ -709,18 +708,18 @@ function Header() {
   <SidebarDropdown isOpen={openDropdown === "facilities"}>
     {facilityItems.map((facility, index) => (
       <div key={index} className="facility-item">
-        {/* Main Facility Item */}
-        <DropdownToggle onClick={() => toggleDropdown(facility.name)}>
+        {/* Facility Item */}
+        <DropdownToggle onClick={() => toggleSubDropdown(facility.name)}>
           <SidebarLink to={facility.link} onClick={toggleSidebar}>
             {facility.name}
           </SidebarLink>
           <FaChevronDown
-            className={`icon ${openDropdown === facility.name ? "rotate-180" : ""}`}
+            className={`icon ${activeSubDropdown === facility.name ? "rotate-180" : ""}`}
           />
         </DropdownToggle>
 
-        {/* Sub-Dropdown */}
-        <SidebarDropdown isOpen={openDropdown === facility.name}>
+        {/* Sub-Dropdown (Only opens when the specific facility is clicked) */}
+        <SidebarDropdown isOpen={activeSubDropdown === facility.name}>
           {facility.subItems.map((subFacility, idx) => (
             <SidebarLink key={idx} to={subFacility.link} onClick={toggleSidebar} className="subitem">
               {subFacility.name}
@@ -731,6 +730,7 @@ function Header() {
     ))}
   </SidebarDropdown>
 </SidebarNavItem>
+
 
 
 

@@ -358,6 +358,44 @@ max-width: 400px !important;
            
             
               }
+
+              .Knniting-card:nth-of-type(2n) {
+                margin: 0 0 0 auto;
+                height: 60vh !important;
+                width: 100%;
+                background-image: url('../../svgfiles/diagonal.svg');
+                font-size: 16px;
+                color: black;
+                line-height: 1.8;
+                background-attachment: fixed;
+             
+                   
+                    
+                      }
+                        .Knniting-card:nth-of-type(3n) {
+                          margin: 0 0 0 auto;
+                          height: 50vh !important;
+                     width: 100%;
+                     display: flex;
+                     background-color: #1e202c !important;
+                     color: black;
+                     background: url('../../svgfiles/diagonal2.svg');
+                     background-attachment: fixed;
+                     font-size: 16px;
+                     color: white;
+                     line-height: 1.8;
+                     background-attachment: fixed;
+                               }
+                               .knittingcontent p{
+                                text-align: left;
+                                line-height: 1.8;
+                               }
+                               /**/
+
+
+              .autoclave-content1 p{
+                line-height: 1.8 !important;
+              }
   .autoclave-content,
   .autoclave-content1,
   .autoclave-content2 {
@@ -435,7 +473,7 @@ max-width: 400px !important;
 
 .autoclave-card:nth-of-type(2n) {
 margin: 0 0 0 auto;
-height: 100vh !important;
+height: 80vh;
 width: 100%;
 background-image: url('../../svgfiles/diagonal.svg');
 font-size: 16px;
@@ -447,7 +485,7 @@ background-attachment: fixed;
 			}
 .autoclave-card:nth-of-type(3n) {
      margin: 0 0 0 auto;
-     height: 100vh !important;
+     height: 80vh ;
 width: 100%;
 display: flex;
 background-color: #1e202c !important;
@@ -458,6 +496,123 @@ font-size: 16px;
 color: white;
 line-height: 1.6;
 background-attachment: fixed;
+          }
+
+          .compression-card:nth-of-type(1) {
+            margin: 0 0 0 0;
+            height: 50vh;
+            width: 100% !important;
+            display: flex;
+            background-color: white !important;
+            color:white;
+           
+            background-attachment: fixed;
+              }
+.compression-card:nth-of-type(2n) {
+  margin: 0 0 0 auto;
+  height: 90vh !important;
+  width: 100%;
+  background-image: url('../../svgfiles/diagonal.svg');
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+  background-attachment: fixed;
+     
+      
+        }
+          .compression-card:nth-of-type(3n) {
+            margin: 0 0 0 auto;
+            height: 90vh !important;
+       width: 100%;
+       display: flex;
+       background-color: #1e202c !important;
+       color: black;
+       background: url('../../svgfiles/diagonal2.svg');
+       background-attachment: fixed;
+       font-size: 16px;
+       color: white;
+       line-height: 1.6;
+       background-attachment: fixed;
+                 }
+
+                 /* RUBBER-Mixing Card*/
+                 .Rubber-card:nth-of-type(1) {
+                  margin: 0 0 0 0;
+                  height: 50vh;
+                  width: 100% !important;
+                  display: flex;
+                  background-color: white !important;
+                  color:white;
+                 
+                  background-attachment: fixed;
+                    }
+      .Rubber-card:nth-of-type(2n) {
+        margin: 0 0 0 auto;
+        height: 90vh !important;
+        width: 100%;
+        background-image: url('../../svgfiles/diagonal.svg');
+        font-size: 16px;
+        color: black;
+        line-height: 1.6;
+        background-attachment: fixed;
+           
+            
+              }
+                .Rubber-card:nth-of-type(3n) {
+                  margin: 0 0 0 auto;
+                  height: 100vh !important;
+             width: 100%;
+             display: flex;
+             background-color: #1e202c !important;
+             color: black;
+             background: url('../../svgfiles/diagonal2.svg');
+             background-attachment: fixed;
+             font-size: 16px;
+             color: white;
+             line-height: 1.6;
+             background-attachment: fixed;
+                       }
+                       /**/
+                       /* LNNITING Card*/
+                 .Knniting-card:nth-of-type(1) {
+                  margin: 0 0 0 0;
+                  height: 60vh;
+                  width: 100% !important;
+                  display: flex;
+                  background-color: white !important;
+                  color:white;
+                 
+                  background-attachment: fixed;
+                    }
+      .Knniting-card:nth-of-type(2n) {
+        margin: 0 0 0 auto;
+        height: 50vh !important;
+        width: 100%;
+        background-image: url('../../svgfiles/diagonal.svg');
+        font-size: 16px;
+        color: black;
+        line-height: 1.6;
+        background-attachment: fixed;
+           
+            
+              }
+                .Knniting-card:nth-of-type(3n) {
+                  margin: 0 0 0 auto;
+                  height: 50vh !important;
+             width: 100%;
+             display: flex;
+             background-color: #1e202c !important;
+             color: black;
+             background: url('../../svgfiles/diagonal2.svg');
+             background-attachment: fixed;
+             font-size: 16px;
+             color: white;
+             line-height: 1.6;
+             background-attachment: fixed;
+                       }
+                       /**/
+          .autoclave-content1 p{
+            line-height: 1.8 !important;
           }
           .autoclave-content{
             line-height: 1.6;
@@ -470,14 +625,14 @@ background-attachment: fixed;
           .autoclave-content img{
             /* width:200px !important; */
             width: 100%;
-    max-width: 400px !important;
+            max-width: 400px !important;
           
           }
           .autoclave-content1 {
             width: 100%;
             padding: 15px;
             font-size: 14px;
-            line-height: 1.6;
+         
             text-align: left;
           }
           .autoclave-content1 p{
@@ -554,9 +709,14 @@ background-attachment: fixed;
           margin: 10px auto;
           }
           .compression-img{
-            margin-left: -50px;
-            width: 250px !important;
+            margin-left: 30px !important;
+            width: 350px !important;
           }
+          .rubber-img{
+            width: 800px !important;
+            margin-left: -20px !important;
+           }
+          
 }
 
 

@@ -61,7 +61,7 @@ const ProductPage = () => {
               <img src={Marinewet1} alt={product.title} className="product-image silicon-img " />
               </div>
              
-              <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-40px"}}>
+              <div className="silicon-article " style={{marginLeft:"20px",marginTop:"-40px"}}>
               <p style={{marginLeft:"20px",marginTop:"40px"}}>Sheetal Rubber provides high-quality Marine Wet
 Exhaust Hoses for engine and generator systems
 in in-board pleasure boats, ensuring durability and
@@ -74,7 +74,7 @@ top performance in marine environments.<b>Marine wet exhaust hoses</b> are criti
 	</figure>
 
 	
-	<figure className="silicon-card">
+	<figure className="silicon-card silicon-card2">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
@@ -82,8 +82,9 @@ top performance in marine environments.<b>Marine wet exhaust hoses</b> are criti
               <img src={Marinewet2} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px"}} />
               </div>
               
-            <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-20px"}}>
-                <p style={{marginLeft:"20px",marginTop:"100px"}}><h3>Key Features and Benefits:</h3>
+            <div className="silicon-article marin-content" style={{marginLeft:"20px",marginTop:"-20px"}}>
+                <p style={{marginLeft:"20px",marginTop:"100px"}}>
+                  <h3>Key Features and Benefits:</h3>
                 <ul>
             <li>We are Manufacturing all hoses from only the highest quality rubber and reinforcement fabrics; they are designed to operate at temperatures up to + 180°C.
 

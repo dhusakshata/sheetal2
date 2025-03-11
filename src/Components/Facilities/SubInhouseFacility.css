@@ -401,12 +401,13 @@ z-index: 1000;
 	}
 			.subinhouse-card:nth-of-type(1) {
 		margin: 0 0 0 0;
-		width: 50%;
+		width: 100% !important;
 			}
 			.subinhouse-card:nth-of-type(2n) {
 		margin: 0 0 0 auto;
-		
+		height: 60vh !important;
 			}
+     
       .product-content p{
         
         font-size: 16px;
@@ -439,6 +440,9 @@ z-index: 1000;
         margin-left: 25px;
           margin-top: 40px;
           text-align: left;
+        }
+        .inhouse-content11{
+            margin-top: -200px !important;
         }
 }
 /* Background Section */

@@ -58,11 +58,11 @@ const ProductPage = () => {
 
 
     <section>
-   <article className="Product-article">
-	<figure className="silicon-card">
+   <article className="Product-article ">
+	<figure className="silicon-card silicon-card2">
   {siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
-            <div className="product-content">
+            <div className="product-content  wired-data1">
               <div style={{marginLeft:"-80px",marginTop:"-200px"}}>
               <img src={Wired1} alt={product.title} className="product-image" />
               </div>
@@ -81,13 +81,13 @@ environments, with a temperature range of
 	</figure>
 
 	
-	<figure className="silicon-card">
+	<figure className="silicon-card silicon-card2">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
-            <div className="product-content" >
+            <div className="product-content wired-data" >
               <img src={Wired11} alt={product.title} className="product-image" style={{width:"500px"}} />
 
-              <div className="silicon-article"  style={{marginLeft:"80px",marginTop:"-40px"}}>
+              <div className="silicon-article marin-content"  style={{marginLeft:"80px",marginTop:"-40px"}}>
  <p style={{marginLeft:"20px",marginTop:"-80px"}}>
         <h3>Key Features and Benefits:</h3>
         <ul>

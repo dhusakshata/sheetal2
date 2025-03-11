@@ -98,7 +98,8 @@ const Slider = () => {
   };
 
   return (
-    <div className="slider-container">
+   <div>
+     <div className="slider-container desktop-slider">
       <div className="slider">
         {/* Text content */}
         <div className="content">
@@ -133,9 +134,23 @@ const Slider = () => {
           ))}
         </div>
       </div>
-
-     
     </div>
+
+    {/* <div className="mobile-slider">
+  {contentSlides.map((slide, index) => (
+    <div
+      key={index}
+      className={`mobile-slide ${index === currentIndex ? "active" : ""}`}
+    >
+      <Link to={slide.link} className="mobile-slide-content">
+        <img src={imageSlides[index].src} alt={slide.title} className="mobile-slide-image" />
+        <h2 className="mobile-slide-title">{slide.title}</h2>
+      </Link>
+    </div>
+  ))}
+</div> */}
+ 
+   </div>
   );
 };
 

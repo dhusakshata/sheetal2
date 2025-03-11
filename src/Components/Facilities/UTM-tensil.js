@@ -49,7 +49,7 @@ const ProductPage = () => {
 	</figure>
 
 	
-	<figure className="silicon-card">
+	<figure className="silicon-card ">
 	
           <div  className="siliconproduct-section" >
             <div className="inhouse-content1" >

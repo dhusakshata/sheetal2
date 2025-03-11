@@ -37,7 +37,7 @@ const Inhousefacility = () => {
     </section>
 
     <article className="Knitting-article">
-	<figure className="autoclave-card">
+	<figure className="autoclave-card Knniting-card">
 
           <div  className="autoclave-section">
             <div className="autoclave-content">
@@ -50,11 +50,11 @@ const Inhousefacility = () => {
 	</figure>
 
 	
-	<figure className="autoclave-card">
+	<figure className="autoclave-card Knniting-card">
 	
           <div className="autoclave-section">
          
-            <div className="autoclave-content1" >
+            <div className="autoclave-content1 knittingcontent" >
             <p>
             Our production line includes advanced Knitting Machines that play a crucial role in the production of
               knitted rubber components. These machines utilize precise knitting techniques to create strong and
@@ -69,7 +69,7 @@ const Inhousefacility = () => {
         
 	</figure>
 
-  <figure className="autoclave-card">
+  <figure className="autoclave-card Knniting-card">
 	
           <div className="autoclave-section">
          
@@ -92,7 +92,7 @@ const Inhousefacility = () => {
  
 
 </article>
- <section className="Knittingbg"></section>
+ {/* <section className="Knittingbg"></section> */}
    
 
     </div>

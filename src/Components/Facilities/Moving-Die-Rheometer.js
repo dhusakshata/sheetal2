@@ -45,10 +45,10 @@ const ProductPage = () => {
 	</figure>
 
 	
-	<figure className="silicon-card">
+	<figure className="silicon-card subinhouse-card">
 	
           <div  className="siliconproduct-section" >
-            <div className="inhouse-content1" >
+            <div className="inhouse-content1 inhouse-content11" >
             <ul style={{marginTop:"-80px"}}>
       <li>A Moving Die Rheometer (MDR) is essential in the rubber industry for measuring the dynamic curing characteristics of rubber and elastomers during vulcanization.</li>
       <li>

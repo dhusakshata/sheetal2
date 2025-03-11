@@ -58,7 +58,7 @@ const ProductPage = () => {
 
     <section>
    <article className="Product-article">
-	<figure className="silicon-card">
+	<figure className="silicon-card silicon-card3">
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content">
@@ -77,22 +77,27 @@ industries.
 	</figure>
 
 	
-	<figure className="silicon-card">
+	<figure className="silicon-card silicon-card2">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
              <div style={{marginLeft:"10px",marginTop:"-250px"}}>
              <img src={Moulded12} alt={product.title} className="moulded-image" style={{marginRight:"15px"}} />
               </div>
-            <p style={{marginLeft:"40px"}}>We are using materials like SBR,
-EPDM, PVC/NBR, Silicone, Neoprene,
-and more.</p>
+              
+            <div className="marin-content">
+            <p style={{marginLeft:"40px"}}>
+              <ul>
+                <li>We are using materials like SBR,
+EPDM, PVC/NBR, Silicone, Neoprene,& more.</li></ul>
+            </p>
+            </div>
             </div>
           </div>
         ))}
 	</figure>
 	
-  <figure className="silicon-card">
+  <figure className="silicon-card silicon-card3">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" style={{marginTop:"-250px"}}>
@@ -120,7 +125,7 @@ and more.</p>
           </div>
         ))}
 	</figure>
-  <figure className="silicon-card">
+  <figure className="silicon-card silicon-card3">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content"style={{marginTop:"-250px"}} >

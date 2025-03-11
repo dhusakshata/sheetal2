@@ -108,6 +108,7 @@ body {
 
   .silicon-hero-heading h2 {
     font-size: 18px !important;
+    margin-left: -200px !important;
   }
 }
 
@@ -320,6 +321,7 @@ article .content {
 		margin: 0 0 0 auto;
 		
 			}
+
      
 }
 
@@ -418,11 +420,12 @@ z-index: 1000;
 	}
 			.silicon-card:nth-of-type(1) {
 		margin: 0 0 0 0;
-		width: 50%;
+    
+		width: 100%;
 			}
 			.silicon-card:nth-of-type(2n) {
 		margin: 0 0 0 auto;
-		width: 50%;
+		width: 100%;
   
 			}
       .silicon-card:nth-of-type(3n) {
@@ -435,7 +438,14 @@ z-index: 1000;
             width: 100%;
             height: 60vh !important;
               }
+/*             
+              .marin-content li,h3{
+                width: 80%;
+margin-left: 60px !important ;
+
+              } */
       .product-content p{
+        width: 100%;
         font-size: 14px !important;
         margin: 60px;
         line-height: 1.4;
@@ -456,9 +466,11 @@ z-index: 1000;
           margin-top: -180px !important;
           
         }
-        
+        .product-content{
+          margin-left: 50px;
+             }
         .silicon-article p{
-          width: 80% !important;
+          width: 100% !important;
           margin: 0 auto;
           padding: 25px;
           text-align: left;
@@ -502,7 +514,26 @@ z-index: 1000;
 		margin: 0 0 0 auto;
     width: 100% !important;
 			}
-      
+      .silicon-card2:nth-of-type(2n) {
+        margin: 0 0 0 auto;
+    width: 100% !important;
+    height: 70vh !important;
+      }
+      .silicon-card3:nth-of-type(1) {
+        margin: 0 0 0 auto;
+    width: 100% !important;
+    height: 50vh !important;
+      }
+      .silicon-card3:nth-of-type(2n) {
+        margin: 0 0 0 auto;
+    width: 100% !important;
+    height: 60vh !important;
+      }
+      .silicon-card3:nth-of-type(4n) {
+        margin: 0 0 0 auto;
+    width: 100% !important;
+    height: 60vh !important;
+      }
       .product-content p{
 
         font-size: 12px !important;
@@ -558,9 +589,29 @@ z-index: 1000;
         margin-left: -360px !important;
        
       }
-
-     
-      
+      .epdm{
+        background-size: contain !important;
+        height: 30vh !important;
+        background-position: center !important;
+      }
+.organic{
+  background-size: contain !important;
+        height: 50vh !important;
+        background-position: center !important;
+        
+}
+ .Assembly{
+  background-size: contain !important;
+        height: 50vh !important;
+        background-position: center !important;
+ }    
+  .wired-data{
+    margin-top: -500px;
+  }  
+  .wired-data1{
+    margin-top: -300px;
+  }    
+  
 }
 /* Background Section */
 .background-section {

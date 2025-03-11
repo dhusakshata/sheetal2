@@ -33,7 +33,7 @@ const Inhousefacility = () => {
 
     <article className="sub-article">
 
-	<figure className="sub-card">
+	<figure className="sub-card hotfeed-card">
 
           <div  className="sub-section">
             <div className="sub-content1">
@@ -50,12 +50,12 @@ const Inhousefacility = () => {
 	</figure>
 
 	
-	<figure className="sub-card">
+	<figure className="sub-card hotfeed1-card">
 	
           <div className="sub-section">
           <h1 style={{textAlign:"center", margin:"30px",fontSize:"2rem",textTransform:"uppercase"}}>Hot Feed Extruder</h1>
             <div className="sub-content" >
-            <img src={HotFeed} alt="Hot Feed Extruder" className="subimg"/>
+            <img src={HotFeed} alt="Hot Feed Extruder" className="subimg hotimg"/>
            
             <ul>
               <li>A hot feed extruder for rubber hoses shapes rubber into hoses by feeding heated rubber through a die.</li>
@@ -86,7 +86,7 @@ const Inhousefacility = () => {
           </div>
         
 	</figure>
-  <figure className="sub-card">
+  <figure className="sub-card hotfeed1-card">
 	
   <div className="sub-section">
   <h1 style={{textAlign:"center", margin:"30px",fontSize:"2rem",textTransform:"uppercase"}}>Co-Extrusion Extruder</h1>
@@ -109,7 +109,7 @@ const Inhousefacility = () => {
 
 
 </article>
- <section className="hotbg1"></section>
+ {/* <section className="hotbg1"></section> */}
    
 
     </div>

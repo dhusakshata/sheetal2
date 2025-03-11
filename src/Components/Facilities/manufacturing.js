@@ -188,10 +188,10 @@ useEffect(() => {
           </div>
         
 	</figure>
-	<figure className="manufacturing-card">
+	{/* <figure className="manufacturing-card">
 	
 
-	</figure>
+	</figure> */}
 
 </article>
 

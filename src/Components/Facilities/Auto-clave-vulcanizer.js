@@ -56,7 +56,13 @@ const Inhousefacility = () => {
             <div className="autoclave-content1" >
             <p>
               Our production line features Auto Clave Vulcanizers (Quick Lock Type), designed for precise and efficient vulcanization of rubber products. These advanced vulcanizers utilize high pressure and heat to cure rubber compounds, ensuring optimal strength, elasticity, and durability in the finished products. The Quick Lock mechanism enables fast and secure loading and unloading of materials, significantly reducing cycle times while maintaining stringent quality control.
+
+              <h4>Purpose:</h4>
+            <ul><li> Vulcanizes rubber products using heat and pressure to enhance strength, elasticity, and durability.</li></ul>
+             
+            
             </p>
+            
             </div>
           </div>
         
@@ -68,10 +74,7 @@ const Inhousefacility = () => {
          
             <div className="autoclave-content2" >
             
-            <h4>Purpose:</h4>
-            <p>
-              Vulcanizes rubber products using heat and pressure to enhance strength, elasticity, and durability.
-            </p>
+           
 
             <h4>Quick Lock Mechanism:</h4>
             <p>
@@ -98,7 +101,7 @@ const Inhousefacility = () => {
  
 
 </article>
- <section className="autoclave"></section>
+ {/* <section className="autoclave"></section> */}
    
 
     </div>

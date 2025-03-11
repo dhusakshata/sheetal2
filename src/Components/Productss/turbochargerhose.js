@@ -65,7 +65,7 @@ const ProductPage = () => {
               <img src={Turbocharger11} alt={product.title} className="product-image  turbo-img" />
               </div>
              
-              <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-40px"}}>
+              <div className="silicon-article " style={{marginLeft:"20px",marginTop:"-40px"}}>
               <p style={{marginLeft:"20px",marginTop:"80px"}}><b>Turbocharger hoses</b> are essential components in the automotive industry, particularly for vehicles equipped with turbocharged engines. These flexible tubes play a crucial role in connecting the turbocharger to the engine's intake manifold. Their primary function is to efficiently transport compressed air from the turbocharger to the engine's cylinders, enhancing performance and fuel economy.Engineered for high-performance connections in turbocharger and
             charge air cooler systems, ensuring durability in demanding automotive
             and industrial applications.
@@ -87,7 +87,7 @@ const ProductPage = () => {
               <img src={ Turbocharger12} alt={product.title} className="product-image  turbo-img" style={{marginRight:"15px"}} />
               </div>
               
-            <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-20px"}}>
+            <div className="silicon-article marin-content" style={{marginLeft:"20px",marginTop:"-20px"}}>
                 <p style={{marginLeft:"20px",marginTop:"80px"}}><h3>Key Features and Benefits:</h3>
                 <ul>
             <li>Design to operate at Temperature range: -50°C to + 230°C.

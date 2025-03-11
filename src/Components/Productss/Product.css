@@ -9,7 +9,9 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-
+.Product-page{
+  overflow-x: hidden !important;
+}
 .Product-hero {
 
   height: 80vh;
@@ -223,7 +225,7 @@ margin-bottom: 50px;
     background-size: contain !important;
     background-attachment: fixed;
     display: flex;
-  
+  overflow-x: hidden;
     color: white;
     position: relative;
   }
@@ -235,7 +237,7 @@ margin-bottom: 50px;
   min-height: 50vh;
   background: url('../../svgfiles/diagonal2.svg');
   background-attachment: fixed;
-
+  overflow-x: hidden;
   display: flex;
   justify-content: center; /* Center content */
   align-items: center;
@@ -251,6 +253,7 @@ display: flex;
   justify-content:flex-end;
   align-items: center;
   width: 100%;
+  overflow-x: hidden !important;
 
 }
 
@@ -359,7 +362,8 @@ font-weight: bold;
   align-items: center;
   color:white;
   font-weight: bold;
-  position: relative
+  position: relative;
+  overflow-x: hidden !important;
 }
 .trusted-product{
   width: 550px;

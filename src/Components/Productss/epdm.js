@@ -57,7 +57,7 @@ const ProductPage = () => {
 
       <section>
    <article  className="Product-article">
-	<figure className="silicon-card">
+	<figure className="silicon-card silicon-card2">
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section" >
             <div className="product-content">
@@ -78,7 +78,7 @@ const ProductPage = () => {
 	</figure>
 
 	
-	<figure className="silicon-card">
+	<figure className="silicon-card silicon-card2">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
@@ -86,7 +86,7 @@ const ProductPage = () => {
               <img src={EPDM2} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px",width:"500px"}}  />
               </div>
               
-            <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-20px"}}>
+            <div className="silicon-article marin-content" style={{marginLeft:"20px",marginTop:"-20px"}}>
                 <p style={{marginLeft:"20px",marginTop:"80px"}}><h3>Key Features and Benefits:</h3>
                 <ul>
             <li>Available in reinforcement as well as non-reinforcement options.

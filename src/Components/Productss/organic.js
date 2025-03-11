@@ -75,7 +75,7 @@ const ProductPage = () => {
 	</figure>
 
 	
-	<figure className="silicon-card">
+	<figure className="silicon-card silicon-card2">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
@@ -83,7 +83,7 @@ const ProductPage = () => {
               <img src={Organic2} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px"}} />
               </div>
               
-            <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-20px"}}>
+            <div className="silicon-article marin-content" style={{marginLeft:"20px",marginTop:"-20px"}}>
                 <p style={{marginLeft:"20px",marginTop:"100px"}}><h3>Key Features and Benefits:</h3>
                 <ul>
             <li>The reinforcement fabrics used in our hoses are typically made from Polyester and Nylon, with Kevlar/Aramid sometimes used for higher temperatures or based on customer specifications.</li>

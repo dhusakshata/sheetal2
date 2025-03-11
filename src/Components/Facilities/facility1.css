@@ -43,10 +43,12 @@
   .subhero-container {
     flex-direction: column !important; /* Stack items vertically */
     height: auto; /* Adjust height for smaller screens */
+    width: 100%; /* Ensure full width */
+    overflow-x: hidden; /* Prevent overflow */
   }
 
-  .subhero-left, .hero-right {
-    width: 100%; /* Full width */
+  .subhero-left, .subhero-right {
+    width: 100% !important; 
   }
 
   .subhero-left {
@@ -55,6 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
 
   .subhero-text-content {
@@ -97,7 +100,7 @@
 }
 .hotcoldbg{
   height: 80vh;
-  background-image: url('../../Images/extrusion-machine2bg.jpg');
+  background-image: url('../../Images/coldfeed.webp');
 
   background-position: center;
   background-repeat: no-repeat;
@@ -181,9 +184,9 @@
 
 .sub-article {
  
-	background-image: url('../../Images/extrusion-machine2bg.jpg');
+	background-image: url('../../Images/coldfeed.webp');
 
-  background-position:50% center !important;
+  background-position:10% center !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -457,17 +460,25 @@ background-attachment: fixed;
         background-size: cover;
         background-attachment: fixed;
           }
+
+
+.hotfeed-card:nth-of-type(1) {
+  height: 50vh !important;
+}
+
+
         .sub-section{
           height: 100vh ;
         }
         .sub-section1{
           height: 100vh ;
+          margin-top: -30px;
          background-color: white !important;
          color: black;
         }
 .sub-content {
   width: 100% !important;
-  height: 60vh;
+
   gap: 10px;
   text-align: left;
   display: flex;
@@ -524,13 +535,14 @@ background-attachment: fixed;
   width: 400px !important;
   height: 60vh;
   gap: 10px;
+  line-height: 1.8 !important;
   text-align: left;
   display: flex;
   flex-direction: column !important;
   justify-content: center;
   align-items: center;
   margin-left: 40px;
-  margin-top: -70px;
+  margin-top: -50px;
 
 }
 .co-img{
@@ -540,7 +552,7 @@ background-attachment: fixed;
 .sub-content3 li{
   width: 100% !important;
   font-size: 14px !important;
-  line-height: 1.6;
+  line-height: 1.8 !important; 
  
   
 }
@@ -675,7 +687,7 @@ background-attachment: fixed;
   .cold-img{
     width: 300px !important;
     margin-left:-100px;
-    margin-top: 140px;
+    margin-top: 200px;
   }
   .sub-content3{
     width: 600px !important;
@@ -692,7 +704,10 @@ background-attachment: fixed;
   }
   .co-img{
     width: 300px !important;
-    margin-top: 100px;
+    margin-top: 200px !important;
+  }
+  .hotimg{
+    margin-top: -100px !important; 
   }
   .sub-content3 p{
     width: 300px;

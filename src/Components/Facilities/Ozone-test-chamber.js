@@ -50,10 +50,10 @@ const ProductPage = () => {
 	</figure>
 
 	
-	<figure className="silicon-card">
+	<figure className="silicon-card subinhouse-card">
 	
           <div  className="siliconproduct-section" >
-            <div className="inhouse-content1" >
+            <div className="inhouse-content1 inhouse-content11" >
             <ul style={{marginTop:"-150px"}}>
             <li>We have Ozone Test Chamber that is a specialized facility designed to evaluate the ozone resistance of rubber and silicone products.</li>
       <li>The chamber simulates high-ozone environments to test the durability of hoses, seals, gaskets, and other components exposed to ozone.</li>

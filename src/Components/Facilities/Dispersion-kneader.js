@@ -147,7 +147,7 @@ const Inhousefacility = () => {
 </figure>
 
 </article>
- <section className="dispersionbg"></section>
+ {/* <section className="dispersionbg"></section> */}
    
 
     </div>

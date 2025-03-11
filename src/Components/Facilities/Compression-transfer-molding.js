@@ -37,7 +37,7 @@ const Inhousefacility = () => {
     </section>
 
     <article className="compression-article">
-	<figure className="autoclave-card">
+	<figure className="autoclave-card compression-card">
 
           <div  className="autoclave-section">
             <div className="autoclave-content">
@@ -50,7 +50,7 @@ const Inhousefacility = () => {
 	</figure>
 
 	
-	<figure className="autoclave-card">
+	<figure className="autoclave-card compression-card">
 	
           <div className="autoclave-section">
          
@@ -82,7 +82,7 @@ const Inhousefacility = () => {
         
 	</figure>
 
-  <figure className="autoclave-card">
+  <figure className="autoclave-card compression-card">
 	
           <div className="autoclave-section">
          
@@ -114,7 +114,7 @@ const Inhousefacility = () => {
  
 
 </article>
- <section className="compressionbg"></section>
+ {/* <section className="compressionbg"></section> */}
    
 
     </div>

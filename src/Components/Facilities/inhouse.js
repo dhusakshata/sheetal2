@@ -142,10 +142,10 @@ Quality has always been the cornerstone of our continued excellence and superior
           </div>
         
 	</figure>
-	<figure className="manufacturing-card">
+	{/* <figure className="manufacturing-card">
 	
        
-	</figure>
+	</figure> */}
 
 </article>
  

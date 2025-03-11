@@ -10,7 +10,9 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-
+.main-wrapper{
+  overflow-x: hidden !important;
+}
 /* Main Hero Section */
 .hero-section {
   height: 100vh;
@@ -388,7 +390,6 @@ padding: 50px 20px;
   padding: 20px 20px;
   text-align: center;
   position: relative;
-  width: 100%;
   overflow: visible;
   display: flex;
   align-items: center;
@@ -456,7 +457,7 @@ b a:focus {
 /* Medium Screens (Tablets: ≤ 1024px) */
 @media screen and (max-width: 1024px) {
   .product-section {
-    height: auto; /* Allow the height to adjust for content */
+    height: 100vh; /* Allow the height to adjust for content */
     padding: 20px;
     background-attachment: scroll; /* Disable fixed background for better performance */
   }
@@ -479,7 +480,7 @@ b a:focus {
 @media screen and (max-width: 768px) {
   .product-section {
     flex-direction: column;
-    height: auto; /* Allow the height to adjust */
+    height: 80vh; /* Allow the height to adjust */
     padding: 15px; /* Reduce padding */
     text-align: center;
   }
@@ -501,7 +502,7 @@ b a:focus {
 /* Extra Small Screens (Mobile: ≤ 480px) */
 @media screen and (max-width: 480px) {
   .product-section {
-    height: auto;
+    height: 80vh;
     padding: 10px; /* Minimal padding for smaller screens */
   }
 
@@ -526,9 +527,9 @@ b a:focus {
 
 /* Clients Section */
 .clients-section {
-  height: 40vh;
+max-height: 50vh !important;
   background: url('../../svgfiles/diagonal.svg');
-
+width: 100%;
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -540,9 +541,10 @@ b a:focus {
 }
 
 .clients-section h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 margin-top: -20px;
   color: black;
+text-align: center;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -615,6 +617,7 @@ margin-top: -20px;
 
 /* For medium-sized screens (tablets) */
 @media (max-width: 1024px) {
+ 
   .logo-item {
     width: 200px; /* Smaller logos for tablets */
     height: 200px;
@@ -623,6 +626,15 @@ margin-top: -20px;
 
 /* For smaller screens (smartphones) */
 @media (max-width: 768px) {
+  .clients-section h2 {
+    font-size: 2rem;
+  margin-top: -20px;
+    color: black;
+  text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
   .logo-item {
     width: 180px; 
     height: 180px;
@@ -635,7 +647,16 @@ margin-top: -20px;
 }
 
 /* For extra small screens (very small devices) */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+  .clients-section h2 {
+    font-size: 1.8rem;
+  margin-top: -20px;
+    color: black;
+  text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
   .logo-item {
     width: 120px;
     height: 120px;
@@ -647,12 +668,12 @@ margin-top: -20px;
 }
 
 
-#application-2 {
+/* #application-2 {
   overflow: visible !important;
-}
+} */
 
 .application-section2 {
-  width: 100%;
+ 
   height: 100vh; /* Full viewport height */
   background: url('../../Images/car.avif') no-repeat center center/cover;
   z-index: 10; 
@@ -752,7 +773,7 @@ margin-top: -20px;
   }
 
   .application-section2 h2 {
-    font-size: 1.5rem; /* Smaller heading size */
+    font-size: 1.8rem; /* Smaller heading size */
   }
 
   .application-section2 p {
@@ -834,7 +855,7 @@ margin-top: -20px;
 /* Tablet */
 @media screen and (max-width: 768px) {
   .application-section {
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     border-width: 6px;
     border-radius: 10px;

@@ -37,12 +37,12 @@ const Inhousefacility = () => {
     </section>
 
     <article className="rubber-mixing-article">
-	<figure className="autoclave-card">
+	<figure className="autoclave-card Rubber-card">
 
           <div  className="autoclave-section">
             <div className="autoclave-content">
-            <img src={RubberMixing} alt="Compression Transfer Moulding" style={{ width: "600px" ,marginLeft:"120px"}} 
-          className='compression-img'
+            <img src={RubberMixing} alt="Compression Transfer Moulding" style={{ width: "800px" ,marginLeft:"120px"}} 
+          className='rubber-img'
           />
             </div>
           </div>
@@ -50,7 +50,7 @@ const Inhousefacility = () => {
 	</figure>
 
 	
-	<figure className="autoclave-card">
+	<figure className="autoclave-card Rubber-card">
 	
           <div className="autoclave-section">
          
@@ -77,7 +77,7 @@ const Inhousefacility = () => {
         
 	</figure>
 
-  <figure className="autoclave-card">
+  <figure className="autoclave-card Rubber-card">
 	
           <div className="autoclave-section">
          
@@ -110,7 +110,7 @@ const Inhousefacility = () => {
  
 
 </article>
- <section className="rubber-mixing"></section>
+ {/* <section className="rubber-mixing"></section> */}
    
 
     </div>

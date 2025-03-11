@@ -559,15 +559,30 @@ margin-left: 5px !important;
 .dispersionsub-content4 ul{
   width: 400px;
   font-size: 14px;
-  margin-left: -860px;
+  margin-left: -920px;
   margin-top: -20px;
  margin-bottom: 800px !important;
 }
 .sub-section h1{
   font-size: 20px;
 }
+.dispersionbg {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
 }
 
+}
+@media (max-width: 768px) {
+  .dispersionbg {
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+   
+    padding: 15px;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
  

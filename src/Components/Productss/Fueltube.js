@@ -74,7 +74,7 @@ systems, with inner diameters ranging from
 	</figure>
 
 	
-	<figure className="silicon-card">
+	<figure className="silicon-card silicon-card2">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
@@ -82,7 +82,7 @@ systems, with inner diameters ranging from
               <img src={FuelTube1} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px"}} />
               </div>
               
-            <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-20px"}}>
+            <div className="silicon-article marin-content" style={{marginLeft:"20px",marginTop:"-20px"}}>
                 <p style={{marginLeft:"20px",marginTop:"60px"}}><h3>Key Features and Benefits:</h3>
                 <ul>
           <li>Sheetal Rubber offers single or double layer for automotive to meet requirement.

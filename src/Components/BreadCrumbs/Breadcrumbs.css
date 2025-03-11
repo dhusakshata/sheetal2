@@ -1,7 +1,7 @@
 /* Breadcrumb Container */
 .breadcrumb {
   font-size: 0.9rem;
- 
+ overflow-x: hidden !important;
   padding: 10px 20px;
   background-color: rgba(243, 243, 243, 0.2);
 
