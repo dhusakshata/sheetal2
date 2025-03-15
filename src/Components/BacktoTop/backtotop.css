@@ -2,7 +2,7 @@
 .back-to-top {
   position: relative !important;
   background-color:black;
-
+  background: linear-gradient(to right, #252837 0%, #252837 100%);
   border: none;
 
   display: none; /* Hidden by default */
