@@ -66,7 +66,7 @@ const ProductPage = () => {
               </div>
              
               <div className="silicon-article ">
-              <p style={{marginLeft:"20px",marginTop:"80px"}}><b>Turbocharger hoses</b> are essential components in the automotive industry, particularly for vehicles equipped with turbocharged engines. These flexible tubes play a crucial role in connecting the turbocharger to the engine's intake manifold. Their primary function is to efficiently transport compressed air from the turbocharger to the engine's cylinders, enhancing performance and fuel economy.Engineered for high-performance connections in turbocharger and
+              <p><b>Turbocharger hoses</b> are essential components in the automotive industry, particularly for vehicles equipped with turbocharged engines. These flexible tubes play a crucial role in connecting the turbocharger to the engine's intake manifold. Their primary function is to efficiently transport compressed air from the turbocharger to the engine's cylinders, enhancing performance and fuel economy.Engineered for high-performance connections in turbocharger and
             charge air cooler systems, ensuring durability in demanding automotive
             and industrial applications.
               </p>
@@ -83,12 +83,12 @@ const ProductPage = () => {
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
-              <div style={{marginLeft:"-70px",}}>
-              <img src={ Turbocharger12} alt={product.title} className="product-image  turbo-img" style={{marginRight:"15px"}} />
+              <div>
+              <img src={ Turbocharger12} alt={product.title} className="product-image  turbo-img"  />
               </div>
               
-            <div className="silicon-article marin-content" style={{marginLeft:"20px",marginTop:"-20px"}}>
-                <p style={{marginLeft:"20px",marginTop:"80px"}}><h3>Key Features and Benefits:</h3>
+            <div className="silicon-article marin-content" style={{display:"flex",flexDirection:"column",marginTop:"-15px"}}>
+                <h3>Key Features and Benefits:</h3>
                 <ul>
             <li>Design to operate at Temperature range: -50°C to + 230°C.
            </li>
@@ -99,7 +99,7 @@ const ProductPage = () => {
             <li>These hoses are designed to provide both rigid and flexible connections, ensuring reliable performance in demanding environments such as generators and other heavy-duty machinery.
             </li>
            
-          </ul></p>
+          </ul>
             </div>
             </div>
           </div>

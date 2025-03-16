@@ -61,12 +61,12 @@ const ProductPage = () => {
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section" >
             <div className="product-content">
-              <div style={{marginLeft:"-70px",}}>
-              <img src={EPDM1} alt={product.title} className="product-image silicon-img" />
+              <div>
+              <img src={EPDM1} alt={product.title} className="product-image epdm-img" />
               </div>
              
-              <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-40px"}}>
-              <p style={{marginLeft:"20px",marginTop:"80px"}}>
+              <div className="silicon-article" >
+              <p>
           <b>EPDM rubber hoses</b> are versatile and widely used in various industries due to their excellent resistance to heat, ozone, weathering, and many chemicals. They are made from EPDM (Ethylene Propylene Diene Monomer), a synthetic rubber known for its durability and flexibility.  
               High-performance hoses for radiator and cooling systems, built to DIN73411 & SAEJ20 Class D standards for durability, flexibility, and heat resistance.
        
@@ -82,12 +82,12 @@ const ProductPage = () => {
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
-              <div style={{marginLeft:"-70px",}}>
-              <img src={EPDM2} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px",width:"500px"}}  />
+              <div>
+              <img src={EPDM2} alt={product.title} className="product-image epdm-img"/>
               </div>
               
-            <div className="silicon-article marin-content" style={{marginLeft:"20px",marginTop:"-20px"}}>
-                <p style={{marginLeft:"20px",marginTop:"80px"}}><h3>Key Features and Benefits:</h3>
+            <div className="silicon-article " style={{display:"flex",flexDirection:"column",marginTop:"-25px"}}>
+               <h3>Key Features and Benefits:</h3>
                 <ul>
             <li>Available in reinforcement as well as non-reinforcement options.
            </li>
@@ -98,7 +98,7 @@ const ProductPage = () => {
             <li>Also available in peroxide-cured hoses.</li>
             
           </ul> 
-          </p>
+          
             </div>
             </div>
           </div>
