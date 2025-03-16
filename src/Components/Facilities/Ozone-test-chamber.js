@@ -54,7 +54,7 @@ const ProductPage = () => {
 	
           <div  className="siliconproduct-section" >
             <div className="inhouse-content1 inhouse-content11" >
-            <ul style={{marginTop:"-150px"}}>
+            <ul style={{marginTop:"-150px",color:"white"}}>
             <li>We have Ozone Test Chamber that is a specialized facility designed to evaluate the ozone resistance of rubber and silicone products.</li>
       <li>The chamber simulates high-ozone environments to test the durability of hoses, seals, gaskets, and other components exposed to ozone.</li>
       <li>This machine helps us to identify cracks, brittleness, or other forms of degradation in our rubber and silicone products.</li>

@@ -41,7 +41,7 @@ const ProductPage = () => {
  
           <div className="subinhouseproduct-section">
             <div className="inhouse-content">
-              <img src={Heatingoven}  className="facility-image" style={{maxWidth:"900px",height:"500px",marginTop:"-150px"}}/>
+              <img src={Heatingoven}  className="facility-image" style={{maxWidth:"900px",height:"500px"}}/>
       
             </div>
           </div>
@@ -53,7 +53,7 @@ const ProductPage = () => {
 	
           <div  className="siliconproduct-section" >
             <div className="inhouse-content1 inhouse-content11" >
-            <ul style={{marginTop:"-150px"}}>
+            <ul style={{color:"white"}}>
             <li>Those Heating Ovens are essential for curing, drying, and preheating for our rubber and silicone hoses during production process.</li>
       <li>This procedure ensures precise temperature control, enhancing the strength, flexibility, and durability to our hoses.</li>
       <li>The controlled heating environment provides uniform heat distribution, ensuring consistent quality to all hoses.</li>

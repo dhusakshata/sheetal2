@@ -61,11 +61,11 @@ const ProductPage = () => {
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section" >
             <div className="product-content">
-              <div style={{marginLeft:"-70px",}}>
+              <div>
               <img src={Turbocharger11} alt={product.title} className="product-image  turbo-img" />
               </div>
              
-              <div className="silicon-article " style={{marginLeft:"20px",marginTop:"-40px"}}>
+              <div className="silicon-article ">
               <p style={{marginLeft:"20px",marginTop:"80px"}}><b>Turbocharger hoses</b> are essential components in the automotive industry, particularly for vehicles equipped with turbocharged engines. These flexible tubes play a crucial role in connecting the turbocharger to the engine's intake manifold. Their primary function is to efficiently transport compressed air from the turbocharger to the engine's cylinders, enhancing performance and fuel economy.Engineered for high-performance connections in turbocharger and
             charge air cooler systems, ensuring durability in demanding automotive
             and industrial applications.

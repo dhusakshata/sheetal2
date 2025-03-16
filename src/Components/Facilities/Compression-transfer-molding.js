@@ -41,7 +41,7 @@ const Inhousefacility = () => {
 
           <div  className="autoclave-section">
             <div className="autoclave-content">
-            <img src={Compression} alt="Compression Transfer Moulding" style={{ width: "500px",marginLeft:"120px" }} 
+            <img src={Compression} alt="Compression Transfer Moulding" style={{ width: "500px",margin:"40px"}} 
           className='compression-img'
           />
             </div>
@@ -55,8 +55,7 @@ const Inhousefacility = () => {
           <div className="autoclave-section">
          
             <div className="autoclave-content1" >
-            <p style={{marginTop:"-60px"
-            }}>
+            <p>
             Our production line utilizes Compression Transfer Moulding, a highly efficient process for shaping rubber
               compounds into finished products. This method involves placing pre-measured rubber material into a heated
               mould, where it is subjected to pressure to achieve the desired shape and density. Compression transfer

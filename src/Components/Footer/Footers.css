@@ -2,7 +2,7 @@
 .footer {
   background: linear-gradient(180deg, #1e202c 0%, #2c2f3f 100%);
   color: white;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 .footer-container {

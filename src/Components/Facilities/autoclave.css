@@ -79,7 +79,7 @@
   position: relative;
 }
 .autoclave-content{
-  width: 500px;
+  width: 100%;
   font-size: 16px;
   line-height: 1.6;
   text-align: left;
@@ -87,16 +87,17 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-left: 50px;
+  
   margin-top: 80px;
   
 }
 .autoclave-content1{
   font-size: 16px;
   line-height: 1.8;
-  width: 700px;
+  width: 90% !important;
   margin-top: 80px;
-padding: 30px;
+margin: 10px;
+padding: 10px;
  color: black;
   text-align: left;
   display: flex;
@@ -107,40 +108,28 @@ padding: 30px;
 }
 
 .autoclave-content2{
-  width: 1200px;
+  width: 90% !important;
   gap: 15px;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 400px;
-margin: 40px;
+  margin: 40px;
+
 }
-.compression-content1{
-  font-size: 16px;
-  line-height: 1.8;
-  width: 700px;
-  margin-top: 80px;
-padding: 30px;
- color: black;
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+
 .autoclave-content img {
   max-width: 100%; /* Prevents image overflow */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Optional for aesthetics */
-  margin-bottom: 20px; /* Space below the image */
+margin-top: 80px !important;
 }
 
 
 
 .autoclave-article {
- 
+ width: 100%;
   background-image: url('../../Images/Autoclave-Vulcanizers-2-1.avif');
   background-position:50% center !important;
   background-repeat: no-repeat;
@@ -187,7 +176,7 @@ article .content {
 
 	.autoclave-card:nth-of-type(2n) {
 margin: 0 0 0 auto;
-height: 80vh;
+height: 100vh !important;
 width: 50%;
 background-image: url('../../svgfiles/diagonal.svg');
 font-size: 16px;
@@ -200,8 +189,8 @@ background-attachment: fixed;
 			}
       .autoclave-card:nth-of-type(3n) {
      margin: 0 0 0 auto;
-height: 80vh;
-width: 100%;
+height: 100vh;
+width: 50%;
 display: flex;
 background-color: #1e202c !important;
 color: black;
@@ -235,7 +224,7 @@ background-attachment: fixed;
 			.autoclave-card:nth-of-type(1) {
 		margin: 0 0 0 0;
     height: 100vh;
-		width: 80% !important;
+		width: 100% !important;
     display: flex;
     background-color: white !important;
     color:white;
@@ -275,7 +264,7 @@ background-attachment: fixed;
             margin-left: 0;
             margin-top: 50px;
             width: 100%;
-            text-align: center;
+            text-align: left;
             
           }
           .autoclave-content img{
@@ -290,7 +279,7 @@ background-attachment: fixed;
           }
           .autoclave-content1 p{
             width: 100%;
-            text-align: center;
+            text-align: left;
             padding: 20px;
             margin: 0 auto;
           }
@@ -298,426 +287,13 @@ background-attachment: fixed;
  .autoclave-content2{
   width: 90%;
   margin: 20px auto;
-  text-align: center;
+  text-align: left;
           }
           
 }
 
 
-@media screen and (max-width: 768px) {
-  .subhero-container {
-    flex-direction: column; /* Stack hero section */
-    height: auto;
-  }
 
-  .subhero-left {
-    
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .subhero-text-content {
-    max-width: 90%;
-    margin-top: 0;
-  }
-
-  .subhero-title {
-    font-size: 2.5rem !important;
-  }
-
-  .subhero-right {
-    flex: 1;
-  }
-
-  .autoclave-content img{
-    width: 90%;
-max-width: 400px !important;
-   
-  }
-  .autoclave-card:nth-of-type(1) {
-		margin: 0 0 0 0;
-    height: 60vh;
-		width: 100% !important;
-    display: flex;
-    background-color: white !important;
-    color:white;
-   
-    background-attachment: fixed;
-			}
-      .autoclave-card:nth-of-type(2n) {
-        margin: 0 0 0 auto;
-        height: 80vh;
-        width: 100%;
-        background-image: url('../../svgfiles/diagonal.svg');
-        font-size: 16px;
-        color: black;
-        
-        line-height: 1.6;
-        background-attachment: fixed;
-           
-            
-              }
-
-              .Knniting-card:nth-of-type(2n) {
-                margin: 0 0 0 auto;
-                height: 60vh !important;
-                width: 100%;
-                background-image: url('../../svgfiles/diagonal.svg');
-                font-size: 16px;
-                color: black;
-                line-height: 1.8;
-                background-attachment: fixed;
-             
-                   
-                    
-                      }
-                        .Knniting-card:nth-of-type(3n) {
-                          margin: 0 0 0 auto;
-                          height: 50vh !important;
-                     width: 100%;
-                     display: flex;
-                     background-color: #1e202c !important;
-                     color: black;
-                     background: url('../../svgfiles/diagonal2.svg');
-                     background-attachment: fixed;
-                     font-size: 16px;
-                     color: white;
-                     line-height: 1.8;
-                     background-attachment: fixed;
-                               }
-                               .knittingcontent p{
-                                text-align: left;
-                                line-height: 1.8;
-                               }
-                               /**/
-
-
-              .autoclave-content1 p{
-                line-height: 1.8 !important;
-              }
-  .autoclave-content,
-  .autoclave-content1,
-  .autoclave-content2 {
-    width: 90% !important;
-    max-width: 600px;
-    text-align: center;
-    margin: 50px auto;
-    padding: 20px;
-    font-size: 14px;
-   
-  }
-  .autoclave-content1 p{
-    margin-top: 10px !important;
-  }
-  .autoclave-content img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-
-  .autoclave-content1 p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  .autoclave-content2 {
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-  }
-
- 
-  .autoclave-card:nth-of-type(2n) {
-    background-size: cover;
-    background-position: center;
-  }
-
-  .autoclave-card:nth-of-type(3n) {
-    height: 80vh;
-  }
-
-  .autoclave {
-    height: 80vh;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  
-	.autoclave-card {
-		background:white;
-		width: calc( 100% + 1px);
-		height: 100vh;
-		margin: 0 0 0 0;
-		position: sticky;
-		top: 0;
-		overflow: hidden;
-   z-index: 1000;
-
-			}
-	
-			.autoclave-card:nth-of-type(2n)::after {
-		right: 50%;
-		left: 5vmin;
-	}
-			.autoclave-card:nth-of-type(1) {
-		margin: 0 0 0 0;
-    height: 60vh;
-		width: 100% !important;
-    display: flex;
-    background-color: white !important;
-    color:white;
-   
-    background-attachment: fixed;
-			}
-
-.autoclave-card:nth-of-type(2n) {
-margin: 0 0 0 auto;
-height: 80vh;
-width: 100%;
-background-image: url('../../svgfiles/diagonal.svg');
-font-size: 16px;
-color: black;
-line-height: 1.6;
-background-attachment: fixed;
-   
-    
-			}
-.autoclave-card:nth-of-type(3n) {
-     margin: 0 0 0 auto;
-     height: 80vh ;
-width: 100%;
-display: flex;
-background-color: #1e202c !important;
-color: black;
-background: url('../../svgfiles/diagonal2.svg');
-background-attachment: fixed;
-font-size: 16px;
-color: white;
-line-height: 1.6;
-background-attachment: fixed;
-          }
-
-          .compression-card:nth-of-type(1) {
-            margin: 0 0 0 0;
-            height: 50vh;
-            width: 100% !important;
-            display: flex;
-            background-color: white !important;
-            color:white;
-           
-            background-attachment: fixed;
-              }
-.compression-card:nth-of-type(2n) {
-  margin: 0 0 0 auto;
-  height: 90vh !important;
-  width: 100%;
-  background-image: url('../../svgfiles/diagonal.svg');
-  font-size: 16px;
-  color: black;
-  line-height: 1.6;
-  background-attachment: fixed;
-     
-      
-        }
-          .compression-card:nth-of-type(3n) {
-            margin: 0 0 0 auto;
-            height: 90vh !important;
-       width: 100%;
-       display: flex;
-       background-color: #1e202c !important;
-       color: black;
-       background: url('../../svgfiles/diagonal2.svg');
-       background-attachment: fixed;
-       font-size: 16px;
-       color: white;
-       line-height: 1.6;
-       background-attachment: fixed;
-                 }
-
-                 /* RUBBER-Mixing Card*/
-                 .Rubber-card:nth-of-type(1) {
-                  margin: 0 0 0 0;
-                  height: 50vh;
-                  width: 100% !important;
-                  display: flex;
-                  background-color: white !important;
-                  color:white;
-                 
-                  background-attachment: fixed;
-                    }
-      .Rubber-card:nth-of-type(2n) {
-        margin: 0 0 0 auto;
-        height: 90vh !important;
-        width: 100%;
-        background-image: url('../../svgfiles/diagonal.svg');
-        font-size: 16px;
-        color: black;
-        line-height: 1.6;
-        background-attachment: fixed;
-           
-            
-              }
-                .Rubber-card:nth-of-type(3n) {
-                  margin: 0 0 0 auto;
-                  height: 100vh !important;
-             width: 100%;
-             display: flex;
-             background-color: #1e202c !important;
-             color: black;
-             background: url('../../svgfiles/diagonal2.svg');
-             background-attachment: fixed;
-             font-size: 16px;
-             color: white;
-             line-height: 1.6;
-             background-attachment: fixed;
-                       }
-                       /**/
-                       /* LNNITING Card*/
-                 .Knniting-card:nth-of-type(1) {
-                  margin: 0 0 0 0;
-                  height: 60vh;
-                  width: 100% !important;
-                  display: flex;
-                  background-color: white !important;
-                  color:white;
-                 
-                  background-attachment: fixed;
-                    }
-      .Knniting-card:nth-of-type(2n) {
-        margin: 0 0 0 auto;
-        height: 50vh !important;
-        width: 100%;
-        background-image: url('../../svgfiles/diagonal.svg');
-        font-size: 16px;
-        color: black;
-        line-height: 1.6;
-        background-attachment: fixed;
-           
-            
-              }
-                .Knniting-card:nth-of-type(3n) {
-                  margin: 0 0 0 auto;
-                  height: 50vh !important;
-             width: 100%;
-             display: flex;
-             background-color: #1e202c !important;
-             color: black;
-             background: url('../../svgfiles/diagonal2.svg');
-             background-attachment: fixed;
-             font-size: 16px;
-             color: white;
-             line-height: 1.6;
-             background-attachment: fixed;
-                       }
-                       /**/
-          .autoclave-content1 p{
-            line-height: 1.8 !important;
-          }
-          .autoclave-content{
-            line-height: 1.6;
-            width: 100%;
-            margin-top: 100px;
-            display: block;
-            text-align: left;
-            
-          }
-          .autoclave-content img{
-            /* width:200px !important; */
-            width: 100%;
-            max-width: 400px !important;
-          
-          }
-          .autoclave-content1 {
-            width: 100%;
-            padding: 15px;
-            font-size: 14px;
-         
-            text-align: left;
-          }
-          .autoclave-content1 p{
-            /* width: 200px !important;
-            font-size: 14px;
-            line-height: 1.8;
-            margin-top: -100px;
-           color: black;
-            text-align: left;
-         padding: 30px;
-          margin-left: -500px; */
-          width: 90%;
-          font-size: 14px;
-          line-height: 1.5;
-          padding: 20px;
-          margin: 10px auto;
-          text-align: left;
-          }
-          .autoclave-content2 ul{
-        font-size: 14px !important;
-           
-          }
-          .autoclave-content2 h4{
-            font-size: 16px !important;
-            font-weight: bold;
-          }
-          
- .autoclave-content2{
-            /* width: 400px;
-            gap: 20px;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-left: 50px !important;
-          margin: 10px; */
-          width: 90%;
-          text-align: left;
-          margin: 0 auto;
-          }
-          .autoclave-content2 p{
-            font-size: 14px !important;
-    text-align: center;
-    width: 100%;
-    margin: 5px auto;
-          }
-          .autoclave-content2 li{
-            font-size: 14px !important;
-    text-align: center;
-    width: 100%;
-    margin: 5px auto;
-          }
-          .autoclave-content2 h4{
-            font-size: 14px !important;
-    text-align: center;
-    width: 100%;
-    margin: 5px auto;
-          }
-          .compression-content1 p{
-            /* width: 200px;
-            font-size: 14px;
-            line-height: 1.8;
-            margin-top: -120px !important;
-           color: black;
-            text-align: left;
-         padding: 30px;
-          margin-left: -500px; */
-          width: 90%;
-          font-size: 14px;
-          line-height: 1.5;
-          padding: 20px;
-          text-align: center;
-          margin: 10px auto;
-          }
-          .compression-img{
-            margin-left: 30px !important;
-            width: 350px !important;
-          }
-          .rubber-img{
-            width: 800px !important;
-            margin-left: -20px !important;
-           }
-          
-}
 
 
 

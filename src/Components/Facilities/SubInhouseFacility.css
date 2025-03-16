@@ -83,7 +83,7 @@ height: 200px;
 margin-left: 30px;
 }
 .inhouse-content1{
-  width: 600px;
+  width:80%;
   text-align: left;
   font-size: 16px;
 	line-height: 1.8;
@@ -187,10 +187,16 @@ margin-left: 30px;
     font-size: 14px !important;
     margin-left: 50px !important;
   }
-  .facility-image{
-width: 300px !important;
-height: 200px !important;
-  }
+  .facility-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ensures it does not exceed its container */
+    height: auto; /* Maintains aspect ratio */
+    padding: 0 20px;
+    margin-bottom: -30px;
+    margin-left: 0; /* Remove fixed margin for better responsiveness */
+}
 .inhouse-image{
   display: flex;
 justify-content: center;
@@ -287,9 +293,27 @@ article .content {
 			}
 			.subinhouse-card:nth-of-type(2n) {
 		margin: 0 0 0 auto;
-		
+   
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    background-color: #1e202c !important;
+    
+    background: url('../../svgfiles/diagonal2.svg');
+    background-attachment: fixed;
+    font-size: 16px;
+    color: white !important;
 			}
-     
+      .facility-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; /* Ensures it does not exceed its container */
+        height: auto; /* Maintains aspect ratio */
+        padding: 0 20px;
+        margin-bottom: -30px;
+        margin-left: 0; /* Remove fixed margin for better responsiveness */
+    }
 }
 
 
@@ -316,12 +340,22 @@ z-index: 1000;
 	}
 			.subinhouse-card:nth-of-type(1) {
 		margin: 0 0 0 0;
-		width: 80% !important;
+		width: 100% !important;
 			}
-			.subinhouse-card:nth-of-type(2n) {
-		margin: 0 0 0 auto;
-		
-			}
+			
+      .subinhouse-card:nth-of-type(2n) {
+        margin: 0 0 0 auto;
+       
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: #1e202c !important;
+        
+        background: url('../../svgfiles/diagonal2.svg');
+        background-attachment: fixed;
+        font-size: 16px;
+        color: white !important;
+          }
       .inhouse-content1{
         margin-left: 0;
         margin-top: 50px;
@@ -335,7 +369,7 @@ z-index: 1000;
         line-height: 1.8;
         text-align: left;
       }
-      .facility-image{
+      /* .facility-image{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -344,10 +378,17 @@ z-index: 1000;
         padding: 0 30px;
         margin-bottom: -30px;
      margin-left: -50px;
-        }
+        } */
+        .facility-image {
+          max-width: 70%;
+          height: auto;
+          padding: 0 10px;
+          margin-bottom: -10px;
+      }
+      
 }
 /*ablet Size Adjustments */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   
 
 
@@ -375,11 +416,11 @@ z-index: 1000;
     margin-bottom: -20px;
     margin-left: 0;
   }
-}
+} */
 
 
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   
 	.subinhouse-card {
 		background:white;
@@ -444,7 +485,7 @@ z-index: 1000;
         .inhouse-content11{
             margin-top: -200px !important;
         }
-}
+} */
 /* Background Section */
 .background-section {
   position: relative;

@@ -188,7 +188,7 @@ background-attachment: fixed;
       .roll-card:nth-of-type(3n) {
      margin: 0 0 0 auto;
 height: 100vh !important;
-width: 100%;
+width: 50%;
 display: flex;
 background-color: #1e202c !important;
 color:white;

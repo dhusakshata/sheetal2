@@ -2,7 +2,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import "./dispersion.css";
+import "./dispersion2.css";
 import hoses from "../../Images/dispersionbg.avif";
 import Dispenser from "../../Images/dispersion kneader.png";
 import Stock from "../../Images/stock_blender-removebg-preview.png";
@@ -80,8 +80,8 @@ const Inhousefacility = () => {
   
   <figure className="sub-card content4">
 	
-          <div className="sub-section">
-          <h1 style={{textAlign:"center", margin:"30px" ,fontSize:"2rem",textTransform:"uppercase" ,color:"white"}}>Internal Mixer</h1>
+          <div className="sub-section internal-section">
+          <h1 style={{textAlign:"center", margin:"30px" ,fontSize:"2rem",textTransform:"uppercase"}}>Internal Mixer</h1>
             <div className="dispersionsub-content2"style={{padding:"0 80px"}} >
   
             <p ><ul><b>Purpose:</b><li>The internal mixer is employed for more intensive mixing, refining the rubber compound by applying higher shear and pressure than a kneader. This is the core stage where the rubber, fillers, and all other components are fully homogenized.</li></ul> 

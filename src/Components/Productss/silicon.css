@@ -6,52 +6,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
-.siliconhero{
-	background-image: url('../../Images/hoses13.png');
-  height: 80vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  position: relative;
-	padding: 50px 20px;
-  background-attachment: fixed;
-}
-
-.subproduct-herodata{
-  margin-top: 20px !important;
-}
-.silicon-hero-heading {
-  position: absolute; 
-  top: 90px;
-  left: -80px;
-  width: 50%;
-  padding: 20px; /* Add some space inside */
-  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
-  color: white;
-  z-index: 10;
-
-  margin-top: -20px;
-  flex: 2;
-  margin-left: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-weight: bold;
-}
-
-
-
-
 /* media query for silicon hero section*/
 
 @media (max-width: 1024px) { 
@@ -150,6 +104,52 @@ body {
 }
 
 /**/
+
+.siliconhero{
+	background-image: url('../../Images/hoses13.png');
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+	padding: 50px 20px;
+  background-attachment: fixed;
+}
+
+.subproduct-herodata{
+  margin-top: 20px !important;
+}
+.silicon-hero-heading {
+  position: absolute; 
+  top: 90px;
+  left: -80px;
+  width: 50%;
+  padding: 20px; /* Add some space inside */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  color: white;
+  z-index: 10;
+
+  margin-top: -20px;
+  flex: 2;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+}
+
+
+
+
+
 .siliconproduct-section {
   height: 100vh;
   text-align: center;
@@ -210,13 +210,18 @@ margin-top: -150px;
   
 
 .product-content {
-  
+  width: 100%;
   text-align: left;
-  padding:  50px;
-margin-top: -80px;
+  
   
 }
-
+.silicon-article{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
 
 
 
@@ -278,6 +283,7 @@ margin-top: -80px;
 }
 
 .Product-article {
+  width: 100%;
   background-image: url('../../Images/hoses16.jpg');
 	/*background-image: url('../../Images/hoses5.jpg'); */
   background-position:50% center !important;
@@ -349,35 +355,25 @@ z-index: 1000;
 	}
 			.silicon-card:nth-of-type(1) {
 		margin: 0 0 0 0;
-		width: 80%;
+		width: 100%;
 			}
 			.silicon-card:nth-of-type(2n) {
 		margin: 0 0 0 auto;
 		
 			}
       
-      .product-content p{
-        font-size: 14px !important;
-        margin: 60px;
-        line-height: 1.4;
-        text-align: left;
-      margin-top: -80px;
-      }
+      
       .product-image{
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 300px;
-        height: 200px;
-        padding: 60px 30px;
-        margin-top: 200px;
+       width: 100%;
+       
       
         }
-        .silicon-img{
-          margin-top: -180px !important;
-        }
+       
         
-        .silicon-article p{
+        /* .silicon-article p{
           width: 95% !important;
           margin: 0 auto;
           padding: 25px;
@@ -385,7 +381,7 @@ z-index: 1000;
           background-size: cover; 
           margin-top: -120px !important;
           margin-left: -50px !important;
-        }
+        } */
 
         .turbo-img{
           margin-top: 155px !important;
@@ -394,11 +390,26 @@ z-index: 1000;
           margin-top: -100px !important;
           width: 480px !important;
         }
-       
+        .product-content {
+          width: 100%;
+          text-align: center;
+          
+          
+        }
+        .silicon-article{
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+       margin: 20px !important;
+          text-align: left;
+        }
+        
+        
 }
 
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   
 	.silicon-card {
 		background:white;
@@ -438,12 +449,7 @@ z-index: 1000;
             width: 100%;
             height: 60vh !important;
               }
-/*             
-              .marin-content li,h3{
-                width: 80%;
-margin-left: 60px !important ;
 
-              } */
       .product-content p{
         width: 100%;
         font-size: 14px !important;
@@ -487,8 +493,8 @@ margin-left: 60px !important ;
           width: 400px !important;
         }
        
-}
-@media screen and (max-width: 480px) {
+} */
+ @media screen and (max-width: 480px) {
   
 	.silicon-card {
 		background:white;
@@ -536,15 +542,23 @@ z-index: 1000;
       }
       .product-content p{
 
-        font-size: 12px !important;
+        font-size: 14px !important;
         margin: 60px;
         line-height: 1.4;
         text-align: left;
       margin-top: -80px;
       }
+      .product-content ul,h3{
+        width: 80%;
+        font-size: 14px !important;
+        margin: 60px;
+        line-height: 1.4;
+        text-align: left;
+      margin-top: -55px;
+      }
       .product-content2 p{
 
-        font-size: 12px !important;
+        font-size: 14px !important;
         margin: 60px;
         line-height: 1.4;
         text-align: left;
@@ -554,7 +568,7 @@ z-index: 1000;
         display: flex;
         justify-content: center;
         align-items: center;
-       width: 300px;
+       width:100%;
         height: 200px;
         margin-top: 160px !important;
 
@@ -574,7 +588,7 @@ z-index: 1000;
       
       
         .silicon-article p{
-          width: 95% !important;
+          width: 90% !important;
           margin: 0 auto;
           padding: 25px;
           text-align: center;
@@ -612,7 +626,7 @@ z-index: 1000;
     margin-top: -300px;
   }    
   
-}
+} 
 /* Background Section */
 .background-section {
   position: relative;

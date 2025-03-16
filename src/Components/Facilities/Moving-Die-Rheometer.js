@@ -37,7 +37,7 @@ const ProductPage = () => {
  
           <div className="subinhouseproduct-section">
             <div className="inhouse-content">
-              <img src={Rheometer}  className="inhouse-image" style={{width:"1200px",height:"500px",marginTop:"60px"}}/>
+              <img src={Rheometer}  className="inhouse-image" style={{width:"1200px",height:"500px"}}/>
       
             </div>
           </div>
@@ -49,7 +49,7 @@ const ProductPage = () => {
 	
           <div  className="siliconproduct-section" >
             <div className="inhouse-content1 inhouse-content11" >
-            <ul style={{marginTop:"-80px"}}>
+            <ul style={{ color:"white"}}>
       <li>A Moving Die Rheometer (MDR) is essential in the rubber industry for measuring the dynamic curing characteristics of rubber and elastomers during vulcanization.</li>
       <li>
       The instrument works by placing a rubber sample in a closed cavity between two dies, one of which oscillates at a constant frequency and amplitude, subjecting the sample to shear deformation.

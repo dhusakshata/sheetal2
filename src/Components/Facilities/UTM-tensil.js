@@ -49,11 +49,11 @@ const ProductPage = () => {
 	</figure>
 
 	
-	<figure className="silicon-card ">
+	<figure className="silicon-card subinhouse-card">
 	
           <div  className="siliconproduct-section" >
             <div className="inhouse-content1" >
-            <ul style={{marginTop:"-150px"}}>
+            <ul style={{color:"white"}}>
             <li>This machine performs a range of tests, including tensile, compressive, and flexural evaluations, providing critical data on material behavior under stress.</li>
         <li>Equipped with advanced load cells, the UTM-1 ensure us for high accuracy in measuring forces, and its digital display offers real-time monitoring of load and elongation during testing.</li>
         <li>The machine generates stress-strain curves that illustrate how materials deform under different loads, revealing important characteristics like yield strength, ultimate tensile strength, elongation at break, and modulus of elasticity.</li>

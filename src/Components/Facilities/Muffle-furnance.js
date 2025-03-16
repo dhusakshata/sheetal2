@@ -39,7 +39,7 @@ const ProductPage = () => {
  
           <div className="subinhouseproduct-section">
             <div className="inhouse-content">
-              <img src={muffle}  className="facility-image" style={{maxWidth:"800px",width:"100%",height:"500px",marginTop:"-150px"}}/>
+              <img src={muffle}  className="facility-image" style={{maxWidth:"800px",width:"100%",height:"500px"}}/>
       
             </div>
           </div>
@@ -51,7 +51,7 @@ const ProductPage = () => {
 	
           <div  className="siliconproduct-section" >
             <div className="inhouse-content1 inhouse-content11" >
-            <ul style={{marginTop:"-150px"}} className="inhouse-ul">
+            <ul style={{color:"white"}} className="inhouse-ul">
             <li>
       A Muffle Furnace helps us for high-temperature testing, heating, and material treatment processes.
       </li>
