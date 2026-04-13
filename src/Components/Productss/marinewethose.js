@@ -56,7 +56,7 @@ const ProductPage = () => {
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section" >
-            <div className="product-content">
+            <div className="product-content marine-art">
               <div>
               <img src={Marinewet1} alt={product.title} className="product-image  marine-img " />
               </div>
@@ -82,7 +82,7 @@ top performance in marine environments.<b>Marine wet exhaust hoses</b> are criti
               <img src={Marinewet2} alt={product.title} className="product-image marine-img"/>
               </div>
               
-            <div className="silicon-article" style={{display:"flex",flexDirection:"column",marginTop:"35px"}}>
+            <div className="silicon-article" style={{display:"flex",flexDirection:"column",marginTop:"-40px"}}>
               
                   <h3>Key Features and Benefits:</h3>
                 <ul>

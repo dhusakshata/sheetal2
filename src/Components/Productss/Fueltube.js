@@ -57,12 +57,12 @@ const ProductPage = () => {
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section" >
             <div className="product-content">
-              <div style={{marginLeft:"-70px",marginTop:"-150px"}}>
-              <img src={FuelTube1} alt={product.title} className="product-image silicon-img" />
+              <div>
+              <img src={FuelTube1} alt={product.title} className="product-image epdm-img"style={{marginTop:"-120px"}} />
               </div>
              
-              <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-40px"}}>
-              <p style={{marginLeft:"20px",marginTop:"80px"}}> Engineered for safe and efficient fluid
+              <div className="silicon-article">
+              <p> Engineered for safe and efficient fluid
 transfer in automotive and industrial
 systems, with inner diameters ranging from
 2 mm to 45 mm.
@@ -78,12 +78,12 @@ systems, with inner diameters ranging from
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
-              <div style={{marginLeft:"-70px",}}>
-              <img src={FuelTube1} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px"}} />
+              <div>
+              <img src={FuelTube1} alt={product.title} className="product-image epdm-img"/>
               </div>
               
-            <div className="silicon-article marin-content" style={{marginLeft:"20px",marginTop:"-20px"}}>
-                <p style={{marginLeft:"20px",marginTop:"60px"}}><h3>Key Features and Benefits:</h3>
+            <div className="silicon-article " style={{display:"flex",flexDirection:"column",marginTop:"-5px"}}>
+                <h3>Key Features and Benefits:</h3>
                 <ul>
           <li>Sheetal Rubber offers single or double layer for automotive to meet requirement.
 </li>
@@ -101,7 +101,7 @@ systems, with inner diameters ranging from
           We also offer fuel tube with sleeves for heat and abrasion resistant.
           </li>
           
-        </ul></p>
+        </ul>
             </div>
             </div>
           </div>

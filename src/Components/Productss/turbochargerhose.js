@@ -60,7 +60,7 @@ const ProductPage = () => {
 	<figure className="silicon-card">
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section" >
-            <div className="product-content">
+            <div className="product-content turbo-art">
               <div>
               <img src={Turbocharger11} alt={product.title} className="product-image  turbo-img" />
               </div>
@@ -82,12 +82,12 @@ const ProductPage = () => {
 	<figure className="silicon-card">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
-            <div className="product-content" >
+            <div className="product-content turbo-art" >
               <div>
-              <img src={ Turbocharger12} alt={product.title} className="product-image  turbo-img"  />
+              <img src={ Turbocharger12} alt={product.title} className="product-image  turbo-img" style={{marginTop:"-10px"}} />
               </div>
               
-            <div className="silicon-article marin-content" style={{display:"flex",flexDirection:"column",marginTop:"-15px"}}>
+            <div className="silicon-article" style={{display:"flex",flexDirection:"column",marginTop:"-70px"}}>
                 <h3>Key Features and Benefits:</h3>
                 <ul>
             <li>Design to operate at Temperature range: -50°C to + 230°C.

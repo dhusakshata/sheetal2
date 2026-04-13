@@ -47,7 +47,7 @@ const ContactInfo = styled.div`
   gap: 15px;
 align-items: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: 830px) {
     display: flex; 
     flex-direction:column;
       gap: 10px;

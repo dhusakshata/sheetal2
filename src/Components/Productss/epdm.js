@@ -60,7 +60,7 @@ const ProductPage = () => {
 	<figure className="silicon-card silicon-card2">
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section" >
-            <div className="product-content">
+            <div className="product-content epdm-art">
               <div>
               <img src={EPDM1} alt={product.title} className="product-image epdm-img" />
               </div>

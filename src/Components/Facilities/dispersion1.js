@@ -2,7 +2,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import "./dispersion.css";
+import "./dispersion2.css";
 import hoses from "../../Images/dispersionbg.avif";
 import Dispenser from "../../Images/dispersion kneader.png";
 import Stock from "../../Images/stock_blender-removebg-preview.png";
@@ -47,17 +47,13 @@ const Inhousefacility = () => {
         </p>
             </div>
           </div>
- 
-	</figure>
+ </figure>
 
-	
 	<figure className="sub-card content4">
-	
-          <div className="sub-section sub-dispersion">
-          <h1 style={{textAlign:"center",padding:"50px",fontSize:"2rem",textTransform:"uppercase"}}>Dispersion Kneader</h1>
+	 <div className="sub-section">
+          <h1 style={{textAlign:"center", margin:"10px",padding:"50px",fontSize:"2rem",textTransform:"uppercase"}}>Dispersion Kneader</h1>
             <div className="dispersionsub-content" >
             <img src={Dispenser} alt="Dispersion Kneader"className="dispersion-img"/>
-           
            <div className="disperssion-info">
            <p>
             The dispersion kneader is the first step in the rubber mixing process. It is responsible for pre-mixing the base rubber with various additives. This machine ensures that the materials are evenly distributed within the rubber matrix before moving to the next stage.
@@ -73,20 +69,16 @@ const Inhousefacility = () => {
           <b>Application:</b>
             <li>It is used in the early stages of rubber compound manufacturing, particularly for creating the masterbatch, where base rubber is mixed with fillers.</li></ul> </p>
            </div>
-
-            </div>
+           </div>
           </div>
-        
-	</figure>
+ 	</figure>
   
   <figure className="sub-card">
 	
-          <div className="sub-section">
+          <div className="sub-section internal-section">
           <h1 style={{textAlign:"center", margin:"30px" ,fontSize:"2rem",textTransform:"uppercase ",color:"white"}}>Internal Mixer</h1>
-            <div className="dispersionsub-content2">
-
-            <div className="disperssion-info2">
-            <p style={{color:"white"}}><ul><b>Purpose:</b><li>The internal mixer is employed for more intensive mixing, refining the rubber compound by applying higher shear and pressure than a kneader. This is the core stage where the rubber, fillers, and all other components are fully homogenized.</li></ul> 
+            <div className="dispersionsub-content2"style={{padding:"0 80px"}} >
+            <p ><ul><b>Purpose:</b><li>The internal mixer is employed for more intensive mixing, refining the rubber compound by applying higher shear and pressure than a kneader. This is the core stage where the rubber, fillers, and all other components are fully homogenized.</li></ul> 
        
           <ul>
           <b>Functionality:</b>
@@ -101,19 +93,17 @@ const Inhousefacility = () => {
           </ul>
        </p>
        </div>
-            </div>
           </div>
         
 	</figure>
-  <figure className="sub-card ">
+  <figure className="sub-card content4">
 	
   <div className="sub-section ">
-  <h1 style={{textAlign:"center",fontSize:"2rem",textTransform:"uppercase",marginTop:"50px"}}>Stock Blender</h1>
+  <h1 style={{textAlign:"center", margin:"30px",fontSize:"2rem",textTransform:"uppercase"}}>Stock Blender</h1>
     <div className="dispersionsub-content3" >
 
     <img src={Stock} alt="Stock Blender" className="stock-img" />
-
-    <div className="disperssion-info">
+   
     <p>
       <b>Purpose:</b> After the rubber compound has been processed in the internal mixer, a stock blender is used to enhance the homogeneity of the mix and prevent temperature build-up, which could negatively impact the material properties.
           
@@ -128,18 +118,15 @@ const Inhousefacility = () => {
             <li>It helps continuous mixing, ensuring uniform texture and quality in the finished product.</li>
           </ul>
           </p>
-          </div>
     </div>
   </div>
 
 </figure>
 
-<figure className="sub-card ">
-	
-  <div className="sub-section" >
-  <h1 style={{textAlign:"center",marginTop:"50px"}}>Why This Sequence is Important for a Rubber-Producing Company?</h1>
+<figure className="sub-card content4">
+  <div className="sub-section">
+  <h1 style={{textAlign:"center", margin:"30px"}}>Why This Sequence is Important for a Rubber-Producing Company?</h1>
     <div className="dispersionsub-content4" >
-    <div className="disperssion-info2" style={{marginTop:"30px"}}>
     <ul>
           <li><b>Efficiency:</b> The use of dispersion kneaders, internal mixers, and stock blenders in sequence ensures that the rubber compound is efficiently mixed, with each stage optimizing different aspects of the material blending process.</li>
           <li><b>Quality Control:</b> Proper mixing at each stage helps maintain the uniformity of the rubber’s mechanical properties, which is vital for ensuring consistent performance in the end products.</li>
@@ -147,10 +134,8 @@ const Inhousefacility = () => {
           <li><b>Cost Reduction:</b> By using these machines in sequence, a rubber-producing company can reduce wastage and improve the overall quality of their product, thus cutting down on rejects and optimizing production efficiency.</li>
           <li><b>Improved Product Consistency:</b> The sequential blending process helps achieve consistent material properties across batches, ensuring uniformity in the final rubber products and enhancing their reliability.</li>
         </ul>
-        </div>
     </div>
   </div>
-
 </figure>
 
 </article>

@@ -55,7 +55,7 @@ const Inhousefacility = () => {
           <div className="autoclave-section">
          
             <div className="autoclave-content1" >
-            <p>
+            <p style={{marginTop:"40px"}}>
             Our production line is equipped with Rubber Mixing Mills, which are essential for the thorough blending
               of rubber compounds. These mills utilize two or more heavy rollers to process raw materials, ensuring a
               uniform mixture and optimal consistency. The efficient operation of rubber mixing mills allows for
@@ -63,11 +63,7 @@ const Inhousefacility = () => {
               properties. By facilitating the preparation of various rubber formulations, these mills enhance
               production efficiency while maintaining stringent quality standards in our finished products.
 
-              <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Purpose:</h4>
-            <ul>
-             <li> Rubber mixing mills are essential for blending raw rubber materials with fillers and additives to create
-             uniform rubber compounds.</li>
-            </ul>
+              
            
            
             </p>
@@ -82,6 +78,11 @@ const Inhousefacility = () => {
           <div className="autoclave-section">
          
             <div className="autoclave-content2" >
+            <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Purpose:</h4>
+            <ul>
+             <li> Rubber mixing mills are essential for blending raw rubber materials with fillers and additives to create
+             uniform rubber compounds.</li>
+            </ul>
             <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Advantages:</h4>
             <ul>
               <li><b>Uniform Mixing:</b> Ensures consistent properties in the final product.</li>
@@ -89,6 +90,21 @@ const Inhousefacility = () => {
               <li><b>Efficient Processing:</b> Can process large volumes quickly, increasing production capacity.</li>
               <li><b>Adjustable Settings:</b> Gap between rollers can be adjusted for precise formulation control.</li>
             </ul>
+            
+           
+            </div>
+          </div>
+        
+	</figure>
+ 
+
+  <figure className="autoclave-card Rubber-card">
+	
+          <div className="autoclave-section">
+         
+            <div className="autoclave-content2" >
+           
+            
             <h4 style={{fontSize:"18px",fontWeight:"bold"}}>Applications:</h4>
             <ul>
               <li><b>Rubber Compounding:</b> Producing multiple compounds for multiple types of hoses.</li>
@@ -107,8 +123,6 @@ const Inhousefacility = () => {
           </div>
         
 	</figure>
- 
-
 </article>
  {/* <section className="rubber-mixing"></section> */}
    

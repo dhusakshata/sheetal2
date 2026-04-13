@@ -1,7 +1,7 @@
 import React from "react";
 import { Parallax } from "react-parallax";
-import "./silicon2.css";
-import GetInTouch from "../GetInTouch.js";
+import "./silicon.css";
+
 import Silicon11 from "../../Images/silicon11.png";
 import Silicon12 from "../../Images/silicon12.png";
 import carImage from "../../Images/car2.jpeg";

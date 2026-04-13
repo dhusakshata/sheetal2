@@ -336,7 +336,9 @@ padding: 50px 20px;
   background-color: #ffa800;
 }
 @media (max-width: 480px) {
- 
+  .about-section{
+    height: 100vh !important;
+  }
   .section-content {
     padding: 10px;
   }

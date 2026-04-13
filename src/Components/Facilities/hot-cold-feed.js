@@ -33,7 +33,7 @@ const Inhousefacility = () => {
 
     <article className="sub-article">
 
-	<figure className="sub-card hotfeed-card">
+	<figure className="sub-card">
 
           <div  className="sub-section">
             <div className="sub-content1">
@@ -50,19 +50,22 @@ const Inhousefacility = () => {
 	</figure>
 
 	
-	<figure className="sub-card hotfeed1-card">
+	<figure className="sub-card">
 	
           <div className="sub-section">
-          <h1 style={{textAlign:"center", margin:"30px",fontSize:"2rem",textTransform:"uppercase"}}>Hot Feed Extruder</h1>
+          <h1  style={{textAlign:"center",padding:"50px",fontSize:"2rem",textTransform:"uppercase"}}>Hot Feed Extruder</h1>
             <div className="sub-content" >
-            <img src={HotFeed} alt="Hot Feed Extruder" className="subimg hotimg"/>
-           
+            <img src={HotFeed} alt="Hot Feed Extruder" className="hotimg"/>
+            <div className="disperssion-info">
+
             <ul>
               <li>A hot feed extruder for rubber hoses shapes rubber into hoses by feeding heated rubber through a die.</li>
               <li>The extruder applies controlled heat and pressure to maintain consistent quality and dimensions.</li>
               <li>This process ensures the rubber is moulded to the desired shape with properties like flexibility and durability.</li>
               <li>It is optimized for continuous production of large volumes.</li>
             </ul>
+            </div>
+            
             </div>
           </div>
         
@@ -71,10 +74,11 @@ const Inhousefacility = () => {
   <figure className="sub-card">
 	
           <div className="sub-section1">
-          <h1 style={{textAlign:"center", margin:"30px",fontSize:"2rem",textTransform:"uppercase"}}>Cold Feed Extruder</h1>
+          <h1 style={{textAlign:"center",fontSize:"2rem",textTransform:"uppercase",marginTop:"50px"}}>Cold Feed Extruder</h1>
             <div className="sub-content2" >
-            <img src={ColdFeed} alt="cold Feed Extruder" style={{width:"500px"}} className="cold-img"/>
-           
+            <img src={ColdFeed} alt="cold Feed Extruder" className="cold-img"/>
+            <div className="disperssion-info">
+
             <ul>
               <li>Processes rubber compounds at ambient or slightly elevated temperatures without pre-heating, offering versatility in handling various compounds and profiles.</li>
               <li>The flexibility of the system allows it to handle different materials and complex shapes.</li>
@@ -83,16 +87,18 @@ const Inhousefacility = () => {
               <li>It minimizes downtime by enabling faster product changes without the need for pre-heating.</li>
             </ul>
             </div>
+            </div>
           </div>
         
 	</figure>
   <figure className="sub-card hotfeed1-card">
 	
   <div className="sub-section">
-  <h1 style={{textAlign:"center", margin:"30px",fontSize:"2rem",textTransform:"uppercase"}}>Co-Extrusion Extruder</h1>
+  <h1  style={{textAlign:"center",fontSize:"2rem",textTransform:"uppercase",marginTop:"50px"}}>Co-Extrusion Extruder</h1>
     <div className="sub-content3" >
-    <img src={CoExtrusion} alt="Co-Extrusion Extruder" style={{width:"900px"}} className="co-img"/>
-   
+
+    <img src={CoExtrusion} alt="Co-Extrusion Extruder"className="co-img"/>
+    <div className="disperssion-info">
     <ul>
            
            <li><b>Multi-Extruder System:</b> Two or more extruders feed different materials into a single die.</li>
@@ -102,6 +108,7 @@ const Inhousefacility = () => {
            <li><b>Industry Use:</b> Popular in automotive, construction, and manufacturing for creating durable and functional multi-layered rubber products.</li>
           
          </ul>
+         </div>
     </div>
   </div>
 

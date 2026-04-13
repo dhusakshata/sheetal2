@@ -62,15 +62,16 @@ const ProductPage = () => {
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content">
-            <div style={{marginLeft:"-10px",marginTop:"-250px"}}>
-              <img src={Moulded11} alt={product.title} className="moulded-image" />
+            <div>
+              <img src={Moulded11} alt={product.title} className="product-image epdm-img"   />
               </div>
-              <h3>{product.title}</h3>
-              <p style={{marginLeft:"20px"}}>
-              We specialize in high-performance,
+              <div className="silicon-article">
+              <p>We specialize in high-performance,
 custom-moulded parts for various
 industries.
-       </p>
+              </p>
+              </div>
+             
             </div>
           </div>
         ))}
@@ -81,16 +82,16 @@ industries.
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content" >
-             <div style={{marginLeft:"10px",marginTop:"-250px"}}>
-             <img src={Moulded12} alt={product.title} className="moulded-image" style={{marginRight:"15px"}} />
+             <div>
+             <img src={Moulded12} alt={product.title} className="product-image epdm-img" />
               </div>
               
-            <div className="marin-content">
-            <p style={{marginLeft:"40px"}}>
+            <div className="silicon-article"
+            style={{display:"flex",flexDirection:"column",marginTop:"40px"}}>
               <ul>
                 <li>We are using materials like SBR,
 EPDM, PVC/NBR, Silicone, Neoprene,& more.</li></ul>
-            </p>
+        
             </div>
             </div>
           </div>
@@ -100,12 +101,11 @@ EPDM, PVC/NBR, Silicone, Neoprene,& more.</li></ul>
   <figure className="silicon-card silicon-card3">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
-            <div className="product-content" style={{marginTop:"-250px"}}>
-             <div style={{marginLeft:"10px"}}>
-               <img src={Moulded13} alt={product.title} className="moulded-image" style={{marginRight:"15px"}} /></div>
-              <div style={{marginLeft:"20px"}}>
-              <p>
-         
+            <div className="product-content">
+             <div>
+               <img src={Moulded13} alt={product.title} className="product-image epdm-img"  /></div>
+              <div className="silicon-article"style={{display:"flex",flexDirection:"column",marginTop:"45px"}}>
+          
         <h3>Key Features and Benefits:</h3>
         <ul>
           <li>Sheetal Rubber offers a range of moulded parts.
@@ -119,7 +119,7 @@ EPDM, PVC/NBR, Silicone, Neoprene,& more.</li></ul>
           <li>Auto-weighing available from 0.5 grams to 5 kgs.</li>
          
         </ul>
-        </p>
+    
         </div>
             </div>
           </div>
@@ -128,12 +128,12 @@ EPDM, PVC/NBR, Silicone, Neoprene,& more.</li></ul>
   <figure className="silicon-card silicon-card3">
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
-            <div className="product-content"style={{marginTop:"-250px"}} >
-              <div style={{marginLeft:"-20px",marginTop:"-40px"}}>
-                <img src={Moulded14} alt={product.title} className="moulded-image" style={{marginRight:"15px"}} /></div>
+            <div className="product-content" >
+              <div>
+                <img src={Moulded14} alt={product.title}className="product-image epdm-img"/></div>
 
-              <div style={{marginLeft:"20px"}}>
-              <p>
+              <div className="silicon-article"style={{display:"flex",flexDirection:"column",marginTop:"45px"}}>
+             
          
         <h3>Applications of Moulded Hoses:</h3>
         <ul>
@@ -144,7 +144,7 @@ EPDM, PVC/NBR, Silicone, Neoprene,& more.</li></ul>
           
          
         </ul>
-        </p>
+     
         </div>
 
             </div>

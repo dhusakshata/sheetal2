@@ -81,12 +81,12 @@ const ProductPage = () => {
   {siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section" >
             <div className="product-content">
-              <div style={{marginLeft:"-70px",}}>
-              <img src={Assemblyy11} alt={product.title} className="product-image silicon-img" />
+              <div>
+              <img src={Assemblyy11} alt={product.title} className="product-image epdm-img" style={{marginTop:"-80px"}} />
               </div>
              
-              <div className="silicon-article" style={{marginLeft:"20px",marginTop:"-40px"}}>
-              <p style={{marginLeft:"20px",marginTop:"80px"}}>Sheetal Rubber provides flexible hoses with custom couplings for efficient media transfer, operating from -40°C to +140°C in sizes 6–75 mm.
+              <div className="silicon-article">
+              <p>Sheetal Rubber provides flexible hoses with custom couplings for efficient media transfer, operating from -40°C to +140°C in sizes 6–75 mm.
               </p>
               </div>
             </div>
@@ -99,12 +99,12 @@ const ProductPage = () => {
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className="siliconproduct-section">
             <div className="product-content" >
-              <div style={{marginLeft:"-70px",}}>
-              <img src={Assemblyy12} alt={product.title} className="product-image silicon-img" style={{marginRight:"15px",marginTop:"150px"}} />
+              <div>
+              <img src={Assemblyy12} alt={product.title} className="product-image epdm-img"/>
               </div>
               
-            <div className="silicon-article marin-content" style={{marginLeft:"20px",marginTop:"-20px"}}>
-                <p style={{marginLeft:"20px",marginTop:"50px"}}><h3>Key Features and Benefits:</h3>
+            <div className="silicon-article"style={{display:"flex",flexDirection:"column",marginTop:"45px"}}>
+                <h3>Key Features and Benefits:</h3>
                 <ul>
             <li>
             A hose or multiple hoses connected to transfer media to or from a vehicle tank, portable tank, or storage receptacle.
@@ -114,7 +114,7 @@ const ProductPage = () => {
             <li>We have an in-house crimping machine facility for hose assemblies.</li>
             
           </ul>
-          </p>
+         
             </div>
             </div>
           </div>

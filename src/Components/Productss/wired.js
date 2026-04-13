@@ -62,13 +62,13 @@ const ProductPage = () => {
 	<figure className="silicon-card silicon-card2">
   {siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
-            <div className="product-content  wired-data1">
-              <div style={{marginLeft:"-80px",marginTop:"-200px"}}>
-              <img src={Wired1} alt={product.title} className="product-image" />
+            <div className="product-content  ">
+              <div>
+              <img src={Wired1} alt={product.title} className="product-image epdm-img" style={{marginTop:"-140px"}}/>
               </div>
               
-          <div className="silicon-article"style={{marginLeft:"20px",marginTop:"-40px"}}>
-          <p style={{marginLeft:"20px",marginTop:"-70px"}}> Engineered for reliability in demanding
+          <div className="silicon-article">
+          <p> Engineered for reliability in demanding
 environments, with a temperature range of
 -40°C to +140°C and sizes from 20 mm to
 200 mm.
@@ -85,10 +85,10 @@ environments, with a temperature range of
 	{siliconproducts.map((product, index) => (
           <div key={product.id} className={`siliconproduct-section ${index % 2 === 0 ? "right" : "left"}`}>
             <div className="product-content wired-data" >
-              <img src={Wired11} alt={product.title} className="product-image" style={{width:"500px"}} />
+              <img src={Wired11} alt={product.title} className="product-image "/>
 
-              <div className="silicon-article marin-content"  style={{marginLeft:"80px",marginTop:"-40px"}}>
- <p style={{marginLeft:"20px",marginTop:"-80px"}}>
+              <div className="silicon-article"style={{display:"flex",flexDirection:"column",marginTop:"-5px"}}>
+ 
         <h3>Key Features and Benefits:</h3>
         <ul>
           <li>The suction hose is designed to maintain vacuum integrity for the transfer of fluids and air.
@@ -102,7 +102,7 @@ environments, with a temperature range of
           </li>
           <li>	It is useful for air cleaner applications in automotive filters.</li>
         </ul>
-        </p>
+  
               </div>
              
             </div>

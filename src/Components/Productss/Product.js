@@ -178,7 +178,7 @@ useEffect(() => {
       {products.map((product) => (
        <div>
             <h3 className="gallery-heading">{product.name}</h3>
-         <div key={product.id} className="gallery-item">
+         <div key={product.id} className="gallery-items">
       
           <img src={product.image} alt={product.name} />
           <div className="overlay">
